@@ -1,0 +1,27 @@
+{
+  "createdAt": "2026-08-16T13:58:51.256941+00:00",
+  "existingResourceCount": 1,
+  "existingResourceIds": [
+    "sample-resource"
+  ],
+  "instructions": {
+    "goal": "Discover useful creator resources for MILEYM3DIA Creator Hub.",
+    "priority": [
+      "music production",
+      "plugins",
+      "samples",
+      "AI creator tools",
+      "video creation",
+      "graphic design",
+      "creator business"
+    ],
+    "rules": [
+      "Prefer official websites.",
+      "Do not invent URLs.",
+      "Do not duplicate existing resources.",
+      "Clearly distinguish free, freemium and paid resources.",
+      "Do not claim verification unless the source supports it.",
+      "Return structured JSON matching the resource schema."
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+name: MILEYM3DIA AI Resource Discovery
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare discovery job
+        run: python3 scripts/ai/discover.py
+
+      - name: Validate repository data
+        run: python3 - <<'PY'
+        import json
+        from pathlib import Path
+
+        for path in Path("data").glob("*.json"):
+            json.loads(path.read_text())
+            print("Valid:", path)
+        PY
+
+      - name: Commit discovery job
+        run: |
+          git config user.name "MILEYM3DIA AI"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/proposals/discovery-job.json
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Prepare AI resource discovery job"
+            git push
+          fi
