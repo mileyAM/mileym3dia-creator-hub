@@ -1,0 +1,14 @@
+[
+  {"id":"music-production","name":"Music Production","icon":"🎚️"},
+  {"id":"plugins","name":"Plugins & Effects","icon":"🎛️"},
+  {"id":"daws","name":"DAWs","icon":"🎹"},
+  {"id":"samples","name":"Samples & Drum Kits","icon":"🥁"},
+  {"id":"vocals","name":"Vocals & Recording","icon":"🎤"},
+  {"id":"mixing-mastering","name":"Mixing & Mastering","icon":"🎧"},
+  {"id":"ai","name":"AI Creator Tools","icon":"🤖"},
+  {"id":"video","name":"Video Creation","icon":"🎬"},
+  {"id":"design","name":"Graphic Design","icon":"🎨"},
+  {"id":"social","name":"Social Media","icon":"📱"},
+  {"id":"distribution","name":"Music Distribution","icon":"💿"},
+  {"id":"business","name":"Creator Business","icon":"💰"}
+]

@@ -1,0 +1,7 @@
+[
+  {"id":"macos","name":"macOS"},
+  {"id":"windows","name":"Windows"},
+  {"id":"ios","name":"iOS"},
+  {"id":"android","name":"Android"},
+  {"id":"web","name":"Web"}
+]
