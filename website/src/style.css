@@ -41,7 +41,6 @@ html {
 
 body {
   margin: 0;
-
   background:
     radial-gradient(
       circle at 12% 5%,
@@ -59,16 +58,13 @@ body {
       transparent 35%
     ),
     var(--bg);
-
   color: var(--text);
-
   font-family:
     Inter,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-
   line-height: 1.5;
 }
 
@@ -83,13 +79,13 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button {
+  border: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
-}
-
-button {
-  border: 0;
 }
 
 /* =========================
@@ -108,7 +104,7 @@ button {
   min-height: 76px;
   padding: 0 5vw;
 
-  background: rgba(5, 5, 7, 0.90);
+  background: rgba(5, 5, 7, 0.9);
 
   border-bottom: 1px solid var(--line);
 
@@ -146,7 +142,7 @@ button {
   letter-spacing: -1px;
 
   box-shadow:
-    0 0 18px rgba(0, 255, 157, 0.10),
+    0 0 18px rgba(0, 255, 157, 0.1),
     inset 0 0 15px rgba(0, 255, 157, 0.04);
 
   transition:
@@ -158,7 +154,7 @@ button {
   transform: translateY(-2px);
 
   box-shadow:
-    0 0 28px rgba(0, 255, 157, 0.20),
+    0 0 28px rgba(0, 255, 157, 0.2),
     inset 0 0 18px rgba(0, 255, 157, 0.06);
 }
 
@@ -266,6 +262,7 @@ button {
   content: "";
 
   position: absolute;
+
   width: 900px;
   height: 500px;
 
@@ -328,8 +325,7 @@ button {
 .hero h1 {
   margin: 0;
 
-  font-size:
-    clamp(48px, 8vw, 105px);
+  font-size: clamp(48px, 8vw, 105px);
 
   line-height: 0.92;
 
@@ -389,7 +385,7 @@ button {
 
   box-shadow:
     0 0 0 1px rgba(0, 255, 157, 0.025),
-    0 20px 70px rgba(0, 0, 0, 0.50);
+    0 20px 70px rgba(0, 0, 0, 0.5);
 
   transition:
     border-color 0.2s ease,
@@ -401,7 +397,7 @@ button {
   border-color: var(--neon);
 
   box-shadow:
-    0 0 0 1px rgba(0, 255, 157, 0.10),
+    0 0 0 1px rgba(0, 255, 157, 0.1),
     0 0 35px rgba(0, 255, 157, 0.12),
     0 25px 70px rgba(0, 0, 0, 0.45);
 }
@@ -487,7 +483,6 @@ button {
 .section-heading {
   display: flex;
   align-items: center;
-
   gap: 15px;
 }
 
@@ -576,14 +571,16 @@ button {
 
   pointer-events: none;
 
-  transition: opacity 0.2s ease;
+  transition:
+    background 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .category-tile:hover {
   transform: translateY(-4px);
 
   border-color:
-    rgba(0, 255, 157, 0.50);
+    rgba(0, 255, 157, 0.5);
 
   background: var(--panel-2);
 
@@ -614,6 +611,8 @@ button {
 
   font-size: 17px;
   font-weight: 850;
+
+  transition: color 0.2s ease;
 }
 
 .category-tile span {
@@ -623,6 +622,56 @@ button {
   color: var(--muted);
 
   font-size: 12px;
+
+  transition: color 0.2s ease;
+}
+
+/* =========================
+   ACTIVE CATEGORY
+========================= */
+
+.category-tile.active {
+  transform: translateY(-2px);
+
+  color: white;
+
+  border-color: var(--neon);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(0, 255, 157, 0.1),
+      rgba(139, 92, 246, 0.06)
+    );
+
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 157, 0.12),
+    0 0 25px rgba(0, 255, 157, 0.08),
+    inset 0 0 20px rgba(0, 255, 157, 0.025);
+}
+
+.category-tile.active::before {
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(0, 255, 157, 0.14),
+      transparent 48%
+    );
+}
+
+.category-tile.active b {
+  color: var(--neon);
+
+  text-shadow:
+    0 0 18px rgba(0, 255, 157, 0.25);
+}
+
+.category-tile.active strong {
+  color: var(--neon);
+}
+
+.category-tile.active span {
+  color: #b9ffe1;
 }
 
 /* =========================
@@ -671,13 +720,20 @@ button {
 
   transition:
     border-color 0.2s ease,
-    background 0.2s ease;
+    background 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .filters select:hover,
 .filter-toggle:hover {
   border-color: var(--line-light);
   background: var(--panel-2);
+}
+
+.filters select:focus,
+.filter-toggle:focus-visible {
+  outline: 2px solid rgba(0, 255, 157, 0.35);
+  outline-offset: 2px;
 }
 
 .filter-toggle.active {
@@ -688,7 +744,7 @@ button {
   border-color: var(--neon);
 
   box-shadow:
-    0 0 18px rgba(0, 255, 157, 0.10);
+    0 0 18px rgba(0, 255, 157, 0.1);
 }
 
 /* =========================
@@ -723,7 +779,7 @@ button {
     linear-gradient(
       145deg,
       rgba(255, 255, 255, 0.032),
-      rgba(255, 255, 255, 0.010)
+      rgba(255, 255, 255, 0.01)
     );
 
   border: 1px solid var(--line);
@@ -838,7 +894,7 @@ button {
 .open-badge {
   color: var(--neon);
 
-  border: 1px solid rgba(0, 255, 157, 0.20);
+  border: 1px solid rgba(0, 255, 157, 0.2);
 
   background:
     rgba(0, 255, 157, 0.035);
@@ -931,7 +987,8 @@ button {
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
-    background 0.2s ease;
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .btn:hover {
@@ -946,7 +1003,7 @@ button {
 
 .btn.primary:hover {
   box-shadow:
-    0 0 25px rgba(0, 255, 157, 0.20);
+    0 0 25px rgba(0, 255, 157, 0.2);
 }
 
 .btn.secondary {
@@ -1028,7 +1085,7 @@ button {
   background:
     radial-gradient(
       circle at 90% 50%,
-      rgba(0, 255, 157, 0.10),
+      rgba(0, 255, 157, 0.1),
       transparent 35%
     ),
     radial-gradient(
@@ -1110,7 +1167,7 @@ footer {
   border-top: 1px solid var(--line);
 
   background:
-    rgba(0, 0, 0, 0.20);
+    rgba(0, 0, 0, 0.2);
 }
 
 footer strong {
@@ -1431,22 +1488,4 @@ footer a:hover {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-.category-tile.active {
-  border-color: var(--neon);
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(0, 255, 157, 0.08),
-      rgba(139, 92, 246, 0.06)
-    );
-
-  box-shadow:
-    0 0 25px rgba(0, 255, 157, 0.08),
-    inset 0 0 20px rgba(0, 255, 157, 0.025);
-}
-
-.category-tile.active strong {
-  color: var(--neon);
 }
