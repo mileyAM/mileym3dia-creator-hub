@@ -1,8 +1,148 @@
 {
-  "generatedAt": "2026-08-16T14:03:16.867248+00:00",
-  "count": 827,
+  "generatedAt": "2026-08-16T14:07:56.731966+00:00",
+  "count": 847,
   "status": "needs-review",
   "candidates": [
+    {
+      "name": "Show HN: Offshoot \u2013 Copy-on-write branching for stock SQLite files",
+      "description": "Article URL: https://github.com/sricola/offshoot Comments URL: https://news.ycombinator.com/item?id=49320181 Points: 1 # Comments: 0",
+      "website": "https://github.com/sricola/offshoot",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: AmitabhC \u2013 a programming language made of Amitabh Bachchan dialogues",
+      "description": "Hi HN! Amitabh Bachchan is Indian cinema's biggest icon - five decades of films whose dialogues everyone in India can quote from memory. I built a programming language where those films and dialogues are the language. Comments URL: https://news.ycombinator.com/item?id=49320178 Points: 1 # Comments: 0",
+      "website": "https://github.com/jay123anta/amitabhc",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: ponzy.io \u2013 I made a casual trading game you can play in the browser",
+      "description": "Hey everyone, I made a small browser game where you trade against other players in a 10 minute free-for-all, player with the most cash at the end wins. Here's the link: ponzy.io Give it a try and let me know what you think. I'm currently actively developing the game and am looking for feedback! The most recent update I added was to give bots unique names and tendencies, instead of having them all just be the same, which is an idea I got from a fellow HN user! Comments URL: https://news.ycombinat",
+      "website": "https://ponzy.io",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "I thought I was building a C replacement. I was wrong",
+      "description": "Article URL: https://c3-lang.org/blog/i_thought_i_was_building_a_c_replacement/ Comments URL: https://news.ycombinator.com/item?id=49320169 Points: 1 # Comments: 0",
+      "website": "https://c3-lang.org/blog/i_thought_i_was_building_a_c_replacement/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
+      "description": "Article URL: https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html Comments URL: https://news.ycombinator.com/item?id=49320144 Points: 2 # Comments: 0",
+      "website": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "New Evooo1Bot Linux botnet turns routers into traffic relay nodes",
+      "description": "Article URL: https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/ Comments URL: https://news.ycombinator.com/item?id=49320141 Points: 1 # Comments: 0",
+      "website": "https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: LookTwice \u2013 validation APIs that don't turn outages into invalid data",
+      "description": "Article URL: https://looktwice.dev/tools Comments URL: https://news.ycombinator.com/item?id=49320139 Points: 1 # Comments: 0",
+      "website": "https://looktwice.dev/tools",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Can Anthropic's invisible watermarks curb AI slop? Researchers remain sceptical",
+      "description": "Article URL: https://www.nature.com/articles/d41586-026-02503-7 Comments URL: https://news.ycombinator.com/item?id=49320124 Points: 1 # Comments: 1",
+      "website": "https://www.nature.com/articles/d41586-026-02503-7",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "My first website passed the Adsense review",
+      "description": "My first website finally passed the AdSense review. https://screenissues.com Comments URL: https://news.ycombinator.com/item?id=49320114 Points: 1 # Comments: 0",
+      "website": "https://news.ycombinator.com/item?id=49320114",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "The Private Messenger That's Simple",
+      "description": "Article URL: https://z-text.org/privatemessengeractuallysimple/ Comments URL: https://news.ycombinator.com/item?id=49320113 Points: 1 # Comments: 0",
+      "website": "https://z-text.org/privatemessengeractuallysimple/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "CEO of Anthropic on the messaging around AI",
+      "description": "Article URL: https://twitter.com/DarioAmodei/status/2088758819304443967 Comments URL: https://news.ycombinator.com/item?id=49320106 Points: 1 # Comments: 0",
+      "website": "https://twitter.com/DarioAmodei/status/2088758819304443967",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Success Is a Clean Cut",
+      "description": "Article URL: https://julienreszka.com/blog/success-is-a-clean-cut/ Comments URL: https://news.ycombinator.com/item?id=49320104 Points: 1 # Comments: 1",
+      "website": "https://julienreszka.com/blog/success-is-a-clean-cut/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "From Coding to Orchestrating: New Role of the Software Engineer",
+      "description": "Article URL: https://blog.lunatech.com/posts/2026-05-19-from-coding-to-orchestrating/ Comments URL: https://news.ycombinator.com/item?id=49320102 Points: 1 # Comments: 0",
+      "website": "https://blog.lunatech.com/posts/2026-05-19-from-coding-to-orchestrating/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: Kungfu \u2013 Keep coding-agent work alive across sessions and handoffs",
+      "description": "Article URL: https://github.com/kungfu-systems/kungfu Comments URL: https://news.ycombinator.com/item?id=49320095 Points: 1 # Comments: 0",
+      "website": "https://github.com/kungfu-systems/kungfu",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "The Folly of Tokenmaxxing or Reinventing the Wheel",
+      "description": "Article URL: https://age-of-product.com/folly-tokenmaxxing/ Comments URL: https://news.ycombinator.com/item?id=49320093 Points: 1 # Comments: 0",
+      "website": "https://age-of-product.com/folly-tokenmaxxing/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: TrustBand Hire \u2013 operator personas as Markdown you paste into Grok Bot",
+      "description": "Free to use. Comments URL: https://news.ycombinator.com/item?id=49320089 Points: 1 # Comments: 0",
+      "website": "https://trustband.app/hire",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: Always responsive UI for a coding agent",
+      "description": "In my limited personal experience, I find the UI of coding agents, or rather their clients, unsatisfying for the following reasons: - They tend to have poor performance characteristics - They make it hard to actually read or copy from the session history - They make it hard to paste large contents, and to undo that paste. - They lack a sane default for sandboxing It appears to me that those UI try to re-use patterns from chat UIs, but fail to address the key difference: large and constantly chan",
+      "website": "https://news.ycombinator.com/item?id=49320073",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Brookfield's Bruce Flatt discusses Nvidia strategic partnership on CNBC [video]",
+      "description": "Article URL: https://www.youtube.com/watch?v=Uxy4s2FP2EY Comments URL: https://news.ycombinator.com/item?id=49320059 Points: 1 # Comments: 0",
+      "website": "https://www.youtube.com/watch?v=Uxy4s2FP2EY",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: A nutrition companion for endurance athletes",
+      "description": "Hey HN! 6 Months ago I soft launched https://mavr.app/ , an IOS companion app for any endurance athletes nutrition. Over the 6 month period we valid some of our key features: 1) Gut training during training your training block, making sure you can handle the carbs during your race 2) Performance focused meal planning. Making sure you can get everything our of your key sessions and recovery optimal 3) Race aware fueling plans. Making sure your fueling plan is efficient and planned specifically fo",
+      "website": "https://news.ycombinator.com/item?id=49320056",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "An Interview with Arthur Mensch",
+      "description": "Article URL: https://www.economist.com/insider/inside-tech/an-interview-with-arthur-mensch Comments URL: https://news.ycombinator.com/item?id=49320049 Points: 1 # Comments: 0",
+      "website": "https://www.economist.com/insider/inside-tech/an-interview-with-arthur-mensch",
+      "category": "ai",
+      "source": "Hacker News"
+    },
     {
       "name": "GitHub Sponsors",
       "description": "GitHub trending project discovered by MILEYM3DIA.",
