@@ -40,7 +40,14 @@ def load_resources():
 
 
 def existing_ids(resources):
-    return {resource["id"] for resource in resources}
+    if isinstance(resources, dict):
+        resources = resources.get("resources", [])
+
+    return {
+        resource["id"]
+        for resource in resources
+        if isinstance(resource, dict) and "id" in resource
+    }
 
 
 def validate_resource(resource, known_ids):
