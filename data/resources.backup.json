@@ -1,0 +1,21 @@
+[
+  {
+    "id":"sample-resource",
+    "name":"Example Resource",
+    "slug":"example-resource",
+    "description":"Placeholder resource used to demonstrate the MILEYM3DIA Creator Hub data structure.",
+    "category":"music-production",
+    "subcategory":"",
+    "tags":["free"],
+    "pricing":{"type":"free","price":0,"currency":"USD"},
+    "platforms":["web"],
+    "formats":[],
+    "website":"https://example.com",
+    "download":"",
+    "logo":"",
+    "featured":true,
+    "verified":false,
+    "source":"placeholder",
+    "lastVerified":null
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MILEYM3DIA Creator Resource",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "description",
+    "category",
+    "subcategory",
+    "tags",
+    "pricing",
+    "platforms",
+    "website",
+    "download",
+    "openSource",
+    "verified",
+    "featured",
+    "source",
+    "lastVerified"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pricing": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "free",
+            "freemium",
+            "paid",
+            "subscription",
+            "unknown"
+          ]
+        },
+        "price": {
+          "type": ["number", "null"]
+        },
+        "currency": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "download": {
+      "type": "string"
+    },
+    "openSource": {
+      "type": "boolean"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "lastVerified": {
+      "type": ["string", "null"]
+    }
+  }
+}
