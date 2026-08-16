@@ -1,3 +1,7 @@
+function capitalizeCategory(category) {
+  if (!category) return "";
+  return category.charAt(0).toUpperCase() + category.slice(1);
+}
 import "./style.css";
 
 const DATA_URL = "./data/resources.json";
