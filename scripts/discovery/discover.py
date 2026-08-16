@@ -16,209 +16,170 @@ OUTPUT = DATA / "proposals" / "candidates.json"
 
 USER_AGENT = "MILEYM3DIA-Creator-Hub/1.0"
 
-# Words that indicate a resource is relevant to MILEYM3DIA creators.
-RELEVANCE = {
+KEYWORDS = {
     "music": [
-        "music", "audio", "vst", "plugin", "plugins", "instrument",
-        "synth", "drum", "sample", "samples", "loop", "loops",
-        "preset", "presets", "mixing", "mastering", "vocal",
-        "recording", "daw", "beat", "beats", "producer",
-        "production", "sound", "fx", "effect"
+        "music", "audio", "vst", "plugin", "plugins",
+        "synth", "drum", "sample", "samples", "loops",
+        "preset", "presets", "mixing", "mastering",
+        "vocal", "recording", "daw", "beat", "beats",
+        "producer", "production", "sound", "fx"
     ],
-
     "ai": [
-        "ai", "artificial intelligence", "generative", "text to music",
-        "music ai", "voice ai", "voice generator", "image generator",
-        "video generator", "audio generator"
+        "ai", "artificial intelligence", "generative",
+        "voice generator", "music ai", "image generator",
+        "video generator", "audio generator", "text to video"
     ],
-
     "video": [
-        "video", "editing", "editor", "animation", "motion",
-        "subtitle", "captions", "reels", "shorts", "youtube",
-        "film", "cinema"
+        "video", "video editor", "editing", "animation",
+        "motion", "subtitle", "captions", "youtube",
+        "reels", "shorts", "film"
     ],
-
     "design": [
-        "design", "graphic", "graphics", "logo", "logos", "thumbnail",
-        "photo", "photography", "image", "illustration", "font",
-        "fonts", "mockup", "template", "templates"
+        "design", "graphic", "logo", "thumbnail", "photo",
+        "photography", "image", "illustration", "font",
+        "fonts", "template", "templates", "mockup"
     ],
-
-    "creator-business": [
-        "creator", "creators", "content", "social media", "marketing",
-        "monetization", "affiliate", "royalty", "licensing",
-        "distribution", "store", "shop", "portfolio", "website"
+    "business": [
+        "creator", "content creator", "social media",
+        "marketing", "monetization", "royalty",
+        "licensing", "distribution", "store", "shop",
+        "portfolio", "website", "newsletter"
     ]
 }
 
-# Strong negative signals. These help eliminate developer/news noise.
 REJECT = [
-    "npm", "javascript", "typescript", "python library",
-    "software library", "api documentation", "sdk",
-    "framework", "docker", "kubernetes", "database",
-    "compiler", "programming language", "leetcode",
-    "algorithm", "machine learning benchmark",
-    "security vulnerability", "cybersecurity"
+    "malware", "exploit", "vulnerability", "crypto",
+    "cryptocurrency", "casino", "gambling", "betting",
+    "political campaign"
 ]
 
 
 def fetch(url):
-    request = urllib.request.Request(
+    req = urllib.request.Request(
         url,
         headers={"User-Agent": USER_AGENT}
     )
 
-    with urllib.request.urlopen(request, timeout=20) as response:
+    with urllib.request.urlopen(req, timeout=20) as response:
         return response.read()
 
 
-def clean(text):
-    text = unescape(text or "")
-    text = re.sub(r"<[^>]+>", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+def clean(value):
+    value = unescape(value or "")
+    value = re.sub(r"<[^>]+>", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
 
 
-def load_json(path):
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def existing_urls(resources):
-    return {
-        r.get("website", "").rstrip("/").lower()
-        for r in resources
-        if r.get("website")
-    }
+def load(path):
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def score(title, description):
     text = f"{title} {description}".lower()
 
-    scores = {}
-    total = 0
+    category_scores = {}
 
-    for category, words in RELEVANCE.items():
-        category_score = sum(
-            1 for word in words
-            if word in text
+    for category, words in KEYWORDS.items():
+        category_scores[category] = sum(
+            1 for word in words if word in text
         )
 
-        if category_score:
-            scores[category] = category_score
-            total += category_score
+    positive = sum(category_scores.values())
 
     negative = sum(
         1 for word in REJECT
         if word in text
     )
 
-    return total - (negative * 3), scores
-
-
-def best_category(scores):
-    if not scores:
-        return "creator-tools"
-
-    return max(scores, key=scores.get)
-
-
-def valid_candidate(title, description, link):
-    if not title or not link:
-        return False
-
-    parsed = urlparse(link)
-
-    if parsed.scheme not in ("http", "https"):
-        return False
-
-    combined = f"{title} {description}".lower()
-
-    # Reject obvious noise.
-    if any(word in combined for word in REJECT):
-        return False
-
-    relevance_score, _ = score(title, description)
-
-    # Require at least two relevant signals.
-    if relevance_score < 2:
-        return False
-
-    return True
+    return positive - (negative * 5), category_scores
 
 
 def extract_rss(data, source):
     root = ET.fromstring(data)
-    candidates = []
+    results = []
 
     for item in root.findall(".//item"):
         title = clean(item.findtext("title"))
         description = clean(item.findtext("description"))
         link = clean(item.findtext("link"))
 
-        if not valid_candidate(title, description, link):
+        if not title or not link:
             continue
 
-        relevance_score, categories = score(
-            title,
-            description
+        parsed = urlparse(link)
+
+        if parsed.scheme not in ("http", "https"):
+            continue
+
+        score_value, categories = score(title, description)
+
+        # Keep anything with at least one meaningful creator signal.
+        if score_value < 1:
+            continue
+
+        category = max(
+            categories,
+            key=categories.get
         )
 
-        candidates.append({
-            "name": title[:150],
-            "description": description[:500],
+        results.append({
+            "name": title[:160],
+            "description": description[:600],
             "website": link,
-            "category": best_category(categories),
-            "relevanceScore": relevance_score,
+            "category": category,
+            "relevanceScore": score_value,
             "source": source["name"]
         })
 
-    return candidates
+    return results
 
 
 def main():
-    resources = load_json(RESOURCES)
-    config = load_json(SOURCES)
+    resources = load(RESOURCES)
+    sources = load(SOURCES)
 
-    known = existing_urls(resources)
+    existing = {
+        r.get("website", "").rstrip("/").lower()
+        for r in resources
+        if r.get("website")
+    }
+
     candidates = []
     seen = set()
 
-    for source in config["sources"]:
-        print(f"Checking: {source['name']}")
+    for source in sources["sources"]:
+        print(f"Checking {source['name']}...")
 
         try:
             data = fetch(source["url"])
-
-            if "rss" in source["url"] or "feed" in source["url"]:
-                found = extract_rss(data, source)
-            else:
-                found = []
+            found = extract_rss(data, source)
 
             for item in found:
                 url = item["website"].rstrip("/").lower()
 
-                if url in known or url in seen:
+                if url in existing:
+                    continue
+
+                if url in seen:
                     continue
 
                 seen.add(url)
                 candidates.append(item)
 
         except Exception as error:
-            print(f"  Source error: {error}")
+            print(f"Source failed: {error}")
 
-    # Highest-quality candidates first.
     candidates.sort(
-        key=lambda x: x.get("relevanceScore", 0),
+        key=lambda x: x["relevanceScore"],
         reverse=True
     )
 
-    # Keep the first discovery batch intentionally small.
-    candidates = candidates[:50]
+    candidates = candidates[:25]
 
     result = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "count": len(candidates),
         "status": "needs-review",
+        "count": len(candidates),
         "candidates": candidates
     }
 
@@ -230,9 +191,20 @@ def main():
     )
 
     print()
-    print("MILEYM3DIA discovery complete.")
+    print("======================================")
+    print("MILEYM3DIA DISCOVERY COMPLETE")
+    print("======================================")
     print(f"Qualified candidates: {len(candidates)}")
     print(f"Saved to: {OUTPUT}")
+    print()
+
+    for number, item in enumerate(candidates, 1):
+        print(
+            f"{number}. "
+            f"[{item['category']}] "
+            f"{item['name']} "
+            f"(score {item['relevanceScore']})"
+        )
 
 
 if __name__ == "__main__":

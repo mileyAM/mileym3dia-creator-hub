@@ -1,36 +1,7 @@
 {
-  "version": "1.0",
-  "name": "MILEYM3DIA Creator Hub",
-  "updatedAt": "2026-08-16",
-  "count": 248,
+  "status": "needs-review",
+  "count": 247,
   "resources": [
-    {
-      "id": "sample-resource",
-      "name": "Example Resource",
-      "slug": "example-resource",
-      "description": "Placeholder resource used to demonstrate the MILEYM3DIA Creator Hub data structure.",
-      "category": "music-production",
-      "subcategory": "",
-      "tags": [
-        "free"
-      ],
-      "pricing": {
-        "type": "free",
-        "price": 0,
-        "currency": "USD"
-      },
-      "platforms": [
-        "web"
-      ],
-      "formats": [],
-      "website": "https://example.com",
-      "download": "",
-      "logo": "",
-      "featured": true,
-      "verified": false,
-      "source": "placeholder",
-      "lastVerified": null
-    },
     {
       "id": "capcut",
       "name": "CapCut",

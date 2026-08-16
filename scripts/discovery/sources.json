@@ -3,12 +3,12 @@
     {
       "name": "Hacker News",
       "url": "https://hnrss.org/newest",
-      "category": "ai"
+      "type": "rss"
     },
     {
-      "name": "GitHub Trending",
-      "url": "https://github.com/trending",
-      "category": "ai"
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "type": "rss"
     }
   ]
 }
