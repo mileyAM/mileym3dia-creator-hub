@@ -359,33 +359,35 @@ function render() {
 
         <div class="category-grid">
 
-          <button
-            class="category-tile"
-            data-category="all"
-          >
-            <b>✦</b>
-            <strong>Everything</strong>
-            <span>${state.resources.length} resources</span>
-          </button>
+  <button
+    class="category-tile"
+    data-category="all"
+  >
+    <b>✦</b>
+    <strong>Everything</strong>
+    <span>${state.resources.length} resources</span>
+  </button>
 
-          ${categories.map(category => `
-            <button
-              class="category-tile"
-              data-category="${escapeHTML(category)}"
-            >
-              <b>${categoryIcon(category)}</b>
-              <strong>${escapeHTML(category)}</strong>
-              <span>
-                ${
-                  state.resources.filter(
-                    r => r.category === category
-                  ).length
-                } resources
-              </span>
-            </button>
-          `).join("")}
+  ${categories.map(category => `
+    <button
+      class="category-tile"
+      data-category="${escapeHTML(category)}"
+    >
+      <b>${categoryIcon(category)}</b>
 
-        </div>
+      <strong>${formatCategory(category)}</strong>
+
+      <span>
+        ${
+          state.resources.filter(
+            r => r.category === category
+          ).length
+        } resources →
+      </span>
+    </button>
+  `).join("")}
+
+</div>
 
       </section>
 
