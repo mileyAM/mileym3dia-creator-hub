@@ -1,3 +1,5 @@
+import "./style.css";
+
 const DATA_URL = "./data/resources.json";
 
 const state = {
