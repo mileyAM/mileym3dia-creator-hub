@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "name": "Hacker News",
+      "url": "https://hnrss.org/newest",
+      "category": "ai"
+    },
+    {
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "category": "ai"
+    }
+  ]
+}
