@@ -1,52 +1,196 @@
 import './style.css';
 
-const categories = [
-  ['🎚️','Music Production'],
-  ['🎛️','Plugins & Effects'],
-  ['🎹','DAWs'],
-  ['🥁','Samples & Drum Kits'],
-  ['🎤','Vocals & Recording'],
-  ['🎧','Mixing & Mastering'],
-  ['🤖','AI Creator Tools'],
-  ['🎬','Video Creation'],
-  ['🎨','Graphic Design'],
-  ['📱','Social Media'],
-  ['💿','Music Distribution'],
-  ['💰','Creator Business']
-];
+const app = document.querySelector('#app');
 
-document.querySelector('#app').innerHTML = `
-<header>
-  <div class="brand">MILEYM3DIA</div>
-  <nav>CREATOR HUB</nav>
-</header>
+const state = {
+  resources: [],
+  category: 'all',
+  pricing: 'all',
+  platform: 'all',
+  search: ''
+};
 
-<main>
-  <section class="hero">
-    <div class="eyebrow">THE CREATOR RESOURCE HUB</div>
-    <h1>Tools for creators.<br><span>All in one place.</span></h1>
-    <p>Discover music, AI, video, design and creator resources curated by MILEYM3DIA.</p>
-    <div class="search">
-      <span>⌕</span>
-      <input placeholder="Search thousands of creator resources..." />
-    </div>
-  </section>
+async function loadData() {
+  const response = await fetch('./data/resources.json');
+  state.resources = await response.json();
+  render();
+}
 
-  <section>
-    <div class="section-title">EXPLORE CATEGORIES</div>
-    <div class="grid">
-      ${categories.map(([icon,name]) => `
-        <article class="card">
-          <div class="icon">${icon}</div>
-          <h2>${name}</h2>
-          <p>Explore resources →</p>
-        </article>
-      `).join('')}
-    </div>
-  </section>
-</main>
+function matches(resource) {
+  const search = state.search.toLowerCase();
 
-<footer>
-  <strong>MILEYM3DIA</strong> Creator Hub · Built for creators.
-</footer>
-`;
+  const searchable = [
+    resource.name,
+    resource.description,
+    resource.category,
+    resource.subcategory,
+    ...(resource.tags || []),
+    ...(resource.platforms || [])
+  ].join(' ').toLowerCase();
+
+  if (search && !searchable.includes(search)) return false;
+  if (state.category !== 'all' && resource.category !== state.category) return false;
+  if (state.pricing !== 'all' && resource.pricing?.type !== state.pricing) return false;
+  if (state.platform !== 'all' && !(resource.platforms || []).includes(state.platform)) return false;
+
+  return true;
+}
+
+function categories() {
+  return [...new Set(state.resources.map(r => r.category).filter(Boolean))];
+}
+
+function card(resource) {
+  return `
+    <article class="resource-card">
+      <div class="resource-top">
+        <div class="resource-icon">${resource.logo ? `<img src="${resource.logo}" alt="">` : '✦'}</div>
+        <span class="price ${resource.pricing?.type || ''}">
+          ${(resource.pricing?.type || 'unknown').toUpperCase()}
+        </span>
+      </div>
+
+      <h3>${escapeHtml(resource.name)}</h3>
+      <p>${escapeHtml(resource.description || '')}</p>
+
+      <div class="tags">
+        ${(resource.tags || []).slice(0,4).map(tag => `<span>${escapeHtml(tag)}</span>`).join('')}
+      </div>
+
+      <div class="platforms">
+        ${(resource.platforms || []).map(p => `<span>${escapeHtml(p)}</span>`).join('')}
+      </div>
+
+      <div class="actions">
+        ${resource.website ? `<a href="${resource.website}" target="_blank" rel="noopener">Website ↗</a>` : ''}
+        ${resource.download ? `<a class="download" href="${resource.download}" target="_blank" rel="noopener">Download ↓</a>` : ''}
+      </div>
+    </article>
+  `;
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replaceAll('&','&amp;')
+    .replaceAll('<','&lt;')
+    .replaceAll('>','&gt;')
+    .replaceAll('"','&quot;')
+    .replaceAll("'","&#039;");
+}
+
+function render() {
+  const filtered = state.resources.filter(matches);
+  const cats = categories();
+
+  app.innerHTML = `
+    <header>
+      <a class="logo" href="./">MILEYM3DIA</a>
+      <div class="header-label">CREATOR HUB</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">MILEYM3DIA CREATOR HUB</div>
+        <h1>Everything creators<br><span>need to create.</span></h1>
+        <p>
+          Discover music tools, plugins, AI, video, design,
+          samples, business resources and more.
+        </p>
+
+        <div class="search-box">
+          <span>⌕</span>
+          <input
+            id="search"
+            value="${escapeHtml(state.search)}"
+            placeholder="Search resources..."
+          >
+        </div>
+      </section>
+
+      <section class="controls">
+        <select id="category">
+          <option value="all">All categories</option>
+          ${cats.map(c => `
+            <option value="${escapeHtml(c)}" ${state.category === c ? 'selected' : ''}>
+              ${escapeHtml(c)}
+            </option>
+          `).join('')}
+        </select>
+
+        <select id="pricing">
+          <option value="all">Any price</option>
+          <option value="free" ${state.pricing === 'free' ? 'selected' : ''}>Free</option>
+          <option value="freemium" ${state.pricing === 'freemium' ? 'selected' : ''}>Freemium</option>
+          <option value="paid" ${state.pricing === 'paid' ? 'selected' : ''}>Paid</option>
+        </select>
+
+        <select id="platform">
+          <option value="all">Any platform</option>
+          <option value="macos" ${state.platform === 'macos' ? 'selected' : ''}>macOS</option>
+          <option value="windows" ${state.platform === 'windows' ? 'selected' : ''}>Windows</option>
+          <option value="ios" ${state.platform === 'ios' ? 'selected' : ''}>iOS</option>
+          <option value="android" ${state.platform === 'android' ? 'selected' : ''}>Android</option>
+          <option value="web" ${state.platform === 'web' ? 'selected' : ''}>Web</option>
+        </select>
+
+        <button id="clear">Clear filters</button>
+      </section>
+
+      <section class="stats">
+        <div><strong>${filtered.length}</strong> resources</div>
+        <div><strong>${state.resources.filter(r => r.pricing?.type === 'free').length}</strong> free</div>
+        <div><strong>${state.resources.length}</strong> total indexed</div>
+      </section>
+
+      <section class="results">
+        ${filtered.length
+          ? filtered.map(card).join('')
+          : `<div class="empty">
+              <div>⌕</div>
+              <h2>No resources found</h2>
+              <p>Try another search or clear your filters.</p>
+             </div>`
+        }
+      </section>
+    </main>
+
+    <footer>
+      <strong>MILEYM3DIA</strong>
+      <span>Creator Hub</span>
+      <a href="https://github.com/mileyAM/mileym3dia-creator-hub" target="_blank">GitHub ↗</a>
+    </footer>
+  `;
+
+  document.querySelector('#search').addEventListener('input', e => {
+    state.search = e.target.value;
+    render();
+    const input = document.querySelector('#search');
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+  });
+
+  document.querySelector('#category').addEventListener('change', e => {
+    state.category = e.target.value;
+    render();
+  });
+
+  document.querySelector('#pricing').addEventListener('change', e => {
+    state.pricing = e.target.value;
+    render();
+  });
+
+  document.querySelector('#platform').addEventListener('change', e => {
+    state.platform = e.target.value;
+    render();
+  });
+
+  document.querySelector('#clear').addEventListener('click', () => {
+    state.category = 'all';
+    state.pricing = 'all';
+    state.platform = 'all';
+    state.search = '';
+    render();
+  });
+}
+
+loadData();
