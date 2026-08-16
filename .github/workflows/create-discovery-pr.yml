@@ -1,0 +1,92 @@
+name: Create Resource Discovery PR
+
+on:
+  workflow_run:
+    workflows: ["MILEYM3DIA Free Resource Discovery"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-pr:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check candidates
+        id: candidates
+        run: |
+          if [ ! -f data/proposals/candidates.json ]; then
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          COUNT=$(python3 - <<'PY'
+          import json
+          with open("data/proposals/candidates.json") as f:
+              data = json.load(f)
+          print(len(data.get("candidates", [])))
+          PY
+          )
+
+          echo "Candidate count: $COUNT"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+          if [ "$COUNT" -gt 0 ]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create Pull Request
+        if: steps.candidates.outputs.exists == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="resource-discovery-$(date +%Y%m%d-%H%M%S)"
+
+          git config user.name "MILEYM3DIA Discovery Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "$BRANCH"
+
+          git add data/proposals/candidates.json
+
+          git commit \
+            -m "Review discovered creator resources"
+
+          git push --set-upstream origin "$BRANCH"
+
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "🤖 Review newly discovered creator resources" \
+            --body "## MILEYM3DIA Creator Hub — Resource Discovery
+
+          The free discovery engine found new potential resources.
+
+          **These resources have NOT been automatically published.**
+
+          ### Review checklist
+
+          - [ ] Resource is relevant to MILEYM3DIA creators
+          - [ ] Website is legitimate
+          - [ ] Category is appropriate
+          - [ ] Resource is not already listed
+          - [ ] Pricing information is accurate
+          - [ ] Download links point to appropriate sources
+
+          After review, promote approved resources into \`data/resources.json\`.
+
+          **Discovery source:** automated public-source discovery
+          "
