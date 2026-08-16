@@ -621,6 +621,15 @@ function bindEvents() {
 
           state.category =
             button.dataset.category;
+            
+            document
+  .querySelectorAll("[data-category]")
+  .forEach(btn => {
+    btn.classList.toggle(
+      "active",
+      btn === button
+    );
+  });
 
           render();
 
