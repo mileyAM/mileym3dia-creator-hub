@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   prepare:
@@ -17,18 +16,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
       - name: Prepare discovery job
         run: python3 scripts/ai/discover.py
 
-      - name: Validate repository data
-        run: python3 - <<'PY'
-        import json
-        from pathlib import Path
+      - name: Validate JSON data
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
 
-        for path in Path("data").glob("*.json"):
-            json.loads(path.read_text())
-            print("Valid:", path)
-        PY
+          for path in Path("data").rglob("*.json"):
+              with path.open("r", encoding="utf-8") as f:
+                  json.load(f)
+              print(f"Valid: {path}")
+          PY
 
       - name: Commit discovery job
         run: |
