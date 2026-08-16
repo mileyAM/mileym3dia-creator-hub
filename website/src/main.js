@@ -1,3 +1,23 @@
+function formatCategory(category) {
+  if (!category) return "";
+
+  const acronyms = {
+    ai: "AI",
+    seo: "SEO",
+    daw: "DAW",
+    saas: "SaaS",
+    api: "API",
+    ux: "UX",
+    ui: "UI",
+    vr: "VR",
+    ar: "AR"
+  };
+
+  const value = String(category).trim();
+
+  return acronyms[value.toLowerCase()] ||
+    value.charAt(0).toUpperCase() + value.slice(1);
+}
 function capitalizeCategory(category) {
   if (!category) return "";
   return category.charAt(0).toUpperCase() + category.slice(1);
