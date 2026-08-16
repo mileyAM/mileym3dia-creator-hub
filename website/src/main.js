@@ -610,38 +610,29 @@ function bindEvents() {
     }
   );
 
-  document
-    .querySelectorAll("[data-category]")
-    .forEach(button => {
-
-      button.addEventListener(
-        "click",
-        () => {
-
-          state.category =
-            button.dataset.category;
-            
-            document
+ document
   .querySelectorAll("[data-category]")
-  .forEach(btn => {
-    btn.classList.toggle(
-      "active",
-      btn === button
+  .forEach(button => {
+
+    button.addEventListener(
+      "click",
+      () => {
+
+        state.category =
+          button.dataset.category;
+
+        render();
+
+        document
+          .querySelector("#resources")
+          ?.scrollIntoView({
+            behavior: "smooth"
+          });
+
+      }
     );
+
   });
-
-          render();
-
-          document
-            .querySelector("#resources")
-            ?.scrollIntoView({
-              behavior: "smooth"
-            });
-
-        }
-      );
-
-    });
 
 }
 
