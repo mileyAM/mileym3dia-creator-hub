@@ -357,10 +357,10 @@ function render() {
           <h2>EXPLORE BY CATEGORY</h2>
         </div>
 
-        <div class="category-grid">
+       <div class="category-grid">
 
   <button
-    class="category-tile"
+    class="category-tile ${state.category === "all" ? "active" : ""}"
     data-category="all"
   >
     <b>✦</b>
@@ -370,7 +370,7 @@ function render() {
 
   ${categories.map(category => `
     <button
-      class="category-tile"
+      class="category-tile ${state.category === category ? "active" : ""}"
       data-category="${escapeHTML(category)}"
     >
       <b>${categoryIcon(category)}</b>
@@ -388,7 +388,6 @@ function render() {
   `).join("")}
 
 </div>
-
       </section>
 
 
