@@ -1,8 +1,36 @@
 {
-  "generatedAt": "2026-08-16T14:07:56.731966+00:00",
+  "generatedAt": "2026-08-16T14:15:35.286410+00:00",
   "count": 847,
   "status": "needs-review",
   "candidates": [
+    {
+      "name": "Show HN: SelfUniversity \u2013 learn system engineering via interactive puzzles",
+      "description": "I'm 18, I've solved 826 problems on LeetCode with a 430+ day streak, and I can tell you, it's a dry platform for solving algorithmic little tasks, and it has nothing to do with education. I am not saying it is bad, LeetCode is actually awesome, but it just does not teach you anything. I came here to fix this exact problem. When you want to solve a new problem, you often run into the fact that you're seeing it for the first time, especially the topics that are in there. And then going off to read",
+      "website": "https://news.ycombinator.com/item?id=49320280",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Taking Pause \u2013 All property is theft",
+      "description": "Article URL: https://www.futilitycloset.com/2026/08/16/taking-pause/ Comments URL: https://news.ycombinator.com/item?id=49320261 Points: 1 # Comments: 0",
+      "website": "https://www.futilitycloset.com/2026/08/16/taking-pause/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "China Is Opening the First Regular Cargo Route Through the Arctic",
+      "description": "Article URL: https://www.wsj.com/world/china-is-opening-the-first-regular-cargo-route-through-the-arctic-445245bc Comments URL: https://news.ycombinator.com/item?id=49320259 Points: 1 # Comments: 1",
+      "website": "https://www.wsj.com/world/china-is-opening-the-first-regular-cargo-route-through-the-arctic-445245bc",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "name": "Welcome to Toronto, World Capital of the Urban Raccoon",
+      "description": "Article URL: https://lithub.com/welcome-to-toronto-world-capital-of-the-urban-raccoon/ Comments URL: https://news.ycombinator.com/item?id=49320222 Points: 1 # Comments: 0",
+      "website": "https://lithub.com/welcome-to-toronto-world-capital-of-the-urban-raccoon/",
+      "category": "ai",
+      "source": "Hacker News"
+    },
     {
       "name": "Show HN: Offshoot \u2013 Copy-on-write branching for stock SQLite files",
       "description": "Article URL: https://github.com/sricola/offshoot Comments URL: https://news.ycombinator.com/item?id=49320181 Points: 1 # Comments: 0",
@@ -32,8 +60,15 @@
       "source": "Hacker News"
     },
     {
+      "name": "*Rats!* (1994) source code reconstruction using Qwen 3.8",
+      "description": "Article URL: https://github.com/neuromancer/rats-re Comments URL: https://news.ycombinator.com/item?id=49320152 Points: 2 # Comments: 0",
+      "website": "https://github.com/neuromancer/rats-re",
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
       "name": "Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
-      "description": "Article URL: https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html Comments URL: https://news.ycombinator.com/item?id=49320144 Points: 2 # Comments: 0",
+      "description": "Article URL: https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html Comments URL: https://news.ycombinator.com/item?id=49320144 Points: 3 # Comments: 1",
       "website": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
       "category": "ai",
       "source": "Hacker News"
@@ -105,41 +140,6 @@
       "name": "The Folly of Tokenmaxxing or Reinventing the Wheel",
       "description": "Article URL: https://age-of-product.com/folly-tokenmaxxing/ Comments URL: https://news.ycombinator.com/item?id=49320093 Points: 1 # Comments: 0",
       "website": "https://age-of-product.com/folly-tokenmaxxing/",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "name": "Show HN: TrustBand Hire \u2013 operator personas as Markdown you paste into Grok Bot",
-      "description": "Free to use. Comments URL: https://news.ycombinator.com/item?id=49320089 Points: 1 # Comments: 0",
-      "website": "https://trustband.app/hire",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "name": "Show HN: Always responsive UI for a coding agent",
-      "description": "In my limited personal experience, I find the UI of coding agents, or rather their clients, unsatisfying for the following reasons: - They tend to have poor performance characteristics - They make it hard to actually read or copy from the session history - They make it hard to paste large contents, and to undo that paste. - They lack a sane default for sandboxing It appears to me that those UI try to re-use patterns from chat UIs, but fail to address the key difference: large and constantly chan",
-      "website": "https://news.ycombinator.com/item?id=49320073",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "name": "Brookfield's Bruce Flatt discusses Nvidia strategic partnership on CNBC [video]",
-      "description": "Article URL: https://www.youtube.com/watch?v=Uxy4s2FP2EY Comments URL: https://news.ycombinator.com/item?id=49320059 Points: 1 # Comments: 0",
-      "website": "https://www.youtube.com/watch?v=Uxy4s2FP2EY",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "name": "Show HN: A nutrition companion for endurance athletes",
-      "description": "Hey HN! 6 Months ago I soft launched https://mavr.app/ , an IOS companion app for any endurance athletes nutrition. Over the 6 month period we valid some of our key features: 1) Gut training during training your training block, making sure you can handle the carbs during your race 2) Performance focused meal planning. Making sure you can get everything our of your key sessions and recovery optimal 3) Race aware fueling plans. Making sure your fueling plan is efficient and planned specifically fo",
-      "website": "https://news.ycombinator.com/item?id=49320056",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "name": "An Interview with Arthur Mensch",
-      "description": "Article URL: https://www.economist.com/insider/inside-tech/an-interview-with-arthur-mensch Comments URL: https://news.ycombinator.com/item?id=49320049 Points: 1 # Comments: 0",
-      "website": "https://www.economist.com/insider/inside-tech/an-interview-with-arthur-mensch",
       "category": "ai",
       "source": "Hacker News"
     },
