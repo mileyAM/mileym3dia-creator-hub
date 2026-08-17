@@ -1,5 +1,16 @@
 import "./style.css";
 
+import {
+  normalizeDatabase,
+  searchResources,
+  filterResources,
+  sortResources,
+  getCategories,
+  getSubcategories,
+  getPlatforms,
+  getStats
+} from "./data.js";
+
 const DATA_URL = "./data/resources.json";
 
 const state = {
