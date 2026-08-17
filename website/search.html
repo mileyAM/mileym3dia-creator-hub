@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Creator Tools — Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:24px auto;padding:0 16px}
+    input[type=text]{width:100%;padding:12px;border:1px solid #ccc;border-radius:6px}
+    ul{list-style:none;padding:0;margin-top:16px}
+    li{border-bottom:1px solid #eee;padding:12px 0}
+    .meta{color:#666;font-size:0.9rem}
+  </style>
+</head>
+<body>
+  <h1>Creator Tools — Search</h1>
+  <p>Search top creator tools (seed dataset).</p>
+  <input id="q" type="text" placeholder="Search tools by name, category, or tags...">
+  <ul id="results"></ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+  <script>
+    async function loadIndex(){
+      const res = await fetch('/mileym3dia-creator-hub/raw/feature/search-index/website/search-index.json');
+      const data = await res.json();
+      window.toolsIndexData = data;
+      // build simple lunr index
+      window.idx = lunr(function(){
+        this.ref('id');
+        this.field('name');
+        this.field('category');
+        this.field('tags');
+        data.forEach(function(doc){
+          this.add(Object.assign({},doc,{tags:(doc.tags||[]).join(' ')}));
+        }, this);
+      });
+      document.getElementById('q').addEventListener('input', onSearch);
+      renderResults(data.slice(0,20));
+    }
+    function onSearch(e){
+      const q = e.target.value.trim();
+      if(!q){ renderResults(window.toolsIndexData.slice(0,20)); return }
+      const results = window.idx.search(q + '*').slice(0,50).map(r=>{
+        return window.toolsIndexData.find(d=>d.id===r.ref);
+      }).filter(Boolean);
+      renderResults(results);
+    }
+    function renderResults(list){
+      const el = document.getElementById('results');
+      el.innerHTML = '';
+      if(list.length===0){ el.innerHTML = '<li>No results</li>'; return }
+      list.forEach(item=>{
+        const li = document.createElement('li');
+        li.innerHTML = `<strong><a href="${item.url}" target="_blank" rel="noopener">${item.name}</a></strong><div class="meta">${item.category} — ${item.tags.join(', ')}</div>`;
+        el.appendChild(li);
+      });
+    }
+    loadIndex().catch(err=>{document.getElementById('results').innerHTML='<li>Error loading index</li>';console.error(err)});
+  </script>
+</body>
+</html>

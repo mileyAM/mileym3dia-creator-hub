@@ -1,0 +1,12 @@
+[
+  {"id":"canva","name":"Canva","url":"https://www.canva.com","category":"design","tags":["design","templates"]},
+  {"id":"descript","name":"Descript","url":"https://www.descript.com","category":"editing","tags":["audio","video"]},
+  {"id":"obs-studio","name":"OBS Studio","url":"https://obsproject.com","category":"streaming","tags":["streaming","recording"]},
+  {"id":"kapwing","name":"Kapwing","url":"https://www.kapwing.com","category":"editing","tags":["video","image"]},
+  {"id":"notion","name":"Notion","url":"https://www.notion.so","category":"productivity","tags":["planning","docs"]},
+  {"id":"airtable","name":"Airtable","url":"https://airtable.com","category":"productivity","tags":["database","planning"]},
+  {"id":"zapier","name":"Zapier","url":"https://zapier.com","category":"automation","tags":["integrations","automation"]},
+  {"id":"patreon","name":"Patreon","url":"https://www.patreon.com","category":"monetization","tags":["membership","payments"]},
+  {"id":"gumroad","name":"Gumroad","url":"https://gumroad.com","category":"ecommerce","tags":["sales","digital-products"]},
+  {"id":"lumen5","name":"Lumen5","url":"https://lumen5.com","category":"video","tags":["ai","video"]}
+]
