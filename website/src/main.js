@@ -2,20 +2,22 @@ import "./style.css";
 
 import {
   normalizeDatabase,
-  searchResources,
-  filterResources,
-  sortResources,
-  getCategories,
-  getSubcategories,
-  getPlatforms,
+  searchResources as searchDatabase,
+  filterResources as filterDatabase,
+  sortResources as sortDatabase,
+  getCategories as getDatabaseCategories,
+  getSubcategories as getDatabaseSubcategories,
+  getPlatforms as getDatabasePlatforms,
   getStats
 } from "./data.js";
 
-const DATA_URL = "./data/resources.json";
 import additions from "./resource-additions.js";
+
+const DATA_URL = "./data/resources.json";
 
 const state = {
   resources: [],
+  view: "categories",
   category: "all",
   subcategory: "all",
   pricing: "all",
@@ -31,33 +33,88 @@ const CATEGORY_META = {
   music: {
     icon: "🎵",
     title: "Music",
-    description: "DAWs, recording, mixing, mastering, samples and music business."
+    description:
+      "DAWs, recording, mixing, mastering, plugins, samples and music business."
   },
+
   video: {
     icon: "🎬",
     title: "Video",
-    description: "Editing, streaming, podcasting, clips, effects and production."
+    description:
+      "Editing, streaming, podcasting, clips, effects and production."
   },
+
   design: {
     icon: "🎨",
     title: "Design",
-    description: "Graphics, photo editing, illustration, UI/UX and 3D."
+    description:
+      "Graphics, photo editing, illustration, UI/UX, branding and 3D."
   },
+
   ai: {
     icon: "🤖",
     title: "AI",
-    description: "AI assistants, image, video, voice, music and creator automation."
+    description:
+      "AI assistants, image, video, voice, music, coding and automation."
   },
-  "creator-business": {
-    icon: "💼",
-    title: "Creator Business",
-    description: "Marketing, monetization, websites, analytics and business tools."
-  },
+
   business: {
     icon: "💼",
     title: "Creator Business",
-    description: "Marketing, monetization, websites, analytics and business tools."
+    description:
+      "Marketing, monetization, websites, analytics, ecommerce and growth."
+  },
+
+  "creator-business": {
+    icon: "💼",
+    title: "Creator Business",
+    description:
+      "Marketing, monetization, websites, analytics, ecommerce and growth."
   }
+};
+
+const SUBCATEGORY_META = {
+  "DAWs & Production": "🎹",
+  "Music Production": "🎹",
+  "Audio Editing & Recording": "🎙️",
+  "Recording": "🎙️",
+  "Mixing & Mastering": "🎚️",
+  "Plugins": "🔌",
+  "Samples": "🥁",
+  "AI Music": "🤖",
+  "Music Business": "💰",
+
+  "Video Editing": "✂️",
+  "AI Video": "🤖",
+  "Streaming & Recording": "📡",
+  "Screen Recording": "🖥️",
+  "Motion Graphics": "✨",
+  "Video Effects": "💥",
+  "Stock Media": "🎞️",
+
+  "Graphic Design": "🖌️",
+  "Photo Editing": "📷",
+  "Digital Art & Illustration": "🎨",
+  "Vector Design": "🔷",
+  "3D & Animation": "🧊",
+  "UI/UX": "🧩",
+  "Branding": "✦",
+
+  "AI Assistants": "🧠",
+  "Image AI": "🖼️",
+  "Video AI": "🎬",
+  "Voice & Audio AI": "🎙️",
+  "Coding & Development": "💻",
+  "Automation": "⚡",
+
+  "Development & Collaboration": "💻",
+  "Marketing": "📣",
+  "SEO": "🔎",
+  "Social Media": "📱",
+  "Analytics": "📊",
+  "Websites": "🌐",
+  "Ecommerce": "🛒",
+  "Monetization": "💵"
 };
 
 function normalize(value = "") {
@@ -73,7 +130,7 @@ function escapeHTML(value = "") {
     .replaceAll("'", "&#039;");
 }
 
-function formatCategory(category) {
+function formatCategory(category = "") {
   if (!category) return "";
 
   const acronyms = {
@@ -98,55 +155,50 @@ function formatCategory(category) {
   );
 }
 
+function getCategoryMeta(category) {
+  const normalized = normalize(category);
+
+  return (
+    CATEGORY_META[normalized] || {
+      icon: "🧰",
+      title: formatCategory(category) || "Resources",
+      description:
+        "Creator tools and resources."
+    }
+  );
+}
+
 function categoryIcon(category) {
-  return CATEGORY_META[normalize(category)]?.icon || "🧰";
+  return getCategoryMeta(category).icon;
 }
 
 function getCategories() {
-  return [
-    ...new Set(
-      state.resources
-        .map(resource => resource.category)
-        .filter(Boolean)
-        .map(normalize)
-    )
-  ].sort();
+  return getDatabaseCategories(state.resources)
+    .filter(Boolean)
+    .sort((a, b) =>
+      formatCategory(a).localeCompare(
+        formatCategory(b)
+      )
+    );
 }
 
-function getSubcategories() {
-  const resources =
-    state.category === "all"
-      ? state.resources
-      : state.resources.filter(
-          resource =>
-            normalize(resource.category) === normalize(state.category)
-        );
-
-  return [
-    ...new Set(
-      resources
-        .map(resource => resource.subcategory)
-        .filter(Boolean)
-    )
-  ].sort((a, b) => a.localeCompare(b));
+function getSubcategories(category = state.category) {
+  return getDatabaseSubcategories(
+    state.resources,
+    category
+  ).filter(Boolean);
 }
 
 function getPlatforms() {
-  return [
-    ...new Set(
-      state.resources.flatMap(resource =>
-        Array.isArray(resource.platforms)
-          ? resource.platforms
-          : []
-      )
-    )
-  ].sort();
+  return getDatabasePlatforms(state.resources);
 }
 
 function getPricingCounts(resources) {
   return resources.reduce(
     (counts, resource) => {
-      const type = normalize(resource.pricing?.type);
+      const type = normalize(
+        resource.pricing?.type
+      );
 
       if (type === "free") counts.free++;
       if (type === "freemium") counts.freemium++;
@@ -162,98 +214,81 @@ function getPricingCounts(resources) {
   );
 }
 
-function searchableText(resource) {
-  return normalize(
-    [
-      resource.name,
-      resource.description,
-      resource.category,
-      resource.subcategory,
-      ...(resource.tags || [])
-    ].join(" ")
-  );
+function getCategoryCount(category) {
+  return state.resources.filter(
+    resource =>
+      normalize(resource.category) ===
+      normalize(category)
+  ).length;
 }
 
-function matches(resource) {
-  const search = normalize(state.search);
+function getSubcategoryCount(
+  category,
+  subcategory
+) {
+  return state.resources.filter(resource => {
+    const categoryMatch =
+      normalize(resource.category) ===
+      normalize(category);
 
-  const categoryMatch =
-    state.category === "all" ||
-    normalize(resource.category) === normalize(state.category);
+    const subcategoryMatch =
+      normalize(resource.subcategory) ===
+      normalize(subcategory);
 
-  const subcategoryMatch =
-    state.subcategory === "all" ||
-    normalize(resource.subcategory) === normalize(state.subcategory);
-
-  const pricingMatch =
-    state.pricing === "all" ||
-    normalize(resource.pricing?.type) === normalize(state.pricing);
-
-  const platformMatch =
-    state.platform === "all" ||
-    (resource.platforms || [])
-      .map(normalize)
-      .includes(normalize(state.platform));
-
-  const openSourceMatch =
-    !state.openSource ||
-    resource.openSource === true;
-
-  const searchMatch =
-    !search ||
-    searchableText(resource).includes(search);
-
-  return (
-    categoryMatch &&
-    subcategoryMatch &&
-    pricingMatch &&
-    platformMatch &&
-    openSourceMatch &&
-    searchMatch
-  );
+    return (
+      categoryMatch &&
+      subcategoryMatch
+    );
+  }).length;
 }
 
-function sortResources(resources) {
-  const sorted = [...resources];
+function getCurrentResources() {
+  let resources = [...state.resources];
 
-  if (state.sort === "name") {
-    return sorted.sort((a, b) =>
-      String(a.name || "").localeCompare(
-        String(b.name || "")
-      )
+  if (state.search) {
+    resources = searchDatabase(
+      resources,
+      state.search
     );
   }
 
-  if (state.sort === "free") {
-    return sorted.sort((a, b) => {
-      const aFree =
-        normalize(a.pricing?.type) === "free" ? 0 : 1;
+  resources = filterDatabase(
+    resources,
+    {
+      category: state.category,
+      subcategory: state.subcategory,
+      pricing: state.pricing,
+      platform: state.platform,
+      openSource: state.openSource
+    }
+  );
 
-      const bFree =
-        normalize(b.pricing?.type) === "free" ? 0 : 1;
+  return sortDatabase(
+    resources,
+    state.sort
+  );
+}
 
-      return aFree - bFree;
-    });
+function pricingIcon(type) {
+  switch (normalize(type)) {
+    case "free":
+      return "🆓";
+
+    case "freemium":
+      return "◐";
+
+    case "paid":
+      return "💳";
+
+    default:
+      return "•";
   }
-
-  if (state.sort === "category") {
-    return sorted.sort((a, b) =>
-      `${a.category}-${a.name}`.localeCompare(
-        `${b.category}-${b.name}`
-      )
-    );
-  }
-
-  if (state.sort === "newest") {
-    return sorted.reverse();
-  }
-
-  return sorted;
 }
 
 function resourceCard(resource) {
   const pricing =
-    resource.pricing?.type || "unknown";
+    resource.pricing?.type ||
+    "unknown";
 
   const platforms =
     Array.isArray(resource.platforms)
@@ -265,9 +300,6 @@ function resourceCard(resource) {
       ? resource.tags
       : [];
 
-  const meta =
-    CATEGORY_META[normalize(resource.category)];
-
   return `
     <article class="resource-card">
 
@@ -276,22 +308,29 @@ function resourceCard(resource) {
         <span class="category-badge">
           ${categoryIcon(resource.category)}
           ${escapeHTML(
-            meta?.title ||
-            formatCategory(resource.category) ||
-            "Resource"
+            getCategoryMeta(
+              resource.category
+            ).title
           )}
         </span>
 
         ${
           resource.openSource
-            ? `<span class="open-badge">OPEN SOURCE</span>`
+            ? `
+              <span class="open-badge">
+                OPEN SOURCE
+              </span>
+            `
             : ""
         }
 
       </div>
 
       <h3>
-        ${escapeHTML(resource.name || "Untitled Resource")}
+        ${escapeHTML(
+          resource.name ||
+          "Untitled Resource"
+        )}
       </h3>
 
       <p class="description">
@@ -304,15 +343,10 @@ function resourceCard(resource) {
       <div class="metadata">
 
         <span>
-          ${
-            pricing === "free"
-              ? "🆓"
-              : pricing === "freemium"
-                ? "◐"
-                : "💳"
-          }
-
-          ${escapeHTML(formatCategory(pricing))}
+          ${pricingIcon(pricing)}
+          ${escapeHTML(
+            formatCategory(pricing)
+          )}
         </span>
 
         ${
@@ -321,8 +355,13 @@ function resourceCard(resource) {
               <span>
                 💻
                 ${platforms
+                  .slice(0, 4)
                   .map(platform =>
-                    escapeHTML(formatCategory(platform))
+                    escapeHTML(
+                      formatCategory(
+                        platform
+                      )
+                    )
                   )
                   .join(" · ")}
               </span>
@@ -336,7 +375,9 @@ function resourceCard(resource) {
         resource.subcategory
           ? `
             <div class="subcategory">
-              ${escapeHTML(resource.subcategory)}
+              ${escapeHTML(
+                resource.subcategory
+              )}
             </div>
           `
           : ""
@@ -350,7 +391,9 @@ function resourceCard(resource) {
                 .slice(0, 5)
                 .map(
                   tag =>
-                    `<span>#${escapeHTML(tag)}</span>`
+                    `<span>#${escapeHTML(
+                      tag
+                    )}</span>`
                 )
                 .join("")}
             </div>
@@ -365,7 +408,9 @@ function resourceCard(resource) {
             ? `
               <a
                 class="btn primary"
-                href="${escapeHTML(resource.website)}"
+                href="${escapeHTML(
+                  resource.website
+                )}"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -380,7 +425,9 @@ function resourceCard(resource) {
             ? `
               <a
                 class="btn secondary"
-                href="${escapeHTML(resource.download)}"
+                href="${escapeHTML(
+                  resource.download
+                )}"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -396,85 +443,8 @@ function resourceCard(resource) {
   `;
 }
 
-function renderCategoryTiles(categories) {
+function renderHeader() {
   return `
-    <button
-      class="category-tile ${
-        state.category === "all" ? "active" : ""
-      }"
-      data-category="all"
-    >
-      <b>✦</b>
-      <strong>Everything</strong>
-      <span>
-        ${state.resources.length} resources →
-      </span>
-    </button>
-
-    ${categories
-      .map(category => {
-        const count =
-          state.resources.filter(
-            resource =>
-              normalize(resource.category) ===
-              normalize(category)
-          ).length;
-
-        const meta =
-          CATEGORY_META[normalize(category)];
-
-        return `
-          <button
-            class="category-tile ${
-              normalize(state.category) ===
-              normalize(category)
-                ? "active"
-                : ""
-            }"
-            data-category="${escapeHTML(category)}"
-          >
-
-            <b>
-              ${meta?.icon || "🧰"}
-            </b>
-
-            <strong>
-              ${escapeHTML(
-                meta?.title ||
-                formatCategory(category)
-              )}
-            </strong>
-
-            <span>
-              ${count} resources →
-            </span>
-
-          </button>
-        `;
-      })
-      .join("")}
-  `;
-}
-
-function render() {
-  const categories = getCategories();
-
-  const filtered =
-    sortResources(
-      state.resources.filter(matches)
-    );
-
-  const pricingCounts =
-    getPricingCounts(state.resources);
-
-  const subcategories =
-    getSubcategories();
-
-  const platforms =
-    getPlatforms();
-
-  app.innerHTML = `
-
     <header class="site-header">
 
       <div class="brand">
@@ -520,459 +490,709 @@ function render() {
       </nav>
 
     </header>
+  `;
+}
 
+function renderHero() {
+  const categories = getCategories();
+  const counts =
+    getPricingCounts(
+      state.resources
+    );
 
-    <main>
+  return `
+    <section class="hero">
 
-      <section class="hero">
+      <div class="hero-glow"></div>
 
-        <div class="hero-glow"></div>
+      <div class="hero-content">
 
-        <div class="hero-content">
+        <div class="eyebrow">
+          THE CREATOR RESOURCE DIRECTORY
+        </div>
 
-          <div class="eyebrow">
-            THE CREATOR RESOURCE DIRECTORY
-          </div>
+        <h1>
+          FIND THE TOOLS.
+          <br>
+          <span>MAKE THE CONTENT.</span>
+        </h1>
 
-          <h1>
-            FIND THE TOOLS.
-            <br>
-            <span>MAKE THE CONTENT.</span>
-          </h1>
+        <p>
+          A growing directory of tools for music,
+          video, design, AI and building your creator business.
+        </p>
 
-          <p>
-            A growing directory of tools for music,
-            video, design, AI and building your creator business.
-          </p>
+        <div class="hero-search">
 
-          <div class="hero-search">
+          <span>⌕</span>
 
-            <span>⌕</span>
-
-            <input
-              id="search"
-              type="search"
-              autocomplete="off"
-              placeholder="Search creator tools..."
-              value="${escapeHTML(state.search)}"
-            />
-
-          </div>
-
-          <div class="hero-stats">
-
-            <div>
-              <strong>
-                ${state.resources.length}
-              </strong>
-              <span>RESOURCES</span>
-            </div>
-
-            <div>
-              <strong>
-                ${categories.length}
-              </strong>
-              <span>CATEGORIES</span>
-            </div>
-
-            <div>
-              <strong>
-                ${pricingCounts.free}
-              </strong>
-              <span>FREE TOOLS</span>
-            </div>
-
-            <div>
-              <strong>
-                ${pricingCounts.freemium}
-              </strong>
-              <span>FREEMIUM</span>
-            </div>
-
-          </div>
+          <input
+            id="search"
+            type="search"
+            autocomplete="off"
+            placeholder="Search creator tools..."
+            value="${escapeHTML(
+              state.search
+            )}"
+          />
 
         </div>
 
-      </section>
-
-
-      <section
-        id="categories"
-        class="category-section"
-      >
-
-        <div class="section-heading">
-
-          <span>01</span>
+        <div class="hero-stats">
 
           <div>
-            <h2>
-              EXPLORE BY CATEGORY
-            </h2>
-
-            <p>
-              Find the right tools for the job.
-            </p>
+            <strong>
+              ${state.resources.length}
+            </strong>
+            <span>RESOURCES</span>
           </div>
-
-        </div>
-
-        <div class="category-grid">
-          ${renderCategoryTiles(categories)}
-        </div>
-
-      </section>
-
-
-      <section
-        id="stacks"
-        class="stacks-section"
-      >
-
-        <div class="section-heading">
-
-          <span>02</span>
 
           <div>
-            <h2>
-              CREATOR STACKS
-            </h2>
-
-            <p>
-              Start with a ready-made collection.
-            </p>
+            <strong>
+              ${categories.length}
+            </strong>
+            <span>CATEGORIES</span>
           </div>
-
-        </div>
-
-        <div class="stack-grid">
-
-          <button
-            class="stack-card"
-            data-stack="music"
-          >
-            <b>🎵</b>
-            <strong>Music Creator</strong>
-            <span>
-              Production → recording → mixing → release
-            </span>
-          </button>
-
-          <button
-            class="stack-card"
-            data-stack="video"
-          >
-            <b>🎬</b>
-            <strong>Video Creator</strong>
-            <span>
-              Record → edit → clip → publish
-            </span>
-          </button>
-
-          <button
-            class="stack-card"
-            data-stack="ai"
-          >
-            <b>🤖</b>
-            <strong>AI Creator</strong>
-            <span>
-              Research → create → automate → publish
-            </span>
-          </button>
-
-          <button
-            class="stack-card"
-            data-stack="design"
-          >
-            <b>🎨</b>
-            <strong>Design Creator</strong>
-            <span>
-              Brand → graphics → thumbnails → content
-            </span>
-          </button>
-
-          <button
-            class="stack-card"
-            data-stack="business"
-          >
-            <b>💰</b>
-            <strong>Creator Business</strong>
-            <span>
-              Website → audience → sales → analytics
-            </span>
-          </button>
-
-        </div>
-
-      </section>
-
-
-      <section
-        id="resources"
-        class="resources-section"
-      >
-
-        <div class="resource-heading">
 
           <div>
-
-            <div class="section-heading">
-
-              <span>03</span>
-
-              <div>
-                <h2>
-                  CREATOR RESOURCES
-                </h2>
-
-                <p>
-                  ${filtered.length}
-                  resources found
-                </p>
-              </div>
-
-            </div>
-
+            <strong>
+              ${counts.free}
+            </strong>
+            <span>FREE TOOLS</span>
           </div>
 
-
-          <div class="filters">
-
-            <select id="subcategory">
-
-              <option value="all">
-                All types
-              </option>
-
-              ${subcategories
-                .map(
-                  subcategory => `
-                    <option
-                      value="${escapeHTML(subcategory)}"
-                      ${
-                        state.subcategory ===
-                        subcategory
-                          ? "selected"
-                          : ""
-                      }
-                    >
-                      ${escapeHTML(subcategory)}
-                    </option>
-                  `
-                )
-                .join("")}
-
-            </select>
-
-
-            <select id="pricing">
-
-              <option value="all">
-                All pricing
-              </option>
-
-              <option
-                value="free"
-                ${
-                  state.pricing === "free"
-                    ? "selected"
-                    : ""
-                }
-              >
-                Free
-              </option>
-
-              <option
-                value="freemium"
-                ${
-                  state.pricing === "freemium"
-                    ? "selected"
-                    : ""
-                }
-              >
-                Freemium
-              </option>
-
-              <option
-                value="paid"
-                ${
-                  state.pricing === "paid"
-                    ? "selected"
-                    : ""
-                }
-              >
-                Paid
-              </option>
-
-            </select>
-
-
-            <select id="platform">
-
-              <option value="all">
-                All platforms
-              </option>
-
-              ${platforms
-                .map(
-                  platform => `
-                    <option
-                      value="${escapeHTML(platform)}"
-                      ${
-                        state.platform ===
-                        platform
-                          ? "selected"
-                          : ""
-                      }
-                    >
-                      ${escapeHTML(
-                        formatCategory(platform)
-                      )}
-                    </option>
-                  `
-                )
-                .join("")}
-
-            </select>
-
-
-            <select id="sort">
-
-              <option
-                value="featured"
-                ${
-                  state.sort === "featured"
-                    ? "selected"
-                    : ""
-                }
-              >
-                Featured
-              </option>
-
-              <option
-                value="name"
-                ${
-                  state.sort === "name"
-                    ? "selected"
-                    : ""
-                }
-              >
-                A–Z
-              </option>
-
-              <option
-                value="category"
-                ${
-                  state.sort === "category"
-                    ? "selected"
-                    : ""
-                }
-              >
-                Category
-              </option>
-
-              <option
-                value="free"
-                ${
-                  state.sort === "free"
-                    ? "selected"
-                    : ""
-                }
-              >
-                Free First
-              </option>
-
-            </select>
-
-
-            <button
-              id="opensource"
-              class="filter-toggle ${
-                state.openSource
-                  ? "active"
-                  : ""
-              }"
-            >
-              Open Source
-            </button>
-
+          <div>
+            <strong>
+              ${counts.freemium}
+            </strong>
+            <span>FREEMIUM</span>
           </div>
 
         </div>
 
+      </div>
 
-        <div class="resource-grid">
+    </section>
+  `;
+}
 
-          ${
-            filtered.length
-              ? filtered
-                  .map(resourceCard)
-                  .join("")
-              : `
-                <div class="empty">
+function renderCategoryFolders() {
+  const categories = getCategories();
 
-                  <div>⌕</div>
+  return `
+    <section
+      id="categories"
+      class="category-section"
+    >
 
-                  <h3>
-                    No resources found
-                  </h3>
+      <div class="section-heading">
 
-                  <p>
-                    Try another search or remove a filter.
-                  </p>
-
-                  <button
-                    id="clearFilters"
-                    class="btn primary"
-                  >
-                    Clear Filters
-                  </button>
-
-                </div>
-              `
-          }
-
-        </div>
-
-      </section>
-
-
-      <section class="cta">
+        <span>01</span>
 
         <div>
-
-          <div class="eyebrow">
-            MILEYM3DIA CREATOR HUB
-          </div>
-
           <h2>
-            BUILD.
-            <span>CREATE.</span>
-            <br>
-            REPEAT.
+            CREATOR LIBRARY
           </h2>
 
           <p>
-            The directory is designed to keep growing
-            with new tools, categories and creator workflows.
+            Choose a category to open its tool library.
           </p>
+        </div>
+
+      </div>
+
+      <div class="category-grid">
+
+        ${categories
+          .map(category => {
+            const meta =
+              getCategoryMeta(category);
+
+            const count =
+              getCategoryCount(category);
+
+            return `
+              <button
+                class="category-tile"
+                data-category="${escapeHTML(
+                  category
+                )}"
+              >
+
+                <b>
+                  ${meta.icon}
+                </b>
+
+                <strong>
+                  ${escapeHTML(
+                    meta.title
+                  )}
+                </strong>
+
+                <span>
+                  ${count} resources →
+                </span>
+
+              </button>
+            `;
+          })
+          .join("")}
+
+      </div>
+
+    </section>
+  `;
+}
+
+function renderSubcategoryFolders() {
+  const meta =
+    getCategoryMeta(
+      state.category
+    );
+
+  const subcategories =
+    getSubcategories();
+
+  return `
+    <section
+      id="categories"
+      class="category-section library-view"
+    >
+
+      <div class="library-header">
+
+        <button
+          class="back-button"
+          id="backCategories"
+        >
+          ← All Categories
+        </button>
+
+        <div class="library-title">
+
+          <div class="library-icon">
+            ${meta.icon}
+          </div>
+
+          <div>
+            <div class="eyebrow">
+              CATEGORY
+            </div>
+
+            <h2>
+              ${escapeHTML(meta.title)}
+            </h2>
+
+            <p>
+              ${escapeHTML(
+                meta.description
+              )}
+            </p>
+          </div>
 
         </div>
 
-        <a
-          class="btn primary large"
-          href="https://github.com/mileyAM/mileym3dia-creator-hub"
-          target="_blank"
-          rel="noopener noreferrer"
+      </div>
+
+      <div class="subcategory-grid">
+
+        ${subcategories
+          .map(subcategory => {
+            const count =
+              getSubcategoryCount(
+                state.category,
+                subcategory
+              );
+
+            const icon =
+              SUBCATEGORY_META[
+                subcategory
+              ] || "🧰";
+
+            return `
+              <button
+                class="subcategory-folder"
+                data-subcategory="${escapeHTML(
+                  subcategory
+                )}"
+              >
+
+                <span class="folder-icon">
+                  ${icon}
+                </span>
+
+                <span class="folder-content">
+
+                  <strong>
+                    ${escapeHTML(
+                      subcategory
+                    )}
+                  </strong>
+
+                  <small>
+                    ${count}
+                    ${
+                      count === 1
+                        ? "tool"
+                        : "tools"
+                    }
+                  </small>
+
+                </span>
+
+                <span class="folder-arrow">
+                  →
+                </span>
+
+              </button>
+            `;
+          })
+          .join("")}
+
+      </div>
+
+    </section>
+  `;
+}
+
+function renderResourceLibrary() {
+  const meta =
+    getCategoryMeta(
+      state.category
+    );
+
+  const resources =
+    getCurrentResources();
+
+  return `
+    <section
+      id="resources"
+      class="resources-section"
+    >
+
+      <div class="library-header">
+
+        <button
+          class="back-button"
+          id="backSubcategories"
         >
-          View on GitHub ↗
-        </a>
+          ← ${escapeHTML(
+            meta.title
+          )}
+        </button>
 
-      </section>
+        <div class="library-title">
 
-    </main>
+          <div class="library-icon">
+            ${SUBCATEGORY_META[
+              state.subcategory
+            ] || "🧰"}
+          </div>
 
+          <div>
+            <div class="eyebrow">
+              TOOL COLLECTION
+            </div>
 
+            <h2>
+              ${escapeHTML(
+                state.subcategory
+              )}
+            </h2>
+
+            <p>
+              ${resources.length}
+              ${
+                resources.length === 1
+                  ? "resource"
+                  : "resources"
+              }
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="filters">
+
+        <select id="pricing">
+
+          <option value="all">
+            All pricing
+          </option>
+
+          <option
+            value="free"
+            ${
+              state.pricing === "free"
+                ? "selected"
+                : ""
+            }
+          >
+            Free
+          </option>
+
+          <option
+            value="freemium"
+            ${
+              state.pricing === "freemium"
+                ? "selected"
+                : ""
+            }
+          >
+            Freemium
+          </option>
+
+          <option
+            value="paid"
+            ${
+              state.pricing === "paid"
+                ? "selected"
+                : ""
+            }
+          >
+            Paid
+          </option>
+
+        </select>
+
+        <select id="platform">
+
+          <option value="all">
+            All platforms
+          </option>
+
+          ${getPlatforms()
+            .map(
+              platform => `
+                <option
+                  value="${escapeHTML(
+                    platform
+                  )}"
+                  ${
+                    state.platform ===
+                    platform
+                      ? "selected"
+                      : ""
+                  }
+                >
+                  ${escapeHTML(
+                    formatCategory(
+                      platform
+                    )
+                  )}
+                </option>
+              `
+            )
+            .join("")}
+
+        </select>
+
+        <select id="sort">
+
+          <option
+            value="featured"
+            ${
+              state.sort === "featured"
+                ? "selected"
+                : ""
+            }
+          >
+            Featured
+          </option>
+
+          <option
+            value="name"
+            ${
+              state.sort === "name"
+                ? "selected"
+                : ""
+            }
+          >
+            A–Z
+          </option>
+
+          <option
+            value="category"
+            ${
+              state.sort === "category"
+                ? "selected"
+                : ""
+            }
+          >
+            Category
+          </option>
+
+          <option
+            value="free"
+            ${
+              state.sort === "free"
+                ? "selected"
+                : ""
+            }
+          >
+            Free First
+          </option>
+
+        </select>
+
+        <button
+          id="opensource"
+          class="filter-toggle ${
+            state.openSource
+              ? "active"
+              : ""
+          }"
+        >
+          Open Source
+        </button>
+
+      </div>
+
+      <div class="resource-grid">
+
+        ${
+          resources.length
+            ? resources
+                .map(resourceCard)
+                .join("")
+            : `
+              <div class="empty">
+
+                <div>⌕</div>
+
+                <h3>
+                  No resources found
+                </h3>
+
+                <p>
+                  Try another filter.
+                </p>
+
+                <button
+                  id="clearFilters"
+                  class="btn primary"
+                >
+                  Clear Filters
+                </button>
+
+              </div>
+            `
+        }
+
+      </div>
+
+    </section>
+  `;
+}
+
+function renderSearchResults() {
+  const resources =
+    searchDatabase(
+      state.resources,
+      state.search
+    );
+
+  return `
+    <section
+      id="resources"
+      class="resources-section"
+    >
+
+      <div class="library-header">
+
+        <button
+          class="back-button"
+          id="clearSearch"
+        >
+          ← Browse Categories
+        </button>
+
+        <div class="library-title">
+
+          <div class="library-icon">
+            ⌕
+          </div>
+
+          <div>
+
+            <div class="eyebrow">
+              SEARCH RESULTS
+            </div>
+
+            <h2>
+              ${escapeHTML(
+                state.search
+              )}
+            </h2>
+
+            <p>
+              ${resources.length}
+              results
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="resource-grid">
+
+        ${
+          resources.length
+            ? resources
+                .map(resourceCard)
+                .join("")
+            : `
+              <div class="empty">
+
+                <div>⌕</div>
+
+                <h3>
+                  Nothing found
+                </h3>
+
+                <p>
+                  Try another search.
+                </p>
+
+              </div>
+            `
+        }
+
+      </div>
+
+    </section>
+  `;
+}
+
+function renderStacks() {
+  return `
+    <section
+      id="stacks"
+      class="stacks-section"
+    >
+
+      <div class="section-heading">
+
+        <span>02</span>
+
+        <div>
+          <h2>
+            CREATOR STACKS
+          </h2>
+
+          <p>
+            Jump directly into a creator workflow.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="stack-grid">
+
+        <button
+          class="stack-card"
+          data-stack="music"
+        >
+          <b>🎵</b>
+          <strong>Music Creator</strong>
+          <span>
+            Production → recording → mixing → release
+          </span>
+        </button>
+
+        <button
+          class="stack-card"
+          data-stack="video"
+        >
+          <b>🎬</b>
+          <strong>Video Creator</strong>
+          <span>
+            Record → edit → clip → publish
+          </span>
+        </button>
+
+        <button
+          class="stack-card"
+          data-stack="ai"
+        >
+          <b>🤖</b>
+          <strong>AI Creator</strong>
+          <span>
+            Research → create → automate → publish
+          </span>
+        </button>
+
+        <button
+          class="stack-card"
+          data-stack="design"
+        >
+          <b>🎨</b>
+          <strong>Design Creator</strong>
+          <span>
+            Brand → graphics → thumbnails → content
+          </span>
+        </button>
+
+        <button
+          class="stack-card"
+          data-stack="business"
+        >
+          <b>💰</b>
+          <strong>Creator Business</strong>
+          <span>
+            Website → audience → sales → analytics
+          </span>
+        </button>
+
+      </div>
+
+    </section>
+  `;
+}
+
+function renderCTA() {
+  return `
+    <section class="cta">
+
+      <div>
+
+        <div class="eyebrow">
+          MILEYM3DIA CREATOR HUB
+        </div>
+
+        <h2>
+          BUILD.
+          <span>CREATE.</span>
+          <br>
+          REPEAT.
+        </h2>
+
+        <p>
+          A growing creator toolkit built around
+          music, video, design, AI and business.
+        </p>
+
+      </div>
+
+      <a
+        class="btn primary large"
+        href="https://github.com/mileyAM/mileym3dia-creator-hub"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View on GitHub ↗
+      </a>
+
+    </section>
+  `;
+}
+
+function renderFooter() {
+  return `
     <footer>
 
       <div>
@@ -1000,18 +1220,136 @@ function render() {
       </a>
 
     </footer>
+  `;
+}
 
+function render() {
+  if (!app) return;
+
+  let content = "";
+
+  if (state.search) {
+    content = renderSearchResults();
+  } else if (
+    state.view === "resources"
+  ) {
+    content = renderResourceLibrary();
+  } else if (
+    state.view === "subcategories"
+  ) {
+    content = renderSubcategoryFolders();
+  } else {
+    content =
+      renderCategoryFolders();
+  }
+
+  app.innerHTML = `
+    ${renderHeader()}
+
+    <main>
+
+      ${renderHero()}
+
+      ${content}
+
+      ${
+        !state.search &&
+        state.view === "categories"
+          ? renderStacks()
+          : ""
+      }
+
+      ${renderCTA()}
+
+    </main>
+
+    ${renderFooter()}
   `;
 
   bindEvents();
 }
 
+function focusSearch() {
+  const input =
+    document.querySelector("#search");
+
+  if (!input) return;
+
+  input.focus();
+
+  input.setSelectionRange(
+    input.value.length,
+    input.value.length
+  );
+}
+
+function clearFilters() {
+  state.subcategory = "all";
+  state.pricing = "all";
+  state.platform = "all";
+  state.openSource = false;
+  state.sort = "featured";
+}
+
+function openCategory(category) {
+  state.category = category;
+  state.subcategory = "all";
+  state.view = "subcategories";
+  clearFilters();
+
+  render();
+
+  document
+    .querySelector("#categories")
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+}
+
+function openSubcategory(
+  subcategory
+) {
+  state.subcategory =
+    subcategory;
+
+  state.view = "resources";
+
+  render();
+
+  document
+    .querySelector("#resources")
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+}
+
+function openStack(stack) {
+  state.category =
+    stack === "business"
+      ? "business"
+      : stack;
+
+  state.subcategory = "all";
+  state.search = "";
+  state.view = "subcategories";
+
+  clearFilters();
+
+  render();
+
+  document
+    .querySelector("#categories")
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+}
+
 function bindEvents() {
   const search =
     document.querySelector("#search");
-
-  const subcategory =
-    document.querySelector("#subcategory");
 
   const pricing =
     document.querySelector("#pricing");
@@ -1025,36 +1363,15 @@ function bindEvents() {
   const openSource =
     document.querySelector("#opensource");
 
-  const clearFilters =
-    document.querySelector("#clearFilters");
-
   search?.addEventListener(
     "input",
     event => {
-      state.search = event.target.value;
-      render();
-
-      const newSearch =
-        document.querySelector("#search");
-
-      newSearch?.focus();
-
-      if (newSearch) {
-        newSearch.setSelectionRange(
-          newSearch.value.length,
-          newSearch.value.length
-        );
-      }
-    }
-  );
-
-  subcategory?.addEventListener(
-    "change",
-    event => {
-      state.subcategory =
+      state.search =
         event.target.value;
 
       render();
+
+      focusSearch();
     }
   );
 
@@ -1098,70 +1415,111 @@ function bindEvents() {
     }
   );
 
-  clearFilters?.addEventListener(
-    "click",
-    () => {
-      state.category = "all";
-      state.subcategory = "all";
-      state.pricing = "all";
-      state.platform = "all";
-      state.search = "";
-      state.openSource = false;
-      state.sort = "featured";
-
-      render();
-    }
-  );
-
   document
-    .querySelectorAll("[data-category]")
+    .querySelectorAll(
+      "[data-category]"
+    )
     .forEach(button => {
       button.addEventListener(
         "click",
         () => {
-          state.category =
-            button.dataset.category;
-
-          state.subcategory = "all";
-
-          render();
-
-          document
-            .querySelector("#resources")
-            ?.scrollIntoView({
-              behavior: "smooth"
-            });
+          openCategory(
+            button.dataset.category
+          );
         }
       );
     });
 
   document
-    .querySelectorAll("[data-stack]")
+    .querySelectorAll(
+      "[data-subcategory]"
+    )
     .forEach(button => {
       button.addEventListener(
         "click",
         () => {
-          const stack =
-            button.dataset.stack;
-
-          state.category =
-            stack === "business"
-              ? "business"
-              : stack;
-
-          state.subcategory = "all";
-          state.search = "";
-
-          render();
-
-          document
-            .querySelector("#resources")
-            ?.scrollIntoView({
-              behavior: "smooth"
-            });
+          openSubcategory(
+            button.dataset.subcategory
+          );
         }
       );
     });
+
+  document
+    .querySelectorAll(
+      "[data-stack]"
+    )
+    .forEach(button => {
+      button.addEventListener(
+        "click",
+        () => {
+          openStack(
+            button.dataset.stack
+          );
+        }
+      );
+    });
+
+  document
+    .querySelector(
+      "#backCategories"
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        state.view = "categories";
+        state.category = "all";
+        state.subcategory = "all";
+        clearFilters();
+
+        render();
+      }
+    );
+
+  document
+    .querySelector(
+      "#backSubcategories"
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        state.view =
+          "subcategories";
+        state.subcategory = "all";
+
+        clearFilters();
+
+        render();
+      }
+    );
+
+  document
+    .querySelector(
+      "#clearSearch"
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        state.search = "";
+        state.view = "categories";
+        state.category = "all";
+        state.subcategory = "all";
+
+        render();
+      }
+    );
+
+  document
+    .querySelector(
+      "#clearFilters"
+    )
+    ?.addEventListener(
+      "click",
+      () => {
+        clearFilters();
+        render();
+      }
+    );
 }
 
 async function loadResources() {
@@ -1178,39 +1536,70 @@ async function loadResources() {
     const data =
       await response.json();
 
+    const rawResources =
+      Array.isArray(data)
+        ? data
+        : data.resources || [];
+
     const baseResources =
-  Array.isArray(data)
-    ? data
-    : data.resources || [];
+      normalizeDatabase(
+        rawResources
+      );
 
-const existingIds = new Set(
-  baseResources.map(resource => resource.id)
-);
+    const normalizedAdditions =
+      normalizeDatabase(
+        additions
+      );
 
-const uniqueAdditions =
-  additions.filter(
-    resource => !existingIds.has(resource.id)
-  );
+    const existingIds =
+      new Set(
+        baseResources.map(
+          resource => resource.id
+        )
+      );
 
-state.resources = [
-  ...baseResources,
-  ...uniqueAdditions
-];
+    const uniqueAdditions =
+      normalizedAdditions.filter(
+        resource =>
+          !existingIds.has(
+            resource.id
+          )
+      );
+
+    state.resources = [
+      ...baseResources,
+      ...uniqueAdditions
+    ];
+
     render();
 
   } catch (error) {
-    console.error(error);
+    console.error(
+      "MILEYM3DIA Creator Hub:",
+      error
+    );
 
     app.innerHTML = `
       <main class="error-screen">
+
+        <div class="error-mark">
+          M3
+        </div>
 
         <h1>
           MILEYM3DIA
         </h1>
 
         <p>
-          Unable to load the resource database.
+          Unable to load the creator resource database.
         </p>
+
+        <small>
+          ${escapeHTML(
+            error.message ||
+            "Unknown error"
+          )}
+        </small>
 
         <button
           onclick="location.reload()"
