@@ -12,6 +12,7 @@ import {
 } from "./data.js";
 
 const DATA_URL = "./data/resources.json";
+import additions from "./resource-additions.js";
 
 const state = {
   resources: [],
@@ -1177,11 +1178,24 @@ async function loadResources() {
     const data =
       await response.json();
 
-    state.resources =
-      Array.isArray(data)
-        ? data
-        : data.resources || [];
+    const baseResources =
+  Array.isArray(data)
+    ? data
+    : data.resources || [];
 
+const existingIds = new Set(
+  baseResources.map(resource => resource.id)
+);
+
+const uniqueAdditions =
+  additions.filter(
+    resource => !existingIds.has(resource.id)
+  );
+
+state.resources = [
+  ...baseResources,
+  ...uniqueAdditions
+];
     render();
 
   } catch (error) {
