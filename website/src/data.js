@@ -1,3 +1,5 @@
+import Fuse from "fuse.js";
+
 const CATEGORY_ALIASES = {
   "music-production": "music",
   "music production": "music",
@@ -287,6 +289,43 @@ export function searchResources(
       );
     }
   );
+}
+
+/**
+ * createSearch(resources)
+ * Returns a search function that mirrors the
+ * searchResources signature: (resources, query) => results
+ * Uses Fuse.js for fuzzy matching and weighted fields.
+ * Falls back to searchResources if Fuse is not available.
+ */
+export function createSearch(resources = []) {
+  try {
+    const options = {
+      keys: [
+        { name: "name", weight: 0.45 },
+        { name: "slug", weight: 0.15 },
+        { name: "tags", weight: 0.15 },
+        { name: "description", weight: 0.15 },
+        { name: "category", weight: 0.06 },
+        { name: "subcategory", weight: 0.04 }
+      ],
+      threshold: 0.35,
+      includeMatches: true,
+      ignoreLocation: true,
+      minMatchCharLength: 2
+    };
+
+    const fuse = new Fuse(resources, options);
+
+    return function fusedSearch(_resources, query) {
+      if (!query || !String(query).trim()) return _resources;
+      const results = fuse.search(String(query));
+      return results.map(r => ({ ...r.item, _matches: r.matches }));
+    };
+  } catch (error) {
+    console.warn("createSearch: Fuse not available, falling back to basic search", error);
+    return searchResources;
+  }
 }
 
 export function filterResources(
