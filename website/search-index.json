@@ -8,5 +8,9 @@
   {"id":"zapier","name":"Zapier","url":"https://zapier.com","category":"automation","tags":["integrations","automation"]},
   {"id":"patreon","name":"Patreon","url":"https://www.patreon.com","category":"monetization","tags":["membership","payments"]},
   {"id":"gumroad","name":"Gumroad","url":"https://gumroad.com","category":"ecommerce","tags":["sales","digital-products"]},
-  {"id":"lumen5","name":"Lumen5","url":"https://lumen5.com","category":"video","tags":["ai","video"]}
+  {"id":"lumen5","name":"Lumen5","url":"https://lumen5.com","category":"video","tags":["ai","video"]},
+  {"id":"ffmpeg","name":"FFmpeg","url":"https://ffmpeg.org/","category":"video","tags":["transcoding","encoding"]},
+  {"id":"auto-editor","name":"Auto-Editor","url":"https://github.com/WyattBlue/auto-editor","category":"video","tags":["automation","programmatic"]},
+  {"id":"remotion","name":"Remotion","url":"https://github.com/remotion-dev/remotion","category":"video","tags":["programmatic","react"]},
+  {"id":"openbio","name":"OpenBio","url":"https://github.com/vanxh/openbio","category":"link-in-bio","tags":["link","self-hosted"]}
 ]
