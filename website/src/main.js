@@ -1,3 +1,66 @@
+import "./style.css";
+
+const DATA_URL = "./data/resources.json";
+
+const state = {
+  resources: [],
+  category: "all",
+  subcategory: "all",
+  pricing: "all",
+  platform: "all",
+  search: "",
+  openSource: false,
+  sort: "featured"
+};
+
+const app = document.querySelector("#app");
+
+const CATEGORY_META = {
+  music: {
+    icon: "🎵",
+    title: "Music",
+    description: "DAWs, recording, mixing, mastering, samples and music business."
+  },
+  video: {
+    icon: "🎬",
+    title: "Video",
+    description: "Editing, streaming, podcasting, clips, effects and production."
+  },
+  design: {
+    icon: "🎨",
+    title: "Design",
+    description: "Graphics, photo editing, illustration, UI/UX and 3D."
+  },
+  ai: {
+    icon: "🤖",
+    title: "AI",
+    description: "AI assistants, image, video, voice, music and creator automation."
+  },
+  "creator-business": {
+    icon: "💼",
+    title: "Creator Business",
+    description: "Marketing, monetization, websites, analytics and business tools."
+  },
+  business: {
+    icon: "💼",
+    title: "Creator Business",
+    description: "Marketing, monetization, websites, analytics and business tools."
+  }
+};
+
+function normalize(value = "") {
+  return String(value).toLowerCase().trim();
+}
+
+function escapeHTML(value = "") {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function formatCategory(category) {
   if (!category) return "";
 
@@ -15,82 +78,100 @@ function formatCategory(category) {
 
   const value = String(category).trim();
 
-  return acronyms[value.toLowerCase()] ||
-    value.charAt(0).toUpperCase() + value.slice(1);
-}
-function capitalizeCategory(category) {
-  if (!category) return "";
-  return category.charAt(0).toUpperCase() + category.slice(1);
-}
-import "./style.css";
-
-const DATA_URL = "./data/resources.json";
-
-const state = {
-  resources: [],
-  category: "all",
-  pricing: "all",
-  platform: "all",
-  search: "",
-  openSource: false
-};
-
-const app = document.querySelector("#app");
-
-async function loadResources() {
-  try {
-    const response = await fetch(DATA_URL);
-
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-
-    const data = await response.json();
-
-    state.resources = Array.isArray(data)
-      ? data
-      : data.resources || [];
-
-    render();
-  } catch (error) {
-    console.error(error);
-
-    app.innerHTML = `
-      <main class="error-screen">
-        <h1>MILEYM3DIA</h1>
-        <p>Unable to load the resource database.</p>
-        <button onclick="location.reload()">Retry</button>
-      </main>
-    `;
-  }
+  return (
+    acronyms[value.toLowerCase()] ||
+    value
+      .replace(/[-_]/g, " ")
+      .replace(/\b\w/g, letter => letter.toUpperCase())
+  );
 }
 
-function normalize(value = "") {
-  return String(value).toLowerCase().trim();
+function categoryIcon(category) {
+  return CATEGORY_META[normalize(category)]?.icon || "🧰";
 }
 
 function getCategories() {
-  return [...new Set(
-    state.resources
-      .map(r => r.category)
-      .filter(Boolean)
-  )].sort();
+  return [
+    ...new Set(
+      state.resources
+        .map(resource => resource.category)
+        .filter(Boolean)
+        .map(normalize)
+    )
+  ].sort();
+}
+
+function getSubcategories() {
+  const resources =
+    state.category === "all"
+      ? state.resources
+      : state.resources.filter(
+          resource =>
+            normalize(resource.category) === normalize(state.category)
+        );
+
+  return [
+    ...new Set(
+      resources
+        .map(resource => resource.subcategory)
+        .filter(Boolean)
+    )
+  ].sort((a, b) => a.localeCompare(b));
+}
+
+function getPlatforms() {
+  return [
+    ...new Set(
+      state.resources.flatMap(resource =>
+        Array.isArray(resource.platforms)
+          ? resource.platforms
+          : []
+      )
+    )
+  ].sort();
+}
+
+function getPricingCounts(resources) {
+  return resources.reduce(
+    (counts, resource) => {
+      const type = normalize(resource.pricing?.type);
+
+      if (type === "free") counts.free++;
+      if (type === "freemium") counts.freemium++;
+      if (type === "paid") counts.paid++;
+
+      return counts;
+    },
+    {
+      free: 0,
+      freemium: 0,
+      paid: 0
+    }
+  );
+}
+
+function searchableText(resource) {
+  return normalize(
+    [
+      resource.name,
+      resource.description,
+      resource.category,
+      resource.subcategory,
+      ...(resource.tags || [])
+    ].join(" ")
+  );
 }
 
 function matches(resource) {
   const search = normalize(state.search);
 
-  const searchable = normalize([
-    resource.name,
-    resource.description,
-    resource.category,
-    resource.subcategory,
-    ...(resource.tags || [])
-  ].join(" "));
-
   const categoryMatch =
     state.category === "all" ||
     normalize(resource.category) === normalize(state.category);
+
+  const subcategoryMatch =
+    state.subcategory === "all" ||
+    normalize(resource.subcategory) === normalize(state.subcategory);
 
   const pricingMatch =
     state.pricing === "all" ||
@@ -108,10 +189,11 @@ function matches(resource) {
 
   const searchMatch =
     !search ||
-    searchable.includes(search);
+    searchableText(resource).includes(search);
 
   return (
     categoryMatch &&
+    subcategoryMatch &&
     pricingMatch &&
     platformMatch &&
     openSourceMatch &&
@@ -119,25 +201,42 @@ function matches(resource) {
   );
 }
 
-function escapeHTML(value = "") {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
+function sortResources(resources) {
+  const sorted = [...resources];
 
-function categoryIcon(category) {
-  const icons = {
-    music: "🎵",
-    video: "🎬",
-    design: "🎨",
-    ai: "🤖",
-    "creator-business": "💼"
-  };
+  if (state.sort === "name") {
+    return sorted.sort((a, b) =>
+      String(a.name || "").localeCompare(
+        String(b.name || "")
+      )
+    );
+  }
 
-  return icons[category] || "🧰";
+  if (state.sort === "free") {
+    return sorted.sort((a, b) => {
+      const aFree =
+        normalize(a.pricing?.type) === "free" ? 0 : 1;
+
+      const bFree =
+        normalize(b.pricing?.type) === "free" ? 0 : 1;
+
+      return aFree - bFree;
+    });
+  }
+
+  if (state.sort === "category") {
+    return sorted.sort((a, b) =>
+      `${a.category}-${a.name}`.localeCompare(
+        `${b.category}-${b.name}`
+      )
+    );
+  }
+
+  if (state.sort === "newest") {
+    return sorted.reverse();
+  }
+
+  return sorted;
 }
 
 function resourceCard(resource) {
@@ -145,21 +244,30 @@ function resourceCard(resource) {
     resource.pricing?.type || "unknown";
 
   const platforms =
-    resource.platforms || [];
+    Array.isArray(resource.platforms)
+      ? resource.platforms
+      : [];
 
   const tags =
-    resource.tags || [];
+    Array.isArray(resource.tags)
+      ? resource.tags
+      : [];
 
-  const download =
-    resource.download || "";
+  const meta =
+    CATEGORY_META[normalize(resource.category)];
 
   return `
     <article class="resource-card">
 
       <div class="card-top">
+
         <span class="category-badge">
           ${categoryIcon(resource.category)}
-          ${escapeHTML(resource.category || "Resource")}
+          ${escapeHTML(
+            meta?.title ||
+            formatCategory(resource.category) ||
+            "Resource"
+          )}
         </span>
 
         ${
@@ -167,9 +275,12 @@ function resourceCard(resource) {
             ? `<span class="open-badge">OPEN SOURCE</span>`
             : ""
         }
+
       </div>
 
-      <h3>${escapeHTML(resource.name)}</h3>
+      <h3>
+        ${escapeHTML(resource.name || "Untitled Resource")}
+      </h3>
 
       <p class="description">
         ${escapeHTML(
@@ -181,19 +292,43 @@ function resourceCard(resource) {
       <div class="metadata">
 
         <span>
-          ${pricing === "free" ? "🆓" : "💳"}
-          ${escapeHTML(pricing)}
+          ${
+            pricing === "free"
+              ? "🆓"
+              : pricing === "freemium"
+                ? "◐"
+                : "💳"
+          }
+
+          ${escapeHTML(formatCategory(pricing))}
         </span>
 
         ${
           platforms.length
-            ? `<span>💻 ${platforms
-                .map(escapeHTML)
-                .join(" · ")}</span>`
+            ? `
+              <span>
+                💻
+                ${platforms
+                  .map(platform =>
+                    escapeHTML(formatCategory(platform))
+                  )
+                  .join(" · ")}
+              </span>
+            `
             : ""
         }
 
       </div>
+
+      ${
+        resource.subcategory
+          ? `
+            <div class="subcategory">
+              ${escapeHTML(resource.subcategory)}
+            </div>
+          `
+          : ""
+      }
 
       ${
         tags.length
@@ -229,11 +364,11 @@ function resourceCard(resource) {
         }
 
         ${
-          download
+          resource.download
             ? `
               <a
                 class="btn secondary"
-                href="${escapeHTML(download)}"
+                href="${escapeHTML(resource.download)}"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -249,20 +384,92 @@ function resourceCard(resource) {
   `;
 }
 
+function renderCategoryTiles(categories) {
+  return `
+    <button
+      class="category-tile ${
+        state.category === "all" ? "active" : ""
+      }"
+      data-category="all"
+    >
+      <b>✦</b>
+      <strong>Everything</strong>
+      <span>
+        ${state.resources.length} resources →
+      </span>
+    </button>
+
+    ${categories
+      .map(category => {
+        const count =
+          state.resources.filter(
+            resource =>
+              normalize(resource.category) ===
+              normalize(category)
+          ).length;
+
+        const meta =
+          CATEGORY_META[normalize(category)];
+
+        return `
+          <button
+            class="category-tile ${
+              normalize(state.category) ===
+              normalize(category)
+                ? "active"
+                : ""
+            }"
+            data-category="${escapeHTML(category)}"
+          >
+
+            <b>
+              ${meta?.icon || "🧰"}
+            </b>
+
+            <strong>
+              ${escapeHTML(
+                meta?.title ||
+                formatCategory(category)
+              )}
+            </strong>
+
+            <span>
+              ${count} resources →
+            </span>
+
+          </button>
+        `;
+      })
+      .join("")}
+  `;
+}
+
 function render() {
+  const categories = getCategories();
 
   const filtered =
-    state.resources.filter(matches);
+    sortResources(
+      state.resources.filter(matches)
+    );
 
-  const categories =
-    getCategories();
+  const pricingCounts =
+    getPricingCounts(state.resources);
+
+  const subcategories =
+    getSubcategories();
+
+  const platforms =
+    getPlatforms();
 
   app.innerHTML = `
 
     <header class="site-header">
 
       <div class="brand">
-        <div class="brand-mark">M3</div>
+
+        <div class="brand-mark">
+          M3
+        </div>
 
         <div>
           <div class="brand-name">
@@ -273,18 +480,31 @@ function render() {
             CREATOR HUB
           </div>
         </div>
+
       </div>
 
       <nav>
-        <a href="#resources">Resources</a>
-        <a href="#categories">Categories</a>
+
+        <a href="#resources">
+          Resources
+        </a>
+
+        <a href="#categories">
+          Categories
+        </a>
+
+        <a href="#stacks">
+          Creator Stacks
+        </a>
+
         <a
           href="https://github.com/mileyAM/mileym3dia-creator-hub"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           GitHub ↗
         </a>
+
       </nav>
 
     </header>
@@ -309,8 +529,8 @@ function render() {
           </h1>
 
           <p>
-            Discover tools for music, video, design,
-            AI and building your creator business.
+            A growing directory of tools for music,
+            video, design, AI and building your creator business.
           </p>
 
           <div class="hero-search">
@@ -320,7 +540,8 @@ function render() {
             <input
               id="search"
               type="search"
-              placeholder="Search 248+ creator resources..."
+              autocomplete="off"
+              placeholder="Search creator tools..."
               value="${escapeHTML(state.search)}"
             />
 
@@ -329,18 +550,31 @@ function render() {
           <div class="hero-stats">
 
             <div>
-              <strong>${state.resources.length}</strong>
+              <strong>
+                ${state.resources.length}
+              </strong>
               <span>RESOURCES</span>
             </div>
 
             <div>
-              <strong>${categories.length}</strong>
+              <strong>
+                ${categories.length}
+              </strong>
               <span>CATEGORIES</span>
             </div>
 
             <div>
-              <strong>FREE</strong>
-              <span>TO EXPLORE</span>
+              <strong>
+                ${pricingCounts.free}
+              </strong>
+              <span>FREE TOOLS</span>
+            </div>
+
+            <div>
+              <strong>
+                ${pricingCounts.freemium}
+              </strong>
+              <span>FREEMIUM</span>
             </div>
 
           </div>
@@ -350,63 +584,174 @@ function render() {
       </section>
 
 
-      <section id="categories" class="category-section">
+      <section
+        id="categories"
+        class="category-section"
+      >
 
         <div class="section-heading">
+
           <span>01</span>
-          <h2>EXPLORE BY CATEGORY</h2>
+
+          <div>
+            <h2>
+              EXPLORE BY CATEGORY
+            </h2>
+
+            <p>
+              Find the right tools for the job.
+            </p>
+          </div>
+
         </div>
 
-       <div class="category-grid">
+        <div class="category-grid">
+          ${renderCategoryTiles(categories)}
+        </div>
 
-  <button
-    class="category-tile ${state.category === "all" ? "active" : ""}"
-    data-category="all"
-  >
-    <b>✦</b>
-    <strong>Everything</strong>
-    <span>${state.resources.length} resources</span>
-  </button>
-
-  ${categories.map(category => `
-    <button
-      class="category-tile ${state.category === category ? "active" : ""}"
-      data-category="${escapeHTML(category)}"
-    >
-      <b>${categoryIcon(category)}</b>
-
-      <strong>${formatCategory(category)}</strong>
-
-      <span>
-        ${
-          state.resources.filter(
-            r => r.category === category
-          ).length
-        } resources →
-      </span>
-    </button>
-  `).join("")}
-
-</div>
       </section>
 
 
-      <section id="resources" class="resources-section">
+      <section
+        id="stacks"
+        class="stacks-section"
+      >
+
+        <div class="section-heading">
+
+          <span>02</span>
+
+          <div>
+            <h2>
+              CREATOR STACKS
+            </h2>
+
+            <p>
+              Start with a ready-made collection.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="stack-grid">
+
+          <button
+            class="stack-card"
+            data-stack="music"
+          >
+            <b>🎵</b>
+            <strong>Music Creator</strong>
+            <span>
+              Production → recording → mixing → release
+            </span>
+          </button>
+
+          <button
+            class="stack-card"
+            data-stack="video"
+          >
+            <b>🎬</b>
+            <strong>Video Creator</strong>
+            <span>
+              Record → edit → clip → publish
+            </span>
+          </button>
+
+          <button
+            class="stack-card"
+            data-stack="ai"
+          >
+            <b>🤖</b>
+            <strong>AI Creator</strong>
+            <span>
+              Research → create → automate → publish
+            </span>
+          </button>
+
+          <button
+            class="stack-card"
+            data-stack="design"
+          >
+            <b>🎨</b>
+            <strong>Design Creator</strong>
+            <span>
+              Brand → graphics → thumbnails → content
+            </span>
+          </button>
+
+          <button
+            class="stack-card"
+            data-stack="business"
+          >
+            <b>💰</b>
+            <strong>Creator Business</strong>
+            <span>
+              Website → audience → sales → analytics
+            </span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <section
+        id="resources"
+        class="resources-section"
+      >
 
         <div class="resource-heading">
 
           <div>
+
             <div class="section-heading">
-              <span>02</span>
-              <h2>CREATOR RESOURCES</h2>
+
+              <span>03</span>
+
+              <div>
+                <h2>
+                  CREATOR RESOURCES
+                </h2>
+
+                <p>
+                  ${filtered.length}
+                  resources found
+                </p>
+              </div>
+
             </div>
 
-            <p>
-              ${filtered.length} resources found
-            </p>
           </div>
 
+
           <div class="filters">
+
+            <select id="subcategory">
+
+              <option value="all">
+                All types
+              </option>
+
+              ${subcategories
+                .map(
+                  subcategory => `
+                    <option
+                      value="${escapeHTML(subcategory)}"
+                      ${
+                        state.subcategory ===
+                        subcategory
+                          ? "selected"
+                          : ""
+                      }
+                    >
+                      ${escapeHTML(subcategory)}
+                    </option>
+                  `
+                )
+                .join("")}
+
+            </select>
+
 
             <select id="pricing">
 
@@ -414,19 +759,41 @@ function render() {
                 All pricing
               </option>
 
-              <option value="free">
+              <option
+                value="free"
+                ${
+                  state.pricing === "free"
+                    ? "selected"
+                    : ""
+                }
+              >
                 Free
               </option>
 
-              <option value="freemium">
+              <option
+                value="freemium"
+                ${
+                  state.pricing === "freemium"
+                    ? "selected"
+                    : ""
+                }
+              >
                 Freemium
               </option>
 
-              <option value="paid">
+              <option
+                value="paid"
+                ${
+                  state.pricing === "paid"
+                    ? "selected"
+                    : ""
+                }
+              >
                 Paid
               </option>
 
             </select>
+
 
             <select id="platform">
 
@@ -434,31 +801,77 @@ function render() {
                 All platforms
               </option>
 
-              <option value="macos">
-                macOS
+              ${platforms
+                .map(
+                  platform => `
+                    <option
+                      value="${escapeHTML(platform)}"
+                      ${
+                        state.platform ===
+                        platform
+                          ? "selected"
+                          : ""
+                      }
+                    >
+                      ${escapeHTML(
+                        formatCategory(platform)
+                      )}
+                    </option>
+                  `
+                )
+                .join("")}
+
+            </select>
+
+
+            <select id="sort">
+
+              <option
+                value="featured"
+                ${
+                  state.sort === "featured"
+                    ? "selected"
+                    : ""
+                }
+              >
+                Featured
               </option>
 
-              <option value="windows">
-                Windows
+              <option
+                value="name"
+                ${
+                  state.sort === "name"
+                    ? "selected"
+                    : ""
+                }
+              >
+                A–Z
               </option>
 
-              <option value="linux">
-                Linux
+              <option
+                value="category"
+                ${
+                  state.sort === "category"
+                    ? "selected"
+                    : ""
+                }
+              >
+                Category
               </option>
 
-              <option value="ios">
-                iOS
-              </option>
-
-              <option value="android">
-                Android
-              </option>
-
-              <option value="web">
-                Web
+              <option
+                value="free"
+                ${
+                  state.sort === "free"
+                    ? "selected"
+                    : ""
+                }
+              >
+                Free First
               </option>
 
             </select>
+
 
             <button
               id="opensource"
@@ -485,11 +898,24 @@ function render() {
                   .join("")
               : `
                 <div class="empty">
+
                   <div>⌕</div>
-                  <h3>No resources found</h3>
+
+                  <h3>
+                    No resources found
+                  </h3>
+
                   <p>
                     Try another search or remove a filter.
                   </p>
+
+                  <button
+                    id="clearFilters"
+                    class="btn primary"
+                  >
+                    Clear Filters
+                  </button>
+
                 </div>
               `
           }
@@ -504,18 +930,19 @@ function render() {
         <div>
 
           <div class="eyebrow">
-            HELP BUILD THE DIRECTORY
+            MILEYM3DIA CREATOR HUB
           </div>
 
           <h2>
-            KNOW A GREAT
-            <span>CREATOR TOOL?</span>
+            BUILD.
+            <span>CREATE.</span>
+            <br>
+            REPEAT.
           </h2>
 
           <p>
-            MILEYM3DIA Creator Hub is designed to grow
-            continuously through community submissions
-            and automated discovery.
+            The directory is designed to keep growing
+            with new tools, categories and creator workflows.
           </p>
 
         </div>
@@ -524,7 +951,7 @@ function render() {
           class="btn primary large"
           href="https://github.com/mileyAM/mileym3dia-creator-hub"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           View on GitHub ↗
         </a>
@@ -537,19 +964,25 @@ function render() {
     <footer>
 
       <div>
-        <strong>MILEYM3DIA</strong>
-        <span>CREATOR HUB</span>
+
+        <strong>
+          MILEYM3DIA
+        </strong>
+
+        <span>
+          CREATOR HUB
+        </span>
+
       </div>
 
       <p>
-        Creator resources for music, video,
-        design, AI and building online.
+        Music · Video · Design · AI · Business
       </p>
 
       <a
         href="https://github.com/mileyAM/mileym3dia-creator-hub"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         Open Source on GitHub ↗
       </a>
@@ -562,9 +995,11 @@ function render() {
 }
 
 function bindEvents() {
-
   const search =
     document.querySelector("#search");
+
+  const subcategory =
+    document.querySelector("#subcategory");
 
   const pricing =
     document.querySelector("#pricing");
@@ -572,24 +1007,51 @@ function bindEvents() {
   const platform =
     document.querySelector("#platform");
 
+  const sort =
+    document.querySelector("#sort");
+
   const openSource =
     document.querySelector("#opensource");
+
+  const clearFilters =
+    document.querySelector("#clearFilters");
 
   search?.addEventListener(
     "input",
     event => {
       state.search = event.target.value;
       render();
-      document
-        .querySelector("#search")
-        ?.focus();
+
+      const newSearch =
+        document.querySelector("#search");
+
+      newSearch?.focus();
+
+      if (newSearch) {
+        newSearch.setSelectionRange(
+          newSearch.value.length,
+          newSearch.value.length
+        );
+      }
+    }
+  );
+
+  subcategory?.addEventListener(
+    "change",
+    event => {
+      state.subcategory =
+        event.target.value;
+
+      render();
     }
   );
 
   pricing?.addEventListener(
     "change",
     event => {
-      state.pricing = event.target.value;
+      state.pricing =
+        event.target.value;
+
       render();
     }
   );
@@ -597,7 +1059,19 @@ function bindEvents() {
   platform?.addEventListener(
     "change",
     event => {
-      state.platform = event.target.value;
+      state.platform =
+        event.target.value;
+
+      render();
+    }
+  );
+
+  sort?.addEventListener(
+    "change",
+    event => {
+      state.sort =
+        event.target.value;
+
       render();
     }
   );
@@ -605,35 +1079,124 @@ function bindEvents() {
   openSource?.addEventListener(
     "click",
     () => {
-      state.openSource = !state.openSource;
+      state.openSource =
+        !state.openSource;
+
       render();
     }
   );
 
- document
-  .querySelectorAll("[data-category]")
-  .forEach(button => {
+  clearFilters?.addEventListener(
+    "click",
+    () => {
+      state.category = "all";
+      state.subcategory = "all";
+      state.pricing = "all";
+      state.platform = "all";
+      state.search = "";
+      state.openSource = false;
+      state.sort = "featured";
 
-    button.addEventListener(
-      "click",
-      () => {
+      render();
+    }
+  );
 
-        state.category =
-          button.dataset.category;
+  document
+    .querySelectorAll("[data-category]")
+    .forEach(button => {
+      button.addEventListener(
+        "click",
+        () => {
+          state.category =
+            button.dataset.category;
 
-        render();
+          state.subcategory = "all";
 
-        document
-          .querySelector("#resources")
-          ?.scrollIntoView({
-            behavior: "smooth"
-          });
+          render();
 
-      }
-    );
+          document
+            .querySelector("#resources")
+            ?.scrollIntoView({
+              behavior: "smooth"
+            });
+        }
+      );
+    });
 
-  });
+  document
+    .querySelectorAll("[data-stack]")
+    .forEach(button => {
+      button.addEventListener(
+        "click",
+        () => {
+          const stack =
+            button.dataset.stack;
 
+          state.category =
+            stack === "business"
+              ? "business"
+              : stack;
+
+          state.subcategory = "all";
+          state.search = "";
+
+          render();
+
+          document
+            .querySelector("#resources")
+            ?.scrollIntoView({
+              behavior: "smooth"
+            });
+        }
+      );
+    });
+}
+
+async function loadResources() {
+  try {
+    const response =
+      await fetch(DATA_URL);
+
+    if (!response.ok) {
+      throw new Error(
+        `HTTP ${response.status}`
+      );
+    }
+
+    const data =
+      await response.json();
+
+    state.resources =
+      Array.isArray(data)
+        ? data
+        : data.resources || [];
+
+    render();
+
+  } catch (error) {
+    console.error(error);
+
+    app.innerHTML = `
+      <main class="error-screen">
+
+        <h1>
+          MILEYM3DIA
+        </h1>
+
+        <p>
+          Unable to load the resource database.
+        </p>
+
+        <button
+          onclick="location.reload()"
+          class="btn primary"
+        >
+          Retry
+        </button>
+
+      </main>
+    `;
+  }
 }
 
 loadResources();
