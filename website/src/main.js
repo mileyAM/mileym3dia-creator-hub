@@ -35,7 +35,7 @@ const CATEGORY_META = {
     title: "Music",
     description:
       "DAWs, recording, mixing, mastering, plugins, samples and music business."
-  },
+   },
 
   video: {
     icon: "🎬",
