@@ -13,12 +13,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
       - name: Validate JSON
         run: |
-          python - <<'PY'
-          import json
+          python3 - <<'PY'
+          import json, sys
           from pathlib import Path
-          for f in Path("data").glob("*.json"):
-              json.loads(f.read_text())
-              print("Valid:", f)
+
+          errors = 0
+          for f in Path("data").rglob("*.json"):
+              try:
+                  text = f.read_text(encoding="utf-8")
+                  json.loads(text)
+                  print("Valid:", f)
+              except Exception as e:
+                  print("Invalid JSON:", f)
+                  print(e)
+                  errors += 1
+
+          if errors:
+              print(f"Found {errors} invalid JSON file(s).")
+              sys.exit(1)
           PY
