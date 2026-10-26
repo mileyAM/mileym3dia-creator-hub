@@ -1,85 +1,109 @@
 {
-  "generatedAt": "2026-10-26T18:13:45.416711+00:00",
+  "generatedAt": "2026-10-26T18:55:12.272100+00:00",
   "status": "needs-review",
-  "count": 10,
+  "count": 13,
   "candidates": [
     {
-      "name": "Come Back to Firefox [video]",
-      "description": "Article URL: https://www.youtube.com/watch?v=jNoGIRkQ5U8 Comments URL: https://news.ycombinator.com/item?id=50248234 Points: 1 # Comments: 0",
-      "website": "https://www.youtube.com/watch?v=jNoGIRkQ5U8",
-      "category": "video",
+      "name": "Show HN: Font Fam \u2013 A directory of 2,181 open-source fonts",
+      "description": "Article URL: https://fontfam.net/ Comments URL: https://news.ycombinator.com/item?id=50248841 Points: 2 # Comments: 1",
+      "website": "https://fontfam.net/",
+      "category": "design",
       "relevanceScore": 2,
       "source": "Hacker News"
     },
     {
-      "name": "Tabcove \u2013 automatic, local-only tab backups for Chrome and Edge",
-      "description": "Article URL: https://chromewebstore.google.com/detail/tabcove-save-restore-back/ccmjgbajjpimmhdnacanbbhmfjecjnlp Comments URL: https://news.ycombinator.com/item?id=50248187 Points: 1 # Comments: 0",
-      "website": "https://chromewebstore.google.com/detail/tabcove-save-restore-back/ccmjgbajjpimmhdnacanbbhmfjecjnlp",
-      "category": "ai",
-      "relevanceScore": 2,
-      "source": "Hacker News"
-    },
-    {
-      "name": "Consumer credit costs in Poland are rising despite falling rates",
-      "description": "Article URL: https://download.ssrn.com/2026/9/25/7525781.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBEaCXVzLWVhc3QtMSJIMEYCIQDp2MOi%2FmYmooYpKv5z1g141dlsW%2FrflusE7Ef3ZhNbgAIhALX8b7TRsEamet4bN8sLQhcRj0tUfMPYELg7x1p9NvJ1KsYFCNr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBBoMMzA4NDc1MzAxMjU3Igyk662iYCy3VBaYlqwqmgUjEXzooirWmnUhRt8bpHuRI9v8AcUPQJ8Alg2YvSktikE%2BrIt0C3oAHOOjctveqHuxyaNwO%2FXM0eBkd6jhYZ9BxJoxiej8Ssuv51VdR%2F3uMX9CWWhQ4XAKuuTTsoS44SnyKOcRNPywSpFLgNL5pGlI3geW3JlaVm6mqPZvW0PepnZIvuIefUaAScSDrGgnYIw7M6y1pf%2BUX8wGaGbnHHvJRcGnh4%2FubVO0CCnKA0LiQgVyUCqqZqqPYJnhVvVp",
-      "website": "https://download.ssrn.com/2026/9/25/7525781.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBEaCXVzLWVhc3QtMSJIMEYCIQDp2MOi%2FmYmooYpKv5z1g141dlsW%2FrflusE7Ef3ZhNbgAIhALX8b7TRsEamet4bN8sLQhcRj0tUfMPYELg7x1p9NvJ1KsYFCNr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBBoMMzA4NDc1MzAxMjU3Igyk662iYCy3VBaYlqwqmgUjEXzooirWmnUhRt8bpHuRI9v8AcUPQJ8Alg2YvSktikE%2BrIt0C3oAHOOjctveqHuxyaNwO%2FXM0eBkd6jhYZ9BxJoxiej8Ssuv51VdR%2F3uMX9CWWhQ4XAKuuTTsoS44SnyKOcRNPywSpFLgNL5pGlI3geW3JlaVm6mqPZvW0PepnZIvuIefUaAScSDrGgnYIw7M6y1pf%2BUX8wGaGbnHHvJRcGnh4%2FubVO0CCnKA0LiQgVyUCqqZqqPYJnhVvVph8VwH%2F7LBTF1ozlqIlu7UOEqySSS6FQ%2Bth%2FcQDZQOtLuCwPPo%2BBkCiop5ZdAp%2FU%2BHaMJI4nP8WaQGaCGzcbAGDbG0Z7OSSyLI5j2KSl7O2fdeVo1SMD9W4FksxTy%2B0AOrAyYEHvtIbNMbc2A%2FNvGaNce7c0AEG16MDpzs2wDojoyCjvJlGNt9RpakQGxiOu033rOnsihFXiTp9jpQ7ZMdCP1n8uhxO2ia4sf3UqPZmTP45upQnz5U0mIs%2BsecWe4DaMmBI3HvuHEfF210gcm%2Bv6KcVbUcOAzUSEs%2Bww5YGw4EavcXy72qmTkdNmlFPh5UEDUOcj%2Bdpbu0VCLtD%2B8kbymHvjilX4fS3UrchhOdt5%2FAhYaOys9m79R7odTfRj%2BAnpf9upXoLVTgTpS43fAozGtbDgzK1ca9ljBTml2%2Fs6rC4kTlplDyAfNpvglkPP%2FdQdVc7zlnGlYIHXAFOhNfKalRq1ceshnyvY7NMf%2BTbcpH6d2543%2F9NVTMzHrCuAbNYbPqLZSe3nLkvN5bt4cxRt9jrt3k0O4eXs2MFOErNuIvmjKrphH4BqtsaXjVJvP9AhxL7mu1FKwl3RdY9TxdrYCsG1BxKZ3vdd7HM5Ts80uq0h%2FwXWyZP4jYhQw3ob%2B1gY6sAE3KJyWhK%2B70U66bCGf5ZQ%2FI551sninkVUaz%2FIgf3TujSnANIC%2BT%2F5pbxutdQDheyQl8XgRmHGPnD%2Bv5f5TQn7OWhbPasJ6OqbMuU4y4wtsS1kyzABJwoQXu6C1WnOw%2BpQi64UDDpKNMkUu6V9SgxlJ4yHZFqHmNjoHdMjrs1BwWat2cKekJtr3MjpUuPF1ywu0Mv7y1YK4GxIwpENPW4SDvTBrmMrsTCyix11JQIDSUA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261026T175449Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAUPUUPRWESRSEFLLI%2F20261026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=35cf255f1a664307eec0f8ee8a9b363813cace920268340f2c1c2ad58801de77&abstractId=7525781",
+      "name": "Reviewing agent output arriving faster than you can inspect it",
+      "description": "It's a curse I know, parallel lanes, context switching. We're told to aim for surgical precision, one item at the time. But when the world is keeping endless inspiration, software commoditised it's hard to live by the rule. Running several agents at the same time, I found myself having a hard time catching up on everything produced, and giving proper feedback. I tend to actually ask my agent to go through transcripts to find old unfinished tasks and re-state the outputs. MD files became tedious, screen shots didn't show the entire flow, production code was usually stale or on stuck on a branch",
+      "website": "https://news.ycombinator.com/item?id=50248804",
       "category": "music",
       "relevanceScore": 2,
       "source": "Hacker News"
     },
     {
-      "name": "Ask HN: Do you still read clean code and software architecture books?",
-      "description": "Now that we have coding agents writing all our code for us, are you still needing to reach out and read books such as clean code and other software architecture books? I think they are now more important than ever as there is more code being pushed out than one can read to see if it is robust as the agents claim. Comments URL: https://news.ycombinator.com/item?id=50248168 Points: 2 # Comments: 0",
-      "website": "https://news.ycombinator.com/item?id=50248168",
+      "name": "NoTemplate \u2013 Local market and competitor research before building a website",
+      "description": "Article URL: https://notemplate.online/ Comments URL: https://news.ycombinator.com/item?id=50248798 Points: 2 # Comments: 0",
+      "website": "https://notemplate.online/",
+      "category": "design",
+      "relevanceScore": 2,
+      "source": "Hacker News"
+    },
+    {
+      "name": "A Distributed Magnetic Optimization Algorithm (MOA) Swarm Running on Numax",
+      "description": "Article URL: https://github.com/GianIac/numax/tree/main/examples/distributed_magnets Comments URL: https://news.ycombinator.com/item?id=50248915 Points: 2 # Comments: 0",
+      "website": "https://github.com/GianIac/numax/tree/main/examples/distributed_magnets",
       "category": "ai",
       "relevanceScore": 1,
       "source": "Hacker News"
     },
     {
-      "name": "Essential Tools for Live Video Stream Monitoring",
-      "description": "Article URL: https://www.red5.net/blog/3-essential-tools-for-live-video-stream-monitoring/ Comments URL: https://news.ycombinator.com/item?id=50248136 Points: 1 # Comments: 0",
-      "website": "https://www.red5.net/blog/3-essential-tools-for-live-video-stream-monitoring/",
+      "name": "The Software Factory Forgot About Design",
+      "description": "Article URL: https://atifaz.am/writing/the-software-factory-forgot-about-design Comments URL: https://news.ycombinator.com/item?id=50248897 Points: 2 # Comments: 0",
+      "website": "https://atifaz.am/writing/the-software-factory-forgot-about-design",
+      "category": "design",
+      "relevanceScore": 1,
+      "source": "Hacker News"
+    },
+    {
+      "name": "Walter Koenig, star of Star Trek, dies aged 90",
+      "description": "Article URL: https://www.rte.ie/entertainment/2026/1026/1596876-walter-koenig-star-of-star-trek-dies-aged-90/ Comments URL: https://news.ycombinator.com/item?id=50248879 Points: 3 # Comments: 0",
+      "website": "https://www.rte.ie/entertainment/2026/1026/1596876-walter-koenig-star-of-star-trek-dies-aged-90/",
+      "category": "ai",
+      "relevanceScore": 1,
+      "source": "Hacker News"
+    },
+    {
+      "name": "Show HN: Termcraft \u2013 2D terminal survival with multiplayer support",
+      "description": "Earlier this year, I started developing Termcraft, a terminal-based 2D survival game written in Rust. Since its first release more than half a year ago, I've added multiplayer support, so you can now host a game and play with friends (or colleagues during a meeting?); Up to 8 players. I've also substantially improved the visuals, lighting, physics, and overall gameplay. A friend and I ended up spending the entire weekend playing through the game from start to finish. The progression takes you from gathering wood and building a shelter to crafting equipment, exploring caves, finding diamonds, c",
+      "website": "https://github.com/pagel-s/termcraft/tree/v0.2.0",
       "category": "video",
       "relevanceScore": 1,
       "source": "Hacker News"
     },
     {
-      "name": "GPT-6.1 Terra",
-      "description": "Article URL: https://openai.com/index/introducing-gpt-6-1-terra/ Comments URL: https://news.ycombinator.com/item?id=50248124 Points: 6 # Comments: 2",
-      "website": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "name": "Warhound raises $200M to engineer war dogs and arm them with Anduril gear",
+      "description": "Article URL: https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/ Comments URL: https://news.ycombinator.com/item?id=50248825 Points: 19 # Comments: 0",
+      "website": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
       "category": "ai",
       "relevanceScore": 1,
       "source": "Hacker News"
     },
     {
-      "name": "SpaceX closes $40B debt deal for AI chips",
-      "description": "Article URL: https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html Comments URL: https://news.ycombinator.com/item?id=50248104 Points: 2 # Comments: 0",
-      "website": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+      "name": "Walter Koenig Has Died",
+      "description": "Article URL: https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/26/walter-koenig-dead-star-trek-actor/92445050007/ Comments URL: https://news.ycombinator.com/item?id=50248811 Points: 2 # Comments: 0",
+      "website": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/10/26/walter-koenig-dead-star-trek-actor/92445050007/",
       "category": "ai",
       "relevanceScore": 1,
       "source": "Hacker News"
     },
     {
-      "name": "Anthropic Reveals It Will Pay SpaceX Up to $120.5B for AI Compute",
-      "description": "Article URL: https://teslanorth.com/2026/10/26/anthropic-s1-spacex-120b-compute/ Comments URL: https://news.ycombinator.com/item?id=50248089 Points: 1 # Comments: 0",
-      "website": "https://teslanorth.com/2026/10/26/anthropic-s1-spacex-120b-compute/",
+      "name": "Stalwart Mail Reaches v1.0.0",
+      "description": "Article URL: https://github.com/stalwartlabs/stalwart/releases/tag/v1.0.0 Comments URL: https://news.ycombinator.com/item?id=50248785 Points: 2 # Comments: 0",
+      "website": "https://github.com/stalwartlabs/stalwart/releases/tag/v1.0.0",
       "category": "ai",
       "relevanceScore": 1,
       "source": "Hacker News"
     },
     {
-      "name": "GPT 6.1 Terra",
-      "description": "Article URL: https://developers.openai.com/api/docs/models/gpt-6.1-terra Comments URL: https://news.ycombinator.com/item?id=50248075 Points: 2 # Comments: 0",
-      "website": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
-      "category": "ai",
+      "name": "Fishing website for Susaki, Japan, hit by data leak, all 3 users affected",
+      "description": "Article URL: https://soranews24.com/2026/10/26/fishing-information-website-for-susaki-japan-hit-by-data-leak-all-3-users-affected/ Comments URL: https://news.ycombinator.com/item?id=50248763 Points: 4 # Comments: 0",
+      "website": "https://soranews24.com/2026/10/26/fishing-information-website-for-susaki-japan-hit-by-data-leak-all-3-users-affected/",
+      "category": "business",
       "relevanceScore": 1,
       "source": "Hacker News"
     },
     {
-      "name": "In Leaked Audio, Flock CEO Tells Cops Backlash to the Company Isn't Real",
-      "description": "Article URL: https://www.404media.co/in-leaked-audio-flock-ceo-tells-cops-backlash-to-the-company-isnt-real/ Comments URL: https://news.ycombinator.com/item?id=50248005 Points: 2 # Comments: 1",
-      "website": "https://www.404media.co/in-leaked-audio-flock-ceo-tells-cops-backlash-to-the-company-isnt-real/",
-      "category": "music",
+      "name": "Geneva to offer free home delivery of groceries to elderly",
+      "description": "Article URL: https://www.swissinfo.ch/eng/demographics/geneva-to-offer-free-home-delivery-of-groceries-to-elderly/92276585 Comments URL: https://news.ycombinator.com/item?id=50248700 Points: 3 # Comments: 0",
+      "website": "https://www.swissinfo.ch/eng/demographics/geneva-to-offer-free-home-delivery-of-groceries-to-elderly/92276585",
+      "category": "design",
+      "relevanceScore": 1,
+      "source": "Hacker News"
+    },
+    {
+      "name": "Stanford CS336: Language Modeling from Scratch \u2013 Spring 2026",
+      "description": "Article URL: https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV Comments URL: https://news.ycombinator.com/item?id=50248693 Points: 2 # Comments: 0",
+      "website": "https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV",
+      "category": "video",
       "relevanceScore": 1,
       "source": "Hacker News"
     }
