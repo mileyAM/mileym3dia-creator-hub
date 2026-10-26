@@ -136,6 +136,10 @@ def extract_rss(data, source):
 
 def main():
     resources = load(RESOURCES)
+    # data/resources.json wraps the list under a "resources" key; iterating
+    # the raw dict yields key strings and crashes on r.get(...).
+    if isinstance(resources, dict):
+        resources = resources.get("resources", [])
     sources = load(SOURCES)
 
     existing = {
