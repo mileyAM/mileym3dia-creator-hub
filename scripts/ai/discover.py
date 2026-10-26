@@ -78,6 +78,10 @@ def validate_resource(resource, known_ids):
 
 def create_job():
     resources = load_resources()
+    # data/resources.json wraps the list under a "resources" key; unwrap so
+    # existingResourceCount and iteration use the actual entries (248, not 5).
+    if isinstance(resources, dict):
+        resources = resources.get("resources", [])
 
     job = {
         "createdAt": datetime.now(timezone.utc).isoformat(),
