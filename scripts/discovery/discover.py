@@ -50,7 +50,9 @@ KEYWORDS = {
 REJECT = [
     "malware", "exploit", "vulnerability", "crypto",
     "cryptocurrency", "casino", "gambling", "betting",
-    "political campaign"
+    "political campaign", "obituary", "dies at", "died at",
+    "killed", "shooting", "lawsuit", "arrested",
+    "earthquake", "data breach", "data leak", "election"
 ]
 
 
@@ -81,14 +83,15 @@ def score(title, description):
 
     for category, words in KEYWORDS.items():
         category_scores[category] = sum(
-            1 for word in words if word in text
+            1 for word in words
+            if re.search(r"\b" + re.escape(word) + r"\b", text)
         )
 
     positive = sum(category_scores.values())
 
     negative = sum(
         1 for word in REJECT
-        if word in text
+        if re.search(r"\b" + re.escape(word) + r"\b", text)
     )
 
     return positive - (negative * 5), category_scores
@@ -113,14 +116,72 @@ def extract_rss(data, source):
 
         score_value, categories = score(title, description)
 
-        # Keep anything with at least one meaningful creator signal.
-        if score_value < 1:
+        # Require a real creator signal: at least two keyword hits
+        # overall and at least two in the winning category. One stray
+        # keyword (the old >= 1 rule) let news and obituaries through.
+        if score_value < 2:
             continue
 
         category = max(
             categories,
             key=categories.get
         )
+
+        if categories[category] < 2:
+            continue
+
+        results.append({
+            "name": title[:160],
+            "description": description[:600],
+            "website": link,
+            "category": category,
+            "relevanceScore": score_value,
+            "source": source["name"]
+        })
+
+    return results
+
+
+ATOM = "{http://www.w3.org/2005/Atom}"
+
+
+def extract_atom(data, source):
+    root = ET.fromstring(data)
+    results = []
+
+    for entry in root.findall(f".//{ATOM}entry"):
+        title = clean(entry.findtext(f"{ATOM}title"))
+        description = clean(
+            entry.findtext(f"{ATOM}summary")
+            or entry.findtext(f"{ATOM}content")
+        )
+
+        link = ""
+        for link_el in entry.findall(f"{ATOM}link"):
+            if link_el.get("rel") in (None, "alternate"):
+                link = link_el.get("href") or ""
+                break
+
+        if not title or not link:
+            continue
+
+        parsed = urlparse(link)
+
+        if parsed.scheme not in ("http", "https"):
+            continue
+
+        score_value, categories = score(title, description)
+
+        if score_value < 2:
+            continue
+
+        category = max(
+            categories,
+            key=categories.get
+        )
+
+        if categories[category] < 2:
+            continue
 
         results.append({
             "name": title[:160],
@@ -157,6 +218,9 @@ def main():
         try:
             data = fetch(source["url"])
             found = extract_rss(data, source)
+
+            if not found:
+                found = extract_atom(data, source)
 
             for item in found:
                 url = item["website"].rstrip("/").lower()
