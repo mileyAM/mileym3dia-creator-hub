@@ -1,6 +1,23 @@
 {
-  "generatedAt": "2026-10-26T20:04:20.625290+00:00",
+  "generatedAt": "2026-11-02T21:59:17.531957+00:00",
   "status": "needs-review",
-  "count": 0,
-  "candidates": []
+  "count": 2,
+  "candidates": [
+    {
+      "name": "Show HN: Mago, an open source AI video studio, runs locally with Comfy",
+      "description": "I'm Alvaro, one of the founders of Mago. With my co-founder Alex (creator of Warpfusion, open source video to video), we built an open source AI video studio specialized in long form content and large volumes of video. It's a desktop app that you can run for free on your own GPU, that uses a portable ComfyUI or can be plugged into an existing Comfy setup. It handles both hybrid production (video to video, AI VFX) and full AI (microdramas, AI series for social etc). Back when Alex was working on Warpfusion, we were discussing making an app for \"real\" production, meaning hours of video, films, s",
+      "website": "https://github.com/MagoStudio/MagoStudio",
+      "category": "video",
+      "relevanceScore": 5,
+      "source": "Hacker News (Show HN)"
+    },
+    {
+      "name": "Show HN: Notes on Watchmen \u2013 A page-by-page exploration of the graphic novel",
+      "description": "This is for fans of Watchmen the graphic novel. (not sure how many are here) I conceived of this project during COVID where I did all the data entry, design proof of concepts, documentation, and set the vision for the final site. Then it sat dormant until this past summer when I resurrected it with Codex. So now it's ready to share. It covers chapter analysis, character overviews, metrics, charts, color spectrums, panel grids, page-by-page detailed notes on themes, symbols, composition, and plot. There are also some longer form essays that go deeper into larger topics. I hope you like it. Comm",
+      "website": "https://notesonwatchmen.com",
+      "category": "design",
+      "relevanceScore": 2,
+      "source": "Hacker News (Show HN)"
+    }
+  ]
 }
