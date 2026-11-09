@@ -1,21 +1,45 @@
 {
-  "generatedAt": "2026-11-02T21:59:17.531957+00:00",
+  "generatedAt": "2026-11-09T22:46:10.849837+00:00",
   "status": "needs-review",
-  "count": 2,
+  "count": 5,
   "candidates": [
     {
-      "name": "Show HN: Mago, an open source AI video studio, runs locally with Comfy",
-      "description": "I'm Alvaro, one of the founders of Mago. With my co-founder Alex (creator of Warpfusion, open source video to video), we built an open source AI video studio specialized in long form content and large volumes of video. It's a desktop app that you can run for free on your own GPU, that uses a portable ComfyUI or can be plugged into an existing Comfy setup. It handles both hybrid production (video to video, AI VFX) and full AI (microdramas, AI series for social etc). Back when Alex was working on Warpfusion, we were discussing making an app for \"real\" production, meaning hours of video, films, s",
-      "website": "https://github.com/MagoStudio/MagoStudio",
-      "category": "video",
-      "relevanceScore": 5,
+      "name": "Show HN: Negs (Spektrafilm) brings spectral film simulations to the browser",
+      "description": "Hi HN, I'm Noah. Negs runs spektrafilm, Andrea Volpato's physically based film simulation, in your browser (it's completely rewritten in Rust and using WebGPU). Drop in a photo (JPEG, PNG, TIFF or a RAW), pick a film and a print paper, and drag the sliders. The picture updates as you drag, and nothing is uploaded: it all runs on your machine. Try it: https://getnegs.com/try/ Code (GPLv3): https://github.com/noahhaasis/negs There are also native apps on the same engine: SwiftUI on macOS, GTK4 on Linux, and Windows. Spektrafilm (it started life as agx-emulsion) isn't a LUT or a preset. It simula",
+      "website": "https://getnegs.com/try/",
+      "category": "design",
+      "relevanceScore": 4,
       "source": "Hacker News (Show HN)"
     },
     {
-      "name": "Show HN: Notes on Watchmen \u2013 A page-by-page exploration of the graphic novel",
-      "description": "This is for fans of Watchmen the graphic novel. (not sure how many are here) I conceived of this project during COVID where I did all the data entry, design proof of concepts, documentation, and set the vision for the final site. Then it sat dormant until this past summer when I resurrected it with Codex. So now it's ready to share. It covers chapter analysis, character overviews, metrics, charts, color spectrums, panel grids, page-by-page detailed notes on themes, symbols, composition, and plot. There are also some longer form essays that go deeper into larger topics. I hope you like it. Comm",
-      "website": "https://notesonwatchmen.com",
+      "name": "ClipsPal",
+      "description": "AI video editor that edits your talking-head videos Discussion | Link",
+      "website": "https://www.producthunt.com/products/clipspal",
+      "category": "video",
+      "relevanceScore": 3,
+      "source": "Product Hunt"
+    },
+    {
+      "name": "Show HN: Brick Atlas: Browse 1000+ LEGO sets on one zoomable canvas",
+      "description": "Hello HN, I\u2019m Daniel and I run ZoomHub, a small deep zoom image service. Most online catalogs look the same: There\u2019s a grid of thumbnails, limited to about 20\u201350 items, filters that refresh the page when activated, and pagination buttons to go to page 22 of 128. It has always bothered me that you can\u2019t see the whole collection and every action makes you wait and lose context. I built Brick Atlas to show it doesn\u2019t have to be that way: You can browse 1000+ LEGO sets by zooming in, selecting a set, seeing different angles (at full resolution) and in the sidebar, the set\u2019s piece count, price, etc",
+      "website": "https://showcase.zoomhub.net/ecommerce/brick-atlas",
       "category": "design",
+      "relevanceScore": 2,
+      "source": "Hacker News (Show HN)"
+    },
+    {
+      "name": "Show HN: Rat Race (After Dark, 1994), ported from 68k assembly to TypeScript",
+      "description": "Github: https://github.com/heyitsjames/rat-race Everything comes from the original module's resource fork. The art is the original sprites, decoded and recoloured with the module's own palettes. The music is its MIDI songs played back through After Dark's instrument samples. The rats' behavior comes from the module's 68k code, disassembled with resource_dasm and labelled by hand. Each rat is a state machine: 7-pixel steps, and every six steps a RandInt(1000) roll against its Training odds to nap, sniff or turn round. Every number cites its assembly address. One deliberate fix: the staggered ga",
+      "website": "https://rat-race.heyitsjam.es/",
+      "category": "music",
+      "relevanceScore": 2,
+      "source": "Hacker News (Show HN)"
+    },
+    {
+      "name": "Show HN: EtherPK Notes \u2013 An Agentic Kanban Board from Your Markdown Tasks [video]",
+      "description": "Article URL: https://www.youtube.com/watch?v=6RpNgH8-Dsc Comments URL: https://news.ycombinator.com/item?id=50431256 Points: 2 # Comments: 0",
+      "website": "https://www.youtube.com/watch?v=6RpNgH8-Dsc",
+      "category": "video",
       "relevanceScore": 2,
       "source": "Hacker News (Show HN)"
     }
