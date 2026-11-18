@@ -30,6 +30,7 @@ jobs:
         run: |
           mkdir -p website/public/data
           cp data/resources.json website/public/data/resources.json
+          cp data/m3-originals.json website/public/data/m3-originals.json
 
       - name: Install
         working-directory: website

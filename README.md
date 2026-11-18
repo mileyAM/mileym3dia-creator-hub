@@ -28,7 +28,7 @@ The main database is:
 
 `data/resources.json`
 
-The initial database contains **248 resources**.
+The database contains **320 curated creator resources**.
 
 Each resource can contain:
 

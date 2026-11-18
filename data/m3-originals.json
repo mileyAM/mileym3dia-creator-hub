@@ -1,0 +1,137 @@
+{
+  "version": "1.0.0",
+  "name": "MILEYM3DIA Originals",
+  "updatedAt": "2026-11-18T06:30:00Z",
+  "items": [
+    {
+      "id": "m3-creator-hub",
+      "name": "MILEYM3DIA Creator Hub",
+      "tagline": "Free, searchable directory of creator tools & digital resources",
+      "type": "Web App",
+      "status": "Released",
+      "category": "Creator Tools",
+      "platforms": ["Web", "All Platforms"],
+      "description": "The open, searchable directory indexing 320+ curated tools across music, video, design, AI, and digital business with instant filtering and zero tracking.",
+      "website": "https://mileyam.github.io/mileym3dia-creator-hub/",
+      "repoUrl": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "accentColor": "#EF252C",
+      "badge": "Core Platform",
+      "pricing": { "type": "free", "price": 0, "currency": "USD" },
+      "openSource": true,
+      "verified": true,
+      "highlights": [
+        "320+ curated creator tools",
+        "Fast local filtering & offline search",
+        "Automated weekly discovery pipeline"
+      ]
+    },
+    {
+      "id": "m3-ai-discovery-engine",
+      "name": "M3 AI Discovery Engine",
+      "tagline": "Automated RSS & GitHub software discovery crawler",
+      "type": "Utility",
+      "status": "Released",
+      "category": "AI",
+      "platforms": ["Python", "GitHub Actions"],
+      "description": "Provider-neutral automated discovery engine that monitors Hacker News, Product Hunt, and GitHub releases for new creator software, filters spam, and prepares validated schema proposals.",
+      "website": "https://github.com/mileyAM/mileym3dia-creator-hub/tree/main/scripts/discovery",
+      "repoUrl": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "accentColor": "#8B38DC",
+      "badge": "Automation",
+      "pricing": { "type": "free", "price": 0, "currency": "USD" },
+      "openSource": true,
+      "verified": true,
+      "highlights": [
+        "Continuous weekly discovery runs",
+        "Keyword relevance scoring & negative filtering",
+        "Automated JSON schema validation"
+      ]
+    },
+    {
+      "id": "m3-audio-bouncer",
+      "name": "M3 Audio Bouncer",
+      "tagline": "One-tap stems, WAV-to-MP3 conversion, and cloud review links",
+      "type": "Apple Shortcut",
+      "status": "Beta",
+      "category": "Music",
+      "platforms": ["macOS", "iOS"],
+      "description": "Apple Shortcut for producers and recording engineers that automates batch audio stem conversion, ID3 metadata tagging, artwork embedding, and uploads preview streaming links to cloud storage.",
+      "website": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "downloadUrl": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "accentColor": "#258DFF",
+      "badge": "Workflow Shortcut",
+      "pricing": { "type": "free", "price": 0, "currency": "USD" },
+      "openSource": true,
+      "verified": true,
+      "highlights": [
+        "Preserves 24-bit studio master quality",
+        "Embeds ISRC and artist metadata automatically",
+        "Generates clean preview links for client review"
+      ]
+    },
+    {
+      "id": "m3-daw-studio-template",
+      "name": "M3 Studio DAW Template",
+      "tagline": "Pre-routed mixing bus, gain staging, and mastering chain",
+      "type": "Template",
+      "status": "Released",
+      "category": "Music",
+      "platforms": ["Ableton Live", "FL Studio", "Logic Pro"],
+      "description": "Standardized music production starter project with calibrated drum bus saturation, sidechain routing groups, vocal tracking chains, and reference loudness monitoring.",
+      "website": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "downloadUrl": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "accentColor": "#D4F329",
+      "badge": "Production Preset",
+      "pricing": { "type": "free", "price": 0, "currency": "USD" },
+      "openSource": true,
+      "verified": true,
+      "highlights": [
+        "Zero-latency vocal tracking bus",
+        "Pre-configured headroom and gain staging (-6dB)",
+        "Color-coded stem organization"
+      ]
+    },
+    {
+      "id": "m3-shortform-repurposer",
+      "name": "M3 Short-Form Repurposer",
+      "tagline": "9:16 vertical video conversion, safe zones & caption presets",
+      "type": "Template",
+      "status": "In Development",
+      "category": "Video",
+      "platforms": ["Premiere Pro", "DaVinci Resolve"],
+      "description": "Modular timeline project for rapid long-to-short video conversion with smart safe-zone overlays for TikTok, Reels, and Shorts, plus kinetic caption style presets.",
+      "website": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "accentColor": "#EF252C",
+      "badge": "In Development",
+      "pricing": { "type": "free", "price": 0, "currency": "USD" },
+      "openSource": true,
+      "verified": true,
+      "highlights": [
+        "Safe-zone guides for all mobile platforms",
+        "Pre-built hook and CTA kinetic text transitions",
+        "Optimized mobile render presets"
+      ]
+    },
+    {
+      "id": "m3-prompt-vault",
+      "name": "M3 Prompt Vault",
+      "tagline": "Curated system prompts & parameter presets for creator LLMs",
+      "type": "Utility",
+      "status": "In Development",
+      "category": "AI",
+      "platforms": ["Web", "API"],
+      "description": "Curated library of tested prompt templates for music lyricism, video script treatments, social hooks, and midjourney image composition with one-click copy.",
+      "website": "https://github.com/mileyAM/mileym3dia-creator-hub",
+      "accentColor": "#8B38DC",
+      "badge": "In Development",
+      "pricing": { "type": "free", "price": 0, "currency": "USD" },
+      "openSource": true,
+      "verified": true,
+      "highlights": [
+        "Calibrated for Claude, GPT-4o, and Gemini",
+        "Variables for tone, tempo, and style parameters",
+        "One-click copy to clipboard"
+      ]
+    }
+  ]
+}
