@@ -19,7 +19,10 @@ const CATEGORY_ALIASES = {
 
   "creator-business": "business",
   "creator business": "business",
-  "business": "business"
+  "business": "business",
+
+  "creator-tools": "creator-tools",
+  "creator tools": "creator-tools"
 };
 
 const PRICING_ALIASES = {

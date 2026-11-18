@@ -1,13 +1,13 @@
 {
   "version": "1.0",
   "name": "MILEYM3DIA Creator Hub",
-  "updatedAt": "2026-10-26T19:31:06Z",
-  "count": 263,
+  "updatedAt": "2026-11-18T06:01:10.993803+00:00",
+  "count": 320,
   "resources": [
     {
       "id": "capcut",
       "name": "CapCut",
-      "description": "CapCut — discovered in Video Creation & Editing.",
+      "description": "CapCut \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -30,7 +30,7 @@
     {
       "id": "davinci-resolve",
       "name": "DaVinci Resolve",
-      "description": "DaVinci Resolve — discovered in Video Creation & Editing.",
+      "description": "DaVinci Resolve \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -53,7 +53,7 @@
     {
       "id": "handbrake",
       "name": "HandBrake",
-      "description": "HandBrake — discovered in Video Creation & Editing.",
+      "description": "HandBrake \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -79,7 +79,7 @@
     {
       "id": "kdenlive",
       "name": "Kdenlive",
-      "description": "Kdenlive — discovered in Video Creation & Editing.",
+      "description": "Kdenlive \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -106,7 +106,7 @@
     {
       "id": "losslesscut",
       "name": "LosslessCut",
-      "description": "LosslessCut — discovered in Video Creation & Editing.",
+      "description": "LosslessCut \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -129,7 +129,7 @@
     {
       "id": "openshot",
       "name": "OpenShot",
-      "description": "OpenShot — discovered in Video Creation & Editing.",
+      "description": "OpenShot \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -155,7 +155,7 @@
     {
       "id": "shotcut",
       "name": "Shotcut",
-      "description": "Shotcut — discovered in Video Creation & Editing.",
+      "description": "Shotcut \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -181,7 +181,7 @@
     {
       "id": "auto-editor",
       "name": "Auto-Editor",
-      "description": "Auto-Editor — discovered in Video Creation & Editing.",
+      "description": "Auto-Editor \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -204,7 +204,7 @@
     {
       "id": "editly",
       "name": "Editly",
-      "description": "Editly — discovered in Video Creation & Editing.",
+      "description": "Editly \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -227,7 +227,7 @@
     {
       "id": "ffmpeg",
       "name": "FFmpeg",
-      "description": "FFmpeg — discovered in Video Creation & Editing.",
+      "description": "FFmpeg \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -252,7 +252,7 @@
     {
       "id": "moviepy",
       "name": "MoviePy",
-      "description": "MoviePy — discovered in Video Creation & Editing.",
+      "description": "MoviePy \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -275,7 +275,7 @@
     {
       "id": "remotion",
       "name": "Remotion",
-      "description": "Remotion — discovered in Video Creation & Editing.",
+      "description": "Remotion \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -298,7 +298,7 @@
     {
       "id": "clipchamp",
       "name": "Clipchamp",
-      "description": "Clipchamp — discovered in Video Creation & Editing.",
+      "description": "Clipchamp \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -321,7 +321,7 @@
     {
       "id": "kapwing",
       "name": "Kapwing",
-      "description": "Kapwing — discovered in Video Creation & Editing.",
+      "description": "Kapwing \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -344,7 +344,7 @@
     {
       "id": "opencut",
       "name": "OpenCut",
-      "description": "OpenCut — discovered in Video Creation & Editing.",
+      "description": "OpenCut \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -367,7 +367,7 @@
     {
       "id": "veed-io",
       "name": "VEED.io",
-      "description": "VEED.io — discovered in Video Creation & Editing.",
+      "description": "VEED.io \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -390,7 +390,7 @@
     {
       "id": "cap",
       "name": "Cap",
-      "description": "Cap — discovered in Video Creation & Editing.",
+      "description": "Cap \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -413,7 +413,7 @@
     {
       "id": "sharex",
       "name": "ShareX",
-      "description": "ShareX — discovered in Video Creation & Editing.",
+      "description": "ShareX \u2014 discovered in Video Creation & Editing.",
       "category": "video",
       "subcategory": "Video Creation & Editing",
       "tags": [],
@@ -436,7 +436,7 @@
     {
       "id": "canva",
       "name": "Canva",
-      "description": "Canva — discovered in Thumbnail & Graphics.",
+      "description": "Canva \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -459,7 +459,7 @@
     {
       "id": "clipdrop",
       "name": "ClipDrop",
-      "description": "ClipDrop — discovered in Thumbnail & Graphics.",
+      "description": "ClipDrop \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -482,7 +482,7 @@
     {
       "id": "excalidraw",
       "name": "Excalidraw",
-      "description": "Excalidraw — discovered in Thumbnail & Graphics.",
+      "description": "Excalidraw \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -505,7 +505,7 @@
     {
       "id": "figma",
       "name": "Figma",
-      "description": "Figma — discovered in Thumbnail & Graphics.",
+      "description": "Figma \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -528,7 +528,7 @@
     {
       "id": "gimp",
       "name": "GIMP",
-      "description": "GIMP — discovered in Thumbnail & Graphics.",
+      "description": "GIMP \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -555,7 +555,7 @@
     {
       "id": "photopea",
       "name": "Photopea",
-      "description": "Photopea — discovered in Thumbnail & Graphics.",
+      "description": "Photopea \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -578,7 +578,7 @@
     {
       "id": "rembg",
       "name": "rembg",
-      "description": "rembg — discovered in Thumbnail & Graphics.",
+      "description": "rembg \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -601,7 +601,7 @@
     {
       "id": "remove-bg",
       "name": "Remove.bg",
-      "description": "Remove.bg — discovered in Thumbnail & Graphics.",
+      "description": "Remove.bg \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -624,7 +624,7 @@
     {
       "id": "unsplash",
       "name": "Unsplash",
-      "description": "Unsplash — discovered in Thumbnail & Graphics.",
+      "description": "Unsplash \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -647,7 +647,7 @@
     {
       "id": "upscayl",
       "name": "Upscayl",
-      "description": "Upscayl — discovered in Thumbnail & Graphics.",
+      "description": "Upscayl \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -674,7 +674,7 @@
     {
       "id": "adobe-firefly",
       "name": "Adobe Firefly",
-      "description": "Adobe Firefly — discovered in Thumbnail & Graphics.",
+      "description": "Adobe Firefly \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -697,7 +697,7 @@
     {
       "id": "flux",
       "name": "FLUX",
-      "description": "FLUX — discovered in Thumbnail & Graphics.",
+      "description": "FLUX \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -720,7 +720,7 @@
     {
       "id": "ideogram",
       "name": "Ideogram",
-      "description": "Ideogram — discovered in Thumbnail & Graphics.",
+      "description": "Ideogram \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -743,7 +743,7 @@
     {
       "id": "leonardo-ai",
       "name": "Leonardo AI",
-      "description": "Leonardo AI — discovered in Thumbnail & Graphics.",
+      "description": "Leonardo AI \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -766,7 +766,7 @@
     {
       "id": "midjourney",
       "name": "Midjourney",
-      "description": "Midjourney — discovered in Thumbnail & Graphics.",
+      "description": "Midjourney \u2014 discovered in Thumbnail & Graphics.",
       "category": "design",
       "subcategory": "Thumbnail & Graphics",
       "tags": [],
@@ -789,7 +789,7 @@
     {
       "id": "audacity",
       "name": "Audacity",
-      "description": "Audacity — discovered in Audio & Podcasting.",
+      "description": "Audacity \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -812,7 +812,7 @@
     {
       "id": "descript",
       "name": "Descript",
-      "description": "Descript — discovered in Audio & Podcasting.",
+      "description": "Descript \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -835,7 +835,7 @@
     {
       "id": "riverside",
       "name": "Riverside",
-      "description": "Riverside — discovered in Audio & Podcasting.",
+      "description": "Riverside \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -858,7 +858,7 @@
     {
       "id": "zencastr",
       "name": "Zencastr",
-      "description": "Zencastr — discovered in Audio & Podcasting.",
+      "description": "Zencastr \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -881,7 +881,7 @@
     {
       "id": "audiobookshelf",
       "name": "Audiobookshelf",
-      "description": "Audiobookshelf — discovered in Audio & Podcasting.",
+      "description": "Audiobookshelf \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -904,7 +904,7 @@
     {
       "id": "buzzsprout",
       "name": "Buzzsprout",
-      "description": "Buzzsprout — discovered in Audio & Podcasting.",
+      "description": "Buzzsprout \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -927,7 +927,7 @@
     {
       "id": "castopod",
       "name": "Castopod",
-      "description": "Castopod — discovered in Audio & Podcasting.",
+      "description": "Castopod \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -950,7 +950,7 @@
     {
       "id": "podcastfy",
       "name": "Podcastfy",
-      "description": "Podcastfy — discovered in Audio & Podcasting.",
+      "description": "Podcastfy \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -973,7 +973,7 @@
     {
       "id": "redcircle",
       "name": "RedCircle",
-      "description": "RedCircle — discovered in Audio & Podcasting.",
+      "description": "RedCircle \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -996,7 +996,7 @@
     {
       "id": "spotify-for-creators",
       "name": "Spotify for Creators",
-      "description": "Spotify for Creators — discovered in Audio & Podcasting.",
+      "description": "Spotify for Creators \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1019,7 +1019,7 @@
     {
       "id": "transistor-fm",
       "name": "Transistor.fm",
-      "description": "Transistor.fm — discovered in Audio & Podcasting.",
+      "description": "Transistor.fm \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1042,7 +1042,7 @@
     {
       "id": "epidemic-sound",
       "name": "Epidemic Sound",
-      "description": "Epidemic Sound — discovered in Audio & Podcasting.",
+      "description": "Epidemic Sound \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1065,7 +1065,7 @@
     {
       "id": "freesound",
       "name": "Freesound",
-      "description": "Freesound — discovered in Audio & Podcasting.",
+      "description": "Freesound \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1088,7 +1088,7 @@
     {
       "id": "uppbeat",
       "name": "Uppbeat",
-      "description": "Uppbeat — discovered in Audio & Podcasting.",
+      "description": "Uppbeat \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1111,7 +1111,7 @@
     {
       "id": "adobe-podcast",
       "name": "Adobe Podcast",
-      "description": "Adobe Podcast — discovered in Audio & Podcasting.",
+      "description": "Adobe Podcast \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1136,7 +1136,7 @@
     {
       "id": "auphonic",
       "name": "Auphonic",
-      "description": "Auphonic — discovered in Audio & Podcasting.",
+      "description": "Auphonic \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1159,7 +1159,7 @@
     {
       "id": "spleeter",
       "name": "Spleeter",
-      "description": "Spleeter — discovered in Audio & Podcasting.",
+      "description": "Spleeter \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1182,7 +1182,7 @@
     {
       "id": "ultimate-vocal-remover",
       "name": "Ultimate Vocal Remover",
-      "description": "Ultimate Vocal Remover — discovered in Audio & Podcasting.",
+      "description": "Ultimate Vocal Remover \u2014 discovered in Audio & Podcasting.",
       "category": "music",
       "subcategory": "Audio & Podcasting",
       "tags": [],
@@ -1205,7 +1205,7 @@
     {
       "id": "meld-studio",
       "name": "Meld Studio",
-      "description": "Meld Studio — discovered in Live Streaming.",
+      "description": "Meld Studio \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1228,7 +1228,7 @@
     {
       "id": "obs-studio",
       "name": "OBS Studio",
-      "description": "OBS Studio — discovered in Live Streaming.",
+      "description": "OBS Studio \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1255,7 +1255,7 @@
     {
       "id": "owncast",
       "name": "Owncast",
-      "description": "Owncast — discovered in Live Streaming.",
+      "description": "Owncast \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1278,7 +1278,7 @@
     {
       "id": "streamlabs",
       "name": "Streamlabs",
-      "description": "Streamlabs — discovered in Live Streaming.",
+      "description": "Streamlabs \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1301,7 +1301,7 @@
     {
       "id": "vdo-ninja",
       "name": "VDO.Ninja",
-      "description": "VDO.Ninja — discovered in Live Streaming.",
+      "description": "VDO.Ninja \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1324,7 +1324,7 @@
     {
       "id": "bitfocus-companion",
       "name": "Bitfocus Companion",
-      "description": "Bitfocus Companion — discovered in Live Streaming.",
+      "description": "Bitfocus Companion \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1347,7 +1347,7 @@
     {
       "id": "nightbot",
       "name": "Nightbot",
-      "description": "Nightbot — discovered in Live Streaming.",
+      "description": "Nightbot \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1370,7 +1370,7 @@
     {
       "id": "phantombot",
       "name": "PhantomBot",
-      "description": "PhantomBot — discovered in Live Streaming.",
+      "description": "PhantomBot \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1393,7 +1393,7 @@
     {
       "id": "streamer-bot",
       "name": "Streamer.bot",
-      "description": "Streamer.bot — discovered in Live Streaming.",
+      "description": "Streamer.bot \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1416,7 +1416,7 @@
     {
       "id": "streamelements",
       "name": "StreamElements",
-      "description": "StreamElements — discovered in Live Streaming.",
+      "description": "StreamElements \u2014 discovered in Live Streaming.",
       "category": "video",
       "subcategory": "Live Streaming",
       "tags": [],
@@ -1439,7 +1439,7 @@
     {
       "id": "buffer",
       "name": "Buffer",
-      "description": "Buffer — discovered in Social Media Management.",
+      "description": "Buffer \u2014 discovered in Social Media Management.",
       "category": "creator-business",
       "subcategory": "Social Media Management",
       "tags": [],
@@ -1462,7 +1462,7 @@
     {
       "id": "later",
       "name": "Later",
-      "description": "Later — discovered in Social Media Management.",
+      "description": "Later \u2014 discovered in Social Media Management.",
       "category": "creator-business",
       "subcategory": "Social Media Management",
       "tags": [],
@@ -1485,7 +1485,7 @@
     {
       "id": "loomly",
       "name": "Loomly",
-      "description": "Loomly — discovered in Social Media Management.",
+      "description": "Loomly \u2014 discovered in Social Media Management.",
       "category": "creator-business",
       "subcategory": "Social Media Management",
       "tags": [],
@@ -1508,7 +1508,7 @@
     {
       "id": "metricool",
       "name": "Metricool",
-      "description": "Metricool — discovered in Social Media Management.",
+      "description": "Metricool \u2014 discovered in Social Media Management.",
       "category": "creator-business",
       "subcategory": "Social Media Management",
       "tags": [],
@@ -1531,7 +1531,7 @@
     {
       "id": "mixpost",
       "name": "Mixpost",
-      "description": "Mixpost — discovered in Social Media Management.",
+      "description": "Mixpost \u2014 discovered in Social Media Management.",
       "category": "creator-business",
       "subcategory": "Social Media Management",
       "tags": [],
@@ -1554,7 +1554,7 @@
     {
       "id": "postiz",
       "name": "Postiz",
-      "description": "Postiz — discovered in Social Media Management.",
+      "description": "Postiz \u2014 discovered in Social Media Management.",
       "category": "creator-business",
       "subcategory": "Social Media Management",
       "tags": [],
@@ -1577,7 +1577,7 @@
     {
       "id": "repurpose-io",
       "name": "Repurpose.io",
-      "description": "Repurpose.io — discovered in Social Media Management.",
+      "description": "Repurpose.io \u2014 discovered in Social Media Management.",
       "category": "creator-business",
       "subcategory": "Social Media Management",
       "tags": [],
@@ -1600,7 +1600,7 @@
     {
       "id": "social-blade",
       "name": "Social Blade",
-      "description": "Social Blade — discovered in Analytics & Insights.",
+      "description": "Social Blade \u2014 discovered in Analytics & Insights.",
       "category": "creator-business",
       "subcategory": "Analytics & Insights",
       "tags": [],
@@ -1623,7 +1623,7 @@
     {
       "id": "tubebuddy",
       "name": "TubeBuddy",
-      "description": "TubeBuddy — discovered in Analytics & Insights.",
+      "description": "TubeBuddy \u2014 discovered in Analytics & Insights.",
       "category": "creator-business",
       "subcategory": "Analytics & Insights",
       "tags": [],
@@ -1646,7 +1646,7 @@
     {
       "id": "vidiq",
       "name": "VidIQ",
-      "description": "VidIQ — discovered in Analytics & Insights.",
+      "description": "VidIQ \u2014 discovered in Analytics & Insights.",
       "category": "creator-business",
       "subcategory": "Analytics & Insights",
       "tags": [],
@@ -1669,7 +1669,7 @@
     {
       "id": "viewstats",
       "name": "ViewStats",
-      "description": "ViewStats — discovered in Analytics & Insights.",
+      "description": "ViewStats \u2014 discovered in Analytics & Insights.",
       "category": "creator-business",
       "subcategory": "Analytics & Insights",
       "tags": [],
@@ -1692,7 +1692,7 @@
     {
       "id": "matomo",
       "name": "Matomo",
-      "description": "Matomo — discovered in Analytics & Insights.",
+      "description": "Matomo \u2014 discovered in Analytics & Insights.",
       "category": "creator-business",
       "subcategory": "Analytics & Insights",
       "tags": [],
@@ -1715,7 +1715,7 @@
     {
       "id": "plausible-analytics",
       "name": "Plausible Analytics",
-      "description": "Plausible Analytics — discovered in Analytics & Insights.",
+      "description": "Plausible Analytics \u2014 discovered in Analytics & Insights.",
       "category": "creator-business",
       "subcategory": "Analytics & Insights",
       "tags": [],
@@ -1738,7 +1738,7 @@
     {
       "id": "umami",
       "name": "Umami",
-      "description": "Umami — discovered in Analytics & Insights.",
+      "description": "Umami \u2014 discovered in Analytics & Insights.",
       "category": "creator-business",
       "subcategory": "Analytics & Insights",
       "tags": [],
@@ -1761,7 +1761,7 @@
     {
       "id": "buy-me-a-coffee",
       "name": "Buy Me a Coffee",
-      "description": "Buy Me a Coffee — discovered in Monetization.",
+      "description": "Buy Me a Coffee \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1784,7 +1784,7 @@
     {
       "id": "gumroad",
       "name": "Gumroad",
-      "description": "Gumroad — discovered in Monetization.",
+      "description": "Gumroad \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1807,7 +1807,7 @@
     {
       "id": "ko-fi",
       "name": "Ko-fi",
-      "description": "Ko-fi — discovered in Monetization.",
+      "description": "Ko-fi \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1830,7 +1830,7 @@
     {
       "id": "patreon",
       "name": "Patreon",
-      "description": "Patreon — discovered in Monetization.",
+      "description": "Patreon \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1853,7 +1853,7 @@
     {
       "id": "courselit",
       "name": "CourseLit",
-      "description": "CourseLit — discovered in Monetization.",
+      "description": "CourseLit \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1876,7 +1876,7 @@
     {
       "id": "fourthwall",
       "name": "Fourthwall",
-      "description": "Fourthwall — discovered in Monetization.",
+      "description": "Fourthwall \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1899,7 +1899,7 @@
     {
       "id": "kajabi",
       "name": "Kajabi",
-      "description": "Kajabi — discovered in Monetization.",
+      "description": "Kajabi \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1922,7 +1922,7 @@
     {
       "id": "lemon-squeezy",
       "name": "Lemon Squeezy",
-      "description": "Lemon Squeezy — discovered in Monetization.",
+      "description": "Lemon Squeezy \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1945,7 +1945,7 @@
     {
       "id": "payhip",
       "name": "Payhip",
-      "description": "Payhip — discovered in Monetization.",
+      "description": "Payhip \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1968,7 +1968,7 @@
     {
       "id": "teachable",
       "name": "Teachable",
-      "description": "Teachable — discovered in Monetization.",
+      "description": "Teachable \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -1991,7 +1991,7 @@
     {
       "id": "thinkific",
       "name": "Thinkific",
-      "description": "Thinkific — discovered in Monetization.",
+      "description": "Thinkific \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -2014,7 +2014,7 @@
     {
       "id": "whop",
       "name": "Whop",
-      "description": "Whop — discovered in Monetization.",
+      "description": "Whop \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -2037,7 +2037,7 @@
     {
       "id": "collabstr",
       "name": "Collabstr",
-      "description": "Collabstr — discovered in Monetization.",
+      "description": "Collabstr \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -2060,7 +2060,7 @@
     {
       "id": "passionfruit",
       "name": "Passionfruit",
-      "description": "Passionfruit — discovered in Monetization.",
+      "description": "Passionfruit \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -2083,7 +2083,7 @@
     {
       "id": "sponsorkit",
       "name": "SponsorKit",
-      "description": "SponsorKit — discovered in Monetization.",
+      "description": "SponsorKit \u2014 discovered in Monetization.",
       "category": "creator-business",
       "subcategory": "Monetization",
       "tags": [],
@@ -2106,7 +2106,7 @@
     {
       "id": "dub",
       "name": "Dub",
-      "description": "Dub — discovered in Link in Bio.",
+      "description": "Dub \u2014 discovered in Link in Bio.",
       "category": "creator-tools",
       "subcategory": "Link in Bio",
       "tags": [],
@@ -2129,7 +2129,7 @@
     {
       "id": "linkstack",
       "name": "LinkStack",
-      "description": "LinkStack — discovered in Link in Bio.",
+      "description": "LinkStack \u2014 discovered in Link in Bio.",
       "category": "creator-tools",
       "subcategory": "Link in Bio",
       "tags": [],
@@ -2152,7 +2152,7 @@
     {
       "id": "linktree",
       "name": "Linktree",
-      "description": "Linktree — discovered in Link in Bio.",
+      "description": "Linktree \u2014 discovered in Link in Bio.",
       "category": "creator-tools",
       "subcategory": "Link in Bio",
       "tags": [],
@@ -2175,7 +2175,7 @@
     {
       "id": "littlelink",
       "name": "LittleLink",
-      "description": "LittleLink — discovered in Link in Bio.",
+      "description": "LittleLink \u2014 discovered in Link in Bio.",
       "category": "creator-tools",
       "subcategory": "Link in Bio",
       "tags": [],
@@ -2198,7 +2198,7 @@
     {
       "id": "openbio",
       "name": "OpenBio",
-      "description": "OpenBio — discovered in Link in Bio.",
+      "description": "OpenBio \u2014 discovered in Link in Bio.",
       "category": "creator-tools",
       "subcategory": "Link in Bio",
       "tags": [],
@@ -2221,7 +2221,7 @@
     {
       "id": "beehiiv",
       "name": "beehiiv",
-      "description": "beehiiv — discovered in Newsletter & Email.",
+      "description": "beehiiv \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2244,7 +2244,7 @@
     {
       "id": "billionmail",
       "name": "BillionMail",
-      "description": "BillionMail — discovered in Newsletter & Email.",
+      "description": "BillionMail \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2267,7 +2267,7 @@
     {
       "id": "buttondown",
       "name": "Buttondown",
-      "description": "Buttondown — discovered in Newsletter & Email.",
+      "description": "Buttondown \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2290,7 +2290,7 @@
     {
       "id": "ghost",
       "name": "Ghost",
-      "description": "Ghost — discovered in Newsletter & Email.",
+      "description": "Ghost \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2313,7 +2313,7 @@
     {
       "id": "kit",
       "name": "Kit",
-      "description": "Kit — discovered in Newsletter & Email.",
+      "description": "Kit \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2336,7 +2336,7 @@
     {
       "id": "listmonk",
       "name": "Listmonk",
-      "description": "Listmonk — discovered in Newsletter & Email.",
+      "description": "Listmonk \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2359,7 +2359,7 @@
     {
       "id": "mautic",
       "name": "Mautic",
-      "description": "Mautic — discovered in Newsletter & Email.",
+      "description": "Mautic \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2382,7 +2382,7 @@
     {
       "id": "plunk",
       "name": "Plunk",
-      "description": "Plunk — discovered in Newsletter & Email.",
+      "description": "Plunk \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2405,7 +2405,7 @@
     {
       "id": "substack",
       "name": "Substack",
-      "description": "Substack — discovered in Newsletter & Email.",
+      "description": "Substack \u2014 discovered in Newsletter & Email.",
       "category": "creator-business",
       "subcategory": "Newsletter & Email",
       "tags": [],
@@ -2428,7 +2428,7 @@
     {
       "id": "heygen",
       "name": "HeyGen",
-      "description": "HeyGen — discovered in AI Content Tools.",
+      "description": "HeyGen \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2451,7 +2451,7 @@
     {
       "id": "kling-ai",
       "name": "Kling AI",
-      "description": "Kling AI — discovered in AI Content Tools.",
+      "description": "Kling AI \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2474,7 +2474,7 @@
     {
       "id": "opus-clip",
       "name": "Opus Clip",
-      "description": "Opus Clip — discovered in AI Content Tools.",
+      "description": "Opus Clip \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2499,7 +2499,7 @@
     {
       "id": "pika",
       "name": "Pika",
-      "description": "Pika — discovered in AI Content Tools.",
+      "description": "Pika \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2522,7 +2522,7 @@
     {
       "id": "runway",
       "name": "Runway",
-      "description": "Runway — discovered in AI Content Tools.",
+      "description": "Runway \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2545,7 +2545,7 @@
     {
       "id": "videolingo",
       "name": "VideoLingo",
-      "description": "VideoLingo — discovered in AI Content Tools.",
+      "description": "VideoLingo \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2568,7 +2568,7 @@
     {
       "id": "wan",
       "name": "Wan",
-      "description": "Wan — discovered in AI Content Tools.",
+      "description": "Wan \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2591,7 +2591,7 @@
     {
       "id": "chatterbox",
       "name": "Chatterbox",
-      "description": "Chatterbox — discovered in AI Content Tools.",
+      "description": "Chatterbox \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2614,7 +2614,7 @@
     {
       "id": "elevenlabs",
       "name": "ElevenLabs",
-      "description": "ElevenLabs — discovered in AI Content Tools.",
+      "description": "ElevenLabs \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2637,7 +2637,7 @@
     {
       "id": "fish-speech",
       "name": "Fish Speech",
-      "description": "Fish Speech — discovered in AI Content Tools.",
+      "description": "Fish Speech \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2660,7 +2660,7 @@
     {
       "id": "gpt-sovits",
       "name": "GPT-SoVITS",
-      "description": "GPT-SoVITS — discovered in AI Content Tools.",
+      "description": "GPT-SoVITS \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2683,7 +2683,7 @@
     {
       "id": "openvoice",
       "name": "OpenVoice",
-      "description": "OpenVoice — discovered in AI Content Tools.",
+      "description": "OpenVoice \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2706,7 +2706,7 @@
     {
       "id": "whisper",
       "name": "Whisper",
-      "description": "Whisper — discovered in AI Content Tools.",
+      "description": "Whisper \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2729,7 +2729,7 @@
     {
       "id": "whisper-cpp",
       "name": "whisper.cpp",
-      "description": "whisper.cpp — discovered in AI Content Tools.",
+      "description": "whisper.cpp \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2752,7 +2752,7 @@
     {
       "id": "ace-step",
       "name": "ACE-Step",
-      "description": "ACE-Step — discovered in AI Content Tools.",
+      "description": "ACE-Step \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2775,7 +2775,7 @@
     {
       "id": "suno",
       "name": "Suno",
-      "description": "Suno — discovered in AI Content Tools.",
+      "description": "Suno \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2798,7 +2798,7 @@
     {
       "id": "udio",
       "name": "Udio",
-      "description": "Udio — discovered in AI Content Tools.",
+      "description": "Udio \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2821,7 +2821,7 @@
     {
       "id": "subtitle-edit",
       "name": "Subtitle Edit",
-      "description": "Subtitle Edit — discovered in AI Content Tools.",
+      "description": "Subtitle Edit \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2844,7 +2844,7 @@
     {
       "id": "whisperx",
       "name": "WhisperX",
-      "description": "WhisperX — discovered in AI Content Tools.",
+      "description": "WhisperX \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2867,7 +2867,7 @@
     {
       "id": "comfyui",
       "name": "ComfyUI",
-      "description": "ComfyUI — discovered in AI Content Tools.",
+      "description": "ComfyUI \u2014 discovered in AI Content Tools.",
       "category": "creator-tools",
       "subcategory": "AI Content Tools",
       "tags": [],
@@ -2890,7 +2890,7 @@
     {
       "id": "chatwoot",
       "name": "Chatwoot",
-      "description": "Chatwoot — discovered in Community & Engagement.",
+      "description": "Chatwoot \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -2913,7 +2913,7 @@
     {
       "id": "circle",
       "name": "Circle",
-      "description": "Circle — discovered in Community & Engagement.",
+      "description": "Circle \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -2936,7 +2936,7 @@
     {
       "id": "discourse",
       "name": "Discourse",
-      "description": "Discourse — discovered in Community & Engagement.",
+      "description": "Discourse \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -2959,7 +2959,7 @@
     {
       "id": "discord",
       "name": "Discord",
-      "description": "Discord — discovered in Community & Engagement.",
+      "description": "Discord \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -2982,7 +2982,7 @@
     {
       "id": "forem",
       "name": "Forem",
-      "description": "Forem — discovered in Community & Engagement.",
+      "description": "Forem \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -3005,7 +3005,7 @@
     {
       "id": "geneva",
       "name": "Geneva",
-      "description": "Geneva — discovered in Community & Engagement.",
+      "description": "Geneva \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -3028,7 +3028,7 @@
     {
       "id": "mighty-networks",
       "name": "Mighty Networks",
-      "description": "Mighty Networks — discovered in Community & Engagement.",
+      "description": "Mighty Networks \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -3051,7 +3051,7 @@
     {
       "id": "skool",
       "name": "Skool",
-      "description": "Skool — discovered in Community & Engagement.",
+      "description": "Skool \u2014 discovered in Community & Engagement.",
       "category": "creator-business",
       "subcategory": "Community & Engagement",
       "tags": [],
@@ -3074,7 +3074,7 @@
     {
       "id": "answer-socrates",
       "name": "Answer Socrates",
-      "description": "Answer Socrates — discovered in SEO & Discovery.",
+      "description": "Answer Socrates \u2014 discovered in SEO & Discovery.",
       "category": "creator-business",
       "subcategory": "SEO & Discovery",
       "tags": [],
@@ -3097,7 +3097,7 @@
     {
       "id": "exploding-topics",
       "name": "Exploding Topics",
-      "description": "Exploding Topics — discovered in SEO & Discovery.",
+      "description": "Exploding Topics \u2014 discovered in SEO & Discovery.",
       "category": "creator-business",
       "subcategory": "SEO & Discovery",
       "tags": [],
@@ -3120,7 +3120,7 @@
     {
       "id": "google-trends",
       "name": "Google Trends",
-      "description": "Google Trends — discovered in SEO & Discovery.",
+      "description": "Google Trends \u2014 discovered in SEO & Discovery.",
       "category": "creator-business",
       "subcategory": "SEO & Discovery",
       "tags": [],
@@ -3143,7 +3143,7 @@
     {
       "id": "keyword-tool",
       "name": "Keyword Tool",
-      "description": "Keyword Tool — discovered in SEO & Discovery.",
+      "description": "Keyword Tool \u2014 discovered in SEO & Discovery.",
       "category": "creator-business",
       "subcategory": "SEO & Discovery",
       "tags": [],
@@ -3166,7 +3166,7 @@
     {
       "id": "rapidtags",
       "name": "RapidTags",
-      "description": "RapidTags — discovered in SEO & Discovery.",
+      "description": "RapidTags \u2014 discovered in SEO & Discovery.",
       "category": "creator-business",
       "subcategory": "SEO & Discovery",
       "tags": [],
@@ -3189,7 +3189,7 @@
     {
       "id": "semrush",
       "name": "Semrush",
-      "description": "Semrush — discovered in SEO & Discovery.",
+      "description": "Semrush \u2014 discovered in SEO & Discovery.",
       "category": "creator-business",
       "subcategory": "SEO & Discovery",
       "tags": [],
@@ -3212,7 +3212,7 @@
     {
       "id": "surfer-seo",
       "name": "Surfer SEO",
-      "description": "Surfer SEO — discovered in SEO & Discovery.",
+      "description": "Surfer SEO \u2014 discovered in SEO & Discovery.",
       "category": "creator-business",
       "subcategory": "SEO & Discovery",
       "tags": [],
@@ -3235,7 +3235,7 @@
     {
       "id": "airtable",
       "name": "Airtable",
-      "description": "Airtable — discovered in Productivity.",
+      "description": "Airtable \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3258,7 +3258,7 @@
     {
       "id": "appflowy",
       "name": "AppFlowy",
-      "description": "AppFlowy — discovered in Productivity.",
+      "description": "AppFlowy \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3281,7 +3281,7 @@
     {
       "id": "celtx",
       "name": "Celtx",
-      "description": "Celtx — discovered in Productivity.",
+      "description": "Celtx \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3304,7 +3304,7 @@
     {
       "id": "clickup",
       "name": "ClickUp",
-      "description": "ClickUp — discovered in Productivity.",
+      "description": "ClickUp \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3327,7 +3327,7 @@
     {
       "id": "eagle",
       "name": "Eagle",
-      "description": "Eagle — discovered in Productivity.",
+      "description": "Eagle \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3353,7 +3353,7 @@
     {
       "id": "notion",
       "name": "Notion",
-      "description": "Notion — discovered in Productivity.",
+      "description": "Notion \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3376,7 +3376,7 @@
     {
       "id": "obsidian",
       "name": "Obsidian",
-      "description": "Obsidian — discovered in Productivity.",
+      "description": "Obsidian \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3401,7 +3401,7 @@
     {
       "id": "trello",
       "name": "Trello",
-      "description": "Trello — discovered in Productivity.",
+      "description": "Trello \u2014 discovered in Productivity.",
       "category": "creator-tools",
       "subcategory": "Productivity",
       "tags": [],
@@ -3426,7 +3426,7 @@
     {
       "id": "moneyprinterturbo",
       "name": "MoneyPrinterTurbo",
-      "description": "MoneyPrinterTurbo — discovered in One-Click Video Generation.",
+      "description": "MoneyPrinterTurbo \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3449,7 +3449,7 @@
     {
       "id": "moneyprinter",
       "name": "MoneyPrinter",
-      "description": "MoneyPrinter — discovered in One-Click Video Generation.",
+      "description": "MoneyPrinter \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3472,7 +3472,7 @@
     {
       "id": "shortgpt",
       "name": "ShortGPT",
-      "description": "ShortGPT — discovered in One-Click Video Generation.",
+      "description": "ShortGPT \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3495,7 +3495,7 @@
     {
       "id": "redditvideomakerbot",
       "name": "RedditVideoMakerBot",
-      "description": "RedditVideoMakerBot — discovered in One-Click Video Generation.",
+      "description": "RedditVideoMakerBot \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3518,7 +3518,7 @@
     {
       "id": "narratoai",
       "name": "NarratoAI",
-      "description": "NarratoAI — discovered in One-Click Video Generation.",
+      "description": "NarratoAI \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3541,7 +3541,7 @@
     {
       "id": "moneyprinterplus",
       "name": "MoneyPrinterPlus",
-      "description": "MoneyPrinterPlus — discovered in One-Click Video Generation.",
+      "description": "MoneyPrinterPlus \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3564,7 +3564,7 @@
     {
       "id": "pixelle-video",
       "name": "Pixelle-Video",
-      "description": "Pixelle-Video — discovered in One-Click Video Generation.",
+      "description": "Pixelle-Video \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3587,7 +3587,7 @@
     {
       "id": "short-video-factory",
       "name": "short-video-factory",
-      "description": "short-video-factory — discovered in One-Click Video Generation.",
+      "description": "short-video-factory \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3610,7 +3610,7 @@
     {
       "id": "video-materials-autogen-workstation",
       "name": "Video-Materials-AutoGEN-Workstation",
-      "description": "Video-Materials-AutoGEN-Workstation — discovered in One-Click Video Generation.",
+      "description": "Video-Materials-AutoGEN-Workstation \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3633,7 +3633,7 @@
     {
       "id": "openmontage",
       "name": "OpenMontage",
-      "description": "OpenMontage — discovered in One-Click Video Generation.",
+      "description": "OpenMontage \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3656,7 +3656,7 @@
     {
       "id": "openstory",
       "name": "OpenStory",
-      "description": "OpenStory — discovered in One-Click Video Generation.",
+      "description": "OpenStory \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3679,7 +3679,7 @@
     {
       "id": "yumcut",
       "name": "YumCut",
-      "description": "YumCut — discovered in One-Click Video Generation.",
+      "description": "YumCut \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3702,7 +3702,7 @@
     {
       "id": "ai-youtube-shorts-generator",
       "name": "AI YouTube Shorts Generator",
-      "description": "AI YouTube Shorts Generator — discovered in One-Click Video Generation.",
+      "description": "AI YouTube Shorts Generator \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3725,7 +3725,7 @@
     {
       "id": "open-generative-ai",
       "name": "Open-Generative-AI",
-      "description": "Open-Generative-AI — discovered in One-Click Video Generation.",
+      "description": "Open-Generative-AI \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3748,7 +3748,7 @@
     {
       "id": "clippedai",
       "name": "ClippedAI",
-      "description": "ClippedAI — discovered in One-Click Video Generation.",
+      "description": "ClippedAI \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3771,7 +3771,7 @@
     {
       "id": "muapi-cli",
       "name": "muapi-cli",
-      "description": "muapi-cli — discovered in One-Click Video Generation.",
+      "description": "muapi-cli \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3794,7 +3794,7 @@
     {
       "id": "infinite-canvas",
       "name": "infinite-canvas",
-      "description": "infinite-canvas — discovered in One-Click Video Generation.",
+      "description": "infinite-canvas \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3817,7 +3817,7 @@
     {
       "id": "ralphy",
       "name": "ralphy",
-      "description": "ralphy — discovered in One-Click Video Generation.",
+      "description": "ralphy \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3840,7 +3840,7 @@
     {
       "id": "ai-video-replicate",
       "name": "AI-video-Replicate",
-      "description": "AI-video-Replicate — discovered in One-Click Video Generation.",
+      "description": "AI-video-Replicate \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3863,7 +3863,7 @@
     {
       "id": "nexior",
       "name": "Nexior",
-      "description": "Nexior — discovered in One-Click Video Generation.",
+      "description": "Nexior \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3886,7 +3886,7 @@
     {
       "id": "clipforge",
       "name": "clipforge",
-      "description": "clipforge — discovered in One-Click Video Generation.",
+      "description": "clipforge \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3909,7 +3909,7 @@
     {
       "id": "wan-3-0-api",
       "name": "Wan-3.0-API",
-      "description": "Wan-3.0-API — discovered in One-Click Video Generation.",
+      "description": "Wan-3.0-API \u2014 discovered in One-Click Video Generation.",
       "category": "creator-tools",
       "subcategory": "One-Click Video Generation",
       "tags": [],
@@ -3932,7 +3932,7 @@
     {
       "id": "open-sora",
       "name": "Open-Sora",
-      "description": "Open-Sora — discovered in AI Text-to-Video Models.",
+      "description": "Open-Sora \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -3955,7 +3955,7 @@
     {
       "id": "wan2-1",
       "name": "Wan2.1",
-      "description": "Wan2.1 — discovered in AI Text-to-Video Models.",
+      "description": "Wan2.1 \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -3978,7 +3978,7 @@
     {
       "id": "framepack",
       "name": "FramePack",
-      "description": "FramePack — discovered in AI Text-to-Video Models.",
+      "description": "FramePack \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4001,7 +4001,7 @@
     {
       "id": "cogvideo",
       "name": "CogVideo",
-      "description": "CogVideo — discovered in AI Text-to-Video Models.",
+      "description": "CogVideo \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4024,7 +4024,7 @@
     {
       "id": "hunyuanvideo",
       "name": "HunyuanVideo",
-      "description": "HunyuanVideo — discovered in AI Text-to-Video Models.",
+      "description": "HunyuanVideo \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4047,7 +4047,7 @@
     {
       "id": "hunyuanvideo-1-5",
       "name": "HunyuanVideo-1.5",
-      "description": "HunyuanVideo-1.5 — discovered in AI Text-to-Video Models.",
+      "description": "HunyuanVideo-1.5 \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4070,7 +4070,7 @@
     {
       "id": "animatediff",
       "name": "AnimateDiff",
-      "description": "AnimateDiff — discovered in AI Text-to-Video Models.",
+      "description": "AnimateDiff \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4093,7 +4093,7 @@
     {
       "id": "diffusers",
       "name": "diffusers",
-      "description": "diffusers — discovered in AI Text-to-Video Models.",
+      "description": "diffusers \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4116,7 +4116,7 @@
     {
       "id": "lance",
       "name": "Lance",
-      "description": "Lance — discovered in AI Text-to-Video Models.",
+      "description": "Lance \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4139,7 +4139,7 @@
     {
       "id": "sana",
       "name": "Sana",
-      "description": "Sana — discovered in AI Text-to-Video Models.",
+      "description": "Sana \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4162,7 +4162,7 @@
     {
       "id": "helios",
       "name": "Helios",
-      "description": "Helios — discovered in AI Text-to-Video Models.",
+      "description": "Helios \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4187,7 +4187,7 @@
     {
       "id": "vllm-omni",
       "name": "vllm-omni",
-      "description": "vllm-omni — discovered in AI Text-to-Video Models.",
+      "description": "vllm-omni \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4210,7 +4210,7 @@
     {
       "id": "cosmos-predict2-5",
       "name": "Cosmos-Predict2.5",
-      "description": "Cosmos-Predict2.5 — discovered in AI Text-to-Video Models.",
+      "description": "Cosmos-Predict2.5 \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4233,7 +4233,7 @@
     {
       "id": "lightx2v",
       "name": "LightX2V",
-      "description": "LightX2V — discovered in AI Text-to-Video Models.",
+      "description": "LightX2V \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4256,7 +4256,7 @@
     {
       "id": "ltx-video-mac",
       "name": "ltx-video-mac",
-      "description": "ltx-video-mac — discovered in AI Text-to-Video Models.",
+      "description": "ltx-video-mac \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4281,7 +4281,7 @@
     {
       "id": "daihuo-jianshou",
       "name": "daihuo-jianshou",
-      "description": "daihuo-jianshou — discovered in AI Text-to-Video Models.",
+      "description": "daihuo-jianshou \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4304,7 +4304,7 @@
     {
       "id": "stable-diffusion",
       "name": "Stable-Diffusion",
-      "description": "Stable-Diffusion — discovered in AI Text-to-Video Models.",
+      "description": "Stable-Diffusion \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4327,7 +4327,7 @@
     {
       "id": "video-clipforge",
       "name": "video-clipforge",
-      "description": "video-clipforge — discovered in AI Text-to-Video Models.",
+      "description": "video-clipforge \u2014 discovered in AI Text-to-Video Models.",
       "category": "creator-tools",
       "subcategory": "AI Text-to-Video Models",
       "tags": [],
@@ -4350,7 +4350,7 @@
     {
       "id": "social-auto-upload",
       "name": "social-auto-upload",
-      "description": "social-auto-upload — discovered in Social Media Automation.",
+      "description": "social-auto-upload \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4373,7 +4373,7 @@
     {
       "id": "video-mover",
       "name": "video-mover",
-      "description": "video-mover — discovered in Social Media Automation.",
+      "description": "video-mover \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4396,7 +4396,7 @@
     {
       "id": "brightbean-studio",
       "name": "BrightBean Studio",
-      "description": "BrightBean Studio — discovered in Social Media Automation.",
+      "description": "BrightBean Studio \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4419,7 +4419,7 @@
     {
       "id": "ytb2bili",
       "name": "YTB2BILI",
-      "description": "YTB2BILI — discovered in Social Media Automation.",
+      "description": "YTB2BILI \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4442,7 +4442,7 @@
     {
       "id": "postbot",
       "name": "PostBot",
-      "description": "PostBot — discovered in Social Media Automation.",
+      "description": "PostBot \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4465,7 +4465,7 @@
     {
       "id": "social-media-kit",
       "name": "social-media-kit",
-      "description": "social-media-kit — discovered in Social Media Automation.",
+      "description": "social-media-kit \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4488,7 +4488,7 @@
     {
       "id": "post4u",
       "name": "Post4U",
-      "description": "Post4U — discovered in Social Media Automation.",
+      "description": "Post4U \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4511,7 +4511,7 @@
     {
       "id": "free-ai-social-media-scheduler",
       "name": "Free-AI-Social-Media-Scheduler",
-      "description": "Free-AI-Social-Media-Scheduler — discovered in Social Media Automation.",
+      "description": "Free-AI-Social-Media-Scheduler \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4534,7 +4534,7 @@
     {
       "id": "trypost",
       "name": "TryPost",
-      "description": "trypost — discovered in Social Media Automation.",
+      "description": "trypost \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4557,7 +4557,7 @@
     {
       "id": "socialclaw",
       "name": "socialclaw",
-      "description": "socialclaw — discovered in Social Media Automation.",
+      "description": "socialclaw \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
       "tags": [],
@@ -4580,7 +4580,7 @@
     {
       "id": "mediacrawler",
       "name": "MediaCrawler",
-      "description": "MediaCrawler — discovered in Social Media Crawlers.",
+      "description": "MediaCrawler \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4603,7 +4603,7 @@
     {
       "id": "tiktok-live-connector",
       "name": "TikTok-Live-Connector",
-      "description": "TikTok-Live-Connector — discovered in Social Media Crawlers.",
+      "description": "TikTok-Live-Connector \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4626,7 +4626,7 @@
     {
       "id": "pytok",
       "name": "pytok",
-      "description": "pytok — discovered in Social Media Crawlers.",
+      "description": "pytok \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4649,7 +4649,7 @@
     {
       "id": "parsehub",
       "name": "ParseHub",
-      "description": "ParseHub — discovered in Social Media Crawlers.",
+      "description": "ParseHub \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4672,7 +4672,7 @@
     {
       "id": "x-web-crawler",
       "name": "x-web-crawler",
-      "description": "x-web-crawler — discovered in Social Media Crawlers.",
+      "description": "x-web-crawler \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4695,7 +4695,7 @@
     {
       "id": "stormy-cookbook",
       "name": "stormy-cookbook",
-      "description": "stormy-cookbook — discovered in Social Media Crawlers.",
+      "description": "stormy-cookbook \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4718,7 +4718,7 @@
     {
       "id": "tiktoklive",
       "name": "TikTokLive",
-      "description": "TikTokLive — discovered in Social Media Crawlers.",
+      "description": "TikTokLive \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4741,7 +4741,7 @@
     {
       "id": "skraper",
       "name": "skraper",
-      "description": "skraper — discovered in Social Media Crawlers.",
+      "description": "skraper \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4764,7 +4764,7 @@
     {
       "id": "beav",
       "name": "Beav",
-      "description": "Beav — discovered in Social Media Crawlers.",
+      "description": "Beav \u2014 discovered in Social Media Crawlers.",
       "category": "creator-business",
       "subcategory": "Social Media Crawlers",
       "tags": [],
@@ -4787,7 +4787,7 @@
     {
       "id": "krillinai",
       "name": "KrillinAI",
-      "description": "KrillinAI — discovered in Subtitle and Localization.",
+      "description": "KrillinAI \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4810,7 +4810,7 @@
     {
       "id": "video-subtitle-remover",
       "name": "video-subtitle-remover",
-      "description": "video-subtitle-remover — discovered in Subtitle and Localization.",
+      "description": "video-subtitle-remover \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4833,7 +4833,7 @@
     {
       "id": "faster-whisper",
       "name": "faster-whisper",
-      "description": "faster-whisper — discovered in Subtitle and Localization.",
+      "description": "faster-whisper \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4856,7 +4856,7 @@
     {
       "id": "whisperlive",
       "name": "WhisperLive",
-      "description": "WhisperLive — discovered in Subtitle and Localization.",
+      "description": "WhisperLive \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4879,7 +4879,7 @@
     {
       "id": "videocaptioner",
       "name": "VideoCaptioner",
-      "description": "VideoCaptioner — discovered in Subtitle and Localization.",
+      "description": "VideoCaptioner \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4902,7 +4902,7 @@
     {
       "id": "whispersubs",
       "name": "WhisperSubs",
-      "description": "WhisperSubs — discovered in Subtitle and Localization.",
+      "description": "WhisperSubs \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4925,7 +4925,7 @@
     {
       "id": "silhouette",
       "name": "Silhouette",
-      "description": "Silhouette — discovered in Subtitle and Localization.",
+      "description": "Silhouette \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4950,7 +4950,7 @@
     {
       "id": "arcsub",
       "name": "ArcSub",
-      "description": "ArcSub — discovered in Subtitle and Localization.",
+      "description": "ArcSub \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4973,7 +4973,7 @@
     {
       "id": "open-lyrics",
       "name": "Open-Lyrics",
-      "description": "Open-Lyrics — discovered in Subtitle and Localization.",
+      "description": "Open-Lyrics \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -4996,7 +4996,7 @@
     {
       "id": "open-dubbing",
       "name": "open-dubbing",
-      "description": "open-dubbing — discovered in Subtitle and Localization.",
+      "description": "open-dubbing \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5019,7 +5019,7 @@
     {
       "id": "livetranslate",
       "name": "LiveTranslate",
-      "description": "LiveTranslate — discovered in Subtitle and Localization.",
+      "description": "LiveTranslate \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5044,7 +5044,7 @@
     {
       "id": "short-video-generator-ai",
       "name": "short-video-generator-AI",
-      "description": "short-video-generator-AI — discovered in Subtitle and Localization.",
+      "description": "short-video-generator-AI \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5067,7 +5067,7 @@
     {
       "id": "haoone-app",
       "name": "haoone-app",
-      "description": "haoone-app — discovered in Subtitle and Localization.",
+      "description": "haoone-app \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5090,7 +5090,7 @@
     {
       "id": "suberase-translate-embed",
       "name": "SubErase-Translate-Embed",
-      "description": "SubErase-Translate-Embed — discovered in Subtitle and Localization.",
+      "description": "SubErase-Translate-Embed \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5113,7 +5113,7 @@
     {
       "id": "smartsub",
       "name": "SmartSub",
-      "description": "SmartSub — discovered in Subtitle and Localization.",
+      "description": "SmartSub \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5140,7 +5140,7 @@
     {
       "id": "dub-studio",
       "name": "dub-studio",
-      "description": "dub-studio — discovered in Subtitle and Localization.",
+      "description": "dub-studio \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5165,7 +5165,7 @@
     {
       "id": "youdub-webui",
       "name": "YouDub-webui",
-      "description": "YouDub-webui — discovered in Subtitle and Localization.",
+      "description": "YouDub-webui \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5188,7 +5188,7 @@
     {
       "id": "hotclip",
       "name": "hotclip",
-      "description": "hotclip — discovered in Subtitle and Localization.",
+      "description": "hotclip \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5213,7 +5213,7 @@
     {
       "id": "videohub",
       "name": "VideoHub",
-      "description": "VideoHub — discovered in Subtitle and Localization.",
+      "description": "VideoHub \u2014 discovered in Subtitle and Localization.",
       "category": "creator-tools",
       "subcategory": "Subtitle and Localization",
       "tags": [],
@@ -5236,7 +5236,7 @@
     {
       "id": "open-ai-micro-drama-generator",
       "name": "Open-AI-Micro-Drama-Generator",
-      "description": "Open-AI-Micro-Drama-Generator — discovered in AI Short Drama Generation.",
+      "description": "Open-AI-Micro-Drama-Generator \u2014 discovered in AI Short Drama Generation.",
       "category": "creator-tools",
       "subcategory": "AI Short Drama Generation",
       "tags": [],
@@ -5259,7 +5259,7 @@
     {
       "id": "huobao-drama",
       "name": "huobao-drama",
-      "description": "huobao-drama — discovered in AI Short Drama Generation.",
+      "description": "huobao-drama \u2014 discovered in AI Short Drama Generation.",
       "category": "creator-tools",
       "subcategory": "AI Short Drama Generation",
       "tags": [],
@@ -5282,7 +5282,7 @@
     {
       "id": "toonflow-app",
       "name": "Toonflow-app",
-      "description": "Toonflow-app — discovered in AI Short Drama Generation.",
+      "description": "Toonflow-app \u2014 discovered in AI Short Drama Generation.",
       "category": "creator-tools",
       "subcategory": "AI Short Drama Generation",
       "tags": [],
@@ -5305,7 +5305,7 @@
     {
       "id": "arcreel",
       "name": "ArcReel",
-      "description": "ArcReel — discovered in AI Short Drama Generation.",
+      "description": "ArcReel \u2014 discovered in AI Short Drama Generation.",
       "category": "creator-tools",
       "subcategory": "AI Short Drama Generation",
       "tags": [],
@@ -5328,7 +5328,7 @@
     {
       "id": "localminidrama",
       "name": "LocalMiniDrama",
-      "description": "LocalMiniDrama — discovered in AI Short Drama Generation.",
+      "description": "LocalMiniDrama \u2014 discovered in AI Short Drama Generation.",
       "category": "creator-tools",
       "subcategory": "AI Short Drama Generation",
       "tags": [],
@@ -5351,7 +5351,7 @@
     {
       "id": "bibigpt-v1",
       "name": "BibiGPT-v1",
-      "description": "BibiGPT-v1 — discovered in AI Video Analysis and Notes.",
+      "description": "BibiGPT-v1 \u2014 discovered in AI Video Analysis and Notes.",
       "category": "ai",
       "subcategory": "AI Video Analysis and Notes",
       "tags": [],
@@ -5374,7 +5374,7 @@
     {
       "id": "bilinote",
       "name": "BiliNote",
-      "description": "BiliNote — discovered in AI Video Analysis and Notes.",
+      "description": "BiliNote \u2014 discovered in AI Video Analysis and Notes.",
       "category": "ai",
       "subcategory": "AI Video Analysis and Notes",
       "tags": [],
@@ -5397,7 +5397,7 @@
     {
       "id": "ai-media2doc",
       "name": "AI-Media2Doc",
-      "description": "AI-Media2Doc — discovered in AI Video Analysis and Notes.",
+      "description": "AI-Media2Doc \u2014 discovered in AI Video Analysis and Notes.",
       "category": "ai",
       "subcategory": "AI Video Analysis and Notes",
       "tags": [],
@@ -5420,7 +5420,7 @@
     {
       "id": "aigcpanel",
       "name": "aigcpanel",
-      "description": "aigcpanel — discovered in AI Digital Human.",
+      "description": "aigcpanel \u2014 discovered in AI Digital Human.",
       "category": "creator-tools",
       "subcategory": "AI Digital Human",
       "tags": [],
@@ -5443,7 +5443,7 @@
     {
       "id": "helios-programmatic-video",
       "name": "Helios",
-      "description": "Helios — discovered in Programmatic Video Creation.",
+      "description": "Helios \u2014 discovered in Programmatic Video Creation.",
       "category": "video",
       "subcategory": "Programmatic Video Creation",
       "tags": [],
@@ -5468,7 +5468,7 @@
     {
       "id": "ffmpeg-python",
       "name": "ffmpeg-python",
-      "description": "ffmpeg-python — discovered in Video Editing Libraries.",
+      "description": "ffmpeg-python \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5491,7 +5491,7 @@
     {
       "id": "kinocut",
       "name": "kinocut",
-      "description": "kinocut — discovered in Video Editing Libraries.",
+      "description": "kinocut \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5514,7 +5514,7 @@
     {
       "id": "pyav",
       "name": "PyAV",
-      "description": "PyAV — discovered in Video Editing Libraries.",
+      "description": "PyAV \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5537,7 +5537,7 @@
     {
       "id": "libopenshot",
       "name": "libopenshot",
-      "description": "libopenshot — discovered in Video Editing Libraries.",
+      "description": "libopenshot \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5560,7 +5560,7 @@
     {
       "id": "etro",
       "name": "etro",
-      "description": "etro — discovered in Video Editing Libraries.",
+      "description": "etro \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5583,7 +5583,7 @@
     {
       "id": "cliparr",
       "name": "Cliparr",
-      "description": "Cliparr — discovered in Video Editing Libraries.",
+      "description": "Cliparr \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5606,7 +5606,7 @@
     {
       "id": "premiere-pro-mcp",
       "name": "premiere-pro-mcp",
-      "description": "premiere-pro-mcp — discovered in Video Editing Libraries.",
+      "description": "premiere-pro-mcp \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5629,7 +5629,7 @@
     {
       "id": "freecut",
       "name": "freecut",
-      "description": "freecut — discovered in Video Editing Libraries.",
+      "description": "freecut \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5652,7 +5652,7 @@
     {
       "id": "timeline-studio",
       "name": "Timeline Studio",
-      "description": "Timeline Studio — discovered in Video Editing Libraries.",
+      "description": "Timeline Studio \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -5675,7 +5675,7 @@
     {
       "id": "wayshot",
       "name": "wayshot",
-      "description": "wayshot — discovered in Video Editing Libraries.",
+      "description": "wayshot \u2014 discovered in Video Editing Libraries.",
       "category": "video",
       "subcategory": "Video Editing Libraries",
       "tags": [],
@@ -6077,7 +6077,7 @@
     {
       "id": "penpot",
       "name": "Penpot",
-      "description": "Open-source design and prototyping platform for interfaces, graphics and design systems — a free Figma alternative.",
+      "description": "Open-source design and prototyping platform for interfaces, graphics and design systems \u2014 a free Figma alternative.",
       "category": "design",
       "subcategory": "UI Design & Prototyping",
       "tags": [
@@ -6214,6 +6214,1758 @@
       "verified": true,
       "source": "manual-curation",
       "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "mago-an-open-source-ai-video-studio-runs-locally-with-comfy",
+      "name": "Mago, an open source AI video studio, runs locally with Comfy",
+      "slug": "mago-an-open-source-ai-video-studio-runs-locally-with-comfy",
+      "description": "I'm Alvaro, one of the founders of Mago. With my co-founder Alex (creator of Warpfusion, open source video to video), we built an open source AI video studio specialized in long form content and large volumes of video. It's a desktop app that you can run for free on your own GPU, that uses a portable ComfyUI or can be plugged into an existing Comfy setup. It handles both hybrid production (video to video, AI VFX) and full AI (microdramas, AI series for social etc). Back when Alex was working on Warpfusion, we were discussing making an app for \"real\" production, meaning hours of video, films, s",
+      "category": "video",
+      "subcategory": "General",
+      "tags": [
+        "discovered"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://github.com/MagoStudio/MagoStudio",
+      "download": "",
+      "openSource": true,
+      "featured": false,
+      "verified": false,
+      "source": "Hacker News (Show HN)",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "notes-on-watchmen",
+      "name": "Notes on Watchmen",
+      "slug": "notes-on-watchmen",
+      "description": "This is for fans of Watchmen the graphic novel. (not sure how many are here) I conceived of this project during COVID where I did all the data entry, design proof of concepts, documentation, and set the vision for the final site. Then it sat dormant until this past summer when I resurrected it with Codex. So now it's ready to share. It covers chapter analysis, character overviews, metrics, charts, color spectrums, panel grids, page-by-page detailed notes on themes, symbols, composition, and plot. There are also some longer form essays that go deeper into larger topics. I hope you like it. Comm",
+      "category": "design",
+      "subcategory": "General",
+      "tags": [
+        "discovered"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://notesonwatchmen.com",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": false,
+      "source": "Hacker News (Show HN)",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "splice",
+      "name": "Splice",
+      "slug": "splice",
+      "description": "Royalty-free samples, presets and sounds for music production.",
+      "category": "music",
+      "subcategory": "Samples",
+      "tags": [
+        "samples",
+        "loops",
+        "presets",
+        "music production"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://splice.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "loopcloud",
+      "name": "Loopcloud",
+      "slug": "loopcloud",
+      "description": "Large searchable library of samples, loops and sounds for producers.",
+      "category": "music",
+      "subcategory": "Samples",
+      "tags": [
+        "samples",
+        "loops",
+        "production"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.loopcloud.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "soundtrap",
+      "name": "Soundtrap",
+      "slug": "soundtrap",
+      "description": "Online music studio for recording, beat making and collaboration.",
+      "category": "music",
+      "subcategory": "DAWs",
+      "tags": [
+        "daw",
+        "recording",
+        "collaboration"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.soundtrap.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "native-instruments",
+      "name": "Native Instruments",
+      "slug": "native-instruments",
+      "description": "Professional instruments, effects, samples and production software.",
+      "category": "music",
+      "subcategory": "Instruments & Plugins",
+      "tags": [
+        "plugins",
+        "kontakt",
+        "instruments",
+        "effects"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.native-instruments.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "arturia",
+      "name": "Arturia",
+      "slug": "arturia",
+      "description": "Synthesizers, virtual instruments, effects and music production hardware.",
+      "category": "music",
+      "subcategory": "Instruments & Plugins",
+      "tags": [
+        "synthesizers",
+        "plugins",
+        "effects",
+        "instruments"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.arturia.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "valhalla-dsp",
+      "name": "Valhalla DSP",
+      "slug": "valhalla-dsp",
+      "description": "Popular professional reverb and delay plugins for music producers.",
+      "category": "music",
+      "subcategory": "Mixing & Mastering",
+      "tags": [
+        "reverb",
+        "delay",
+        "mixing",
+        "mastering"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://valhalladsp.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "voxengo",
+      "name": "Voxengo",
+      "slug": "voxengo",
+      "description": "Audio plugins and professional mixing and mastering tools.",
+      "category": "music",
+      "subcategory": "Mixing & Mastering",
+      "tags": [
+        "plugins",
+        "mixing",
+        "mastering"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.voxengo.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "tunecore",
+      "name": "TuneCore",
+      "slug": "tunecore",
+      "description": "Independent music distribution, publishing and artist services.",
+      "category": "music",
+      "subcategory": "Music Business",
+      "tags": [
+        "distribution",
+        "publishing",
+        "artists"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.tunecore.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-premiere",
+      "name": "Adobe Premiere",
+      "slug": "adobe-premiere",
+      "description": "Professional video editing software for creators and production teams.",
+      "category": "video",
+      "subcategory": "Video Editing",
+      "tags": [
+        "editing",
+        "video",
+        "production"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/premiere.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "after-effects",
+      "name": "Adobe After Effects",
+      "slug": "adobe-after-effects",
+      "description": "Motion graphics and visual effects software for advanced video work.",
+      "category": "video",
+      "subcategory": "Motion Graphics",
+      "tags": [
+        "motion graphics",
+        "vfx",
+        "animation"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/aftereffects.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "frame-io",
+      "name": "Frame.io",
+      "slug": "frame-io",
+      "description": "Video collaboration, review and approval platform for creative teams.",
+      "category": "video",
+      "subcategory": "Collaboration",
+      "tags": [
+        "video",
+        "review",
+        "collaboration",
+        "production"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios"
+      ],
+      "formats": [],
+      "website": "https://frame.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "slug": "adobe-photoshop",
+      "description": "Professional image editing, compositing and graphic design software.",
+      "category": "design",
+      "subcategory": "Photo Editing",
+      "tags": [
+        "photoshop",
+        "photo editing",
+        "graphics"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "ios"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/photoshop.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-illustrator",
+      "name": "Adobe Illustrator",
+      "slug": "adobe-illustrator",
+      "description": "Professional vector graphics software for logos and illustrations.",
+      "category": "design",
+      "subcategory": "Graphic Design",
+      "tags": [
+        "vector",
+        "logos",
+        "illustration"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/illustrator.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "pixlr",
+      "name": "Pixlr",
+      "slug": "pixlr",
+      "description": "Browser-based photo editing and graphic design tools.",
+      "category": "design",
+      "subcategory": "Photo Editing",
+      "tags": [
+        "photo editing",
+        "design",
+        "graphics"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://pixlr.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "slug": "blender",
+      "description": "Free open-source 3D creation suite for modeling, animation and rendering.",
+      "category": "design",
+      "subcategory": "3D",
+      "tags": [
+        "3d",
+        "modeling",
+        "animation",
+        "rendering"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "formats": [],
+      "website": "https://www.blender.org",
+      "download": "",
+      "logo": "",
+      "openSource": true,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "spline",
+      "name": "Spline",
+      "slug": "spline",
+      "description": "Browser-based 3D design and interactive web experiences.",
+      "category": "design",
+      "subcategory": "3D",
+      "tags": [
+        "3d",
+        "web",
+        "interactive",
+        "design"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://spline.design",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "slug": "chatgpt",
+      "description": "AI assistant for writing, research, brainstorming, coding and creator workflows.",
+      "category": "ai",
+      "subcategory": "AI Assistants",
+      "tags": [
+        "ai",
+        "assistant",
+        "writing",
+        "research",
+        "coding"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android",
+        "mac",
+        "windows"
+      ],
+      "formats": [],
+      "website": "https://chatgpt.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "slug": "claude",
+      "description": "AI assistant for writing, analysis, coding and long-form work.",
+      "category": "ai",
+      "subcategory": "AI Assistants",
+      "tags": [
+        "ai",
+        "assistant",
+        "writing",
+        "coding"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://claude.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "slug": "google-gemini",
+      "description": "AI assistant for research, writing, coding and multimodal tasks.",
+      "category": "ai",
+      "subcategory": "AI Assistants",
+      "tags": [
+        "ai",
+        "assistant",
+        "research"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://gemini.google.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "slug": "perplexity",
+      "description": "AI-powered search and research engine with cited answers.",
+      "category": "ai",
+      "subcategory": "Research",
+      "tags": [
+        "research",
+        "search",
+        "ai"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.perplexity.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "slug": "wordpress",
+      "description": "Flexible website and publishing platform for creator businesses.",
+      "category": "creator-business",
+      "subcategory": "Websites",
+      "tags": [
+        "website",
+        "blog",
+        "cms",
+        "business"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://wordpress.org",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "slug": "shopify",
+      "description": "Ecommerce platform for selling products, services and digital goods.",
+      "category": "creator-business",
+      "subcategory": "Ecommerce",
+      "tags": [
+        "ecommerce",
+        "store",
+        "sales"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.shopify.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "printful",
+      "name": "Printful",
+      "slug": "printful",
+      "description": "Print-on-demand fulfillment for creator merchandise and ecommerce.",
+      "category": "creator-business",
+      "subcategory": "Merch",
+      "tags": [
+        "merch",
+        "print on demand",
+        "ecommerce"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.printful.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "slug": "mailchimp",
+      "description": "Email marketing platform for newsletters, campaigns and audiences.",
+      "category": "creator-business",
+      "subcategory": "Email Marketing",
+      "tags": [
+        "email",
+        "newsletter",
+        "marketing"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://mailchimp.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "hootsuite",
+      "name": "Hootsuite",
+      "slug": "hootsuite",
+      "description": "Social media management, scheduling and analytics platform.",
+      "category": "creator-business",
+      "subcategory": "Social Media",
+      "tags": [
+        "social media",
+        "analytics",
+        "scheduling"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.hootsuite.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "google-analytics",
+      "name": "Google Analytics",
+      "slug": "google-analytics",
+      "description": "Website analytics and audience measurement platform.",
+      "category": "creator-business",
+      "subcategory": "Analytics",
+      "tags": [
+        "analytics",
+        "website",
+        "traffic",
+        "seo"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://analytics.google.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "google-search-console",
+      "name": "Google Search Console",
+      "slug": "google-search-console",
+      "description": "Free tools for monitoring search performance and website indexing.",
+      "category": "creator-business",
+      "subcategory": "SEO",
+      "tags": [
+        "seo",
+        "google",
+        "search",
+        "website"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://search.google.com/search-console",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "slug": "github",
+      "description": "Code hosting and collaboration platform for building and deploying projects.",
+      "category": "creator-business",
+      "subcategory": "Development",
+      "tags": [
+        "code",
+        "github",
+        "development",
+        "collaboration"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://github.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "slug": "vercel",
+      "description": "Deployment platform for modern websites and web applications.",
+      "category": "creator-business",
+      "subcategory": "Development",
+      "tags": [
+        "hosting",
+        "deployment",
+        "web",
+        "development"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://vercel.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "slug": "netlify",
+      "description": "Platform for deploying and hosting modern websites and web applications.",
+      "category": "creator-business",
+      "subcategory": "Development",
+      "tags": [
+        "hosting",
+        "deployment",
+        "web"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.netlify.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "slug": "lovable",
+      "description": "AI-powered application builder for creating web apps from natural language.",
+      "category": "ai",
+      "subcategory": "AI Development",
+      "tags": [
+        "ai",
+        "coding",
+        "web apps",
+        "development"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://lovable.dev",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "slug": "bolt",
+      "description": "AI-powered development environment for building web applications.",
+      "category": "ai",
+      "subcategory": "AI Development",
+      "tags": [
+        "ai",
+        "coding",
+        "web apps",
+        "development"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://bolt.new",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "slug": "cursor",
+      "description": "AI-powered code editor designed for building and modifying software.",
+      "category": "ai",
+      "subcategory": "AI Development",
+      "tags": [
+        "ai",
+        "coding",
+        "developer",
+        "editor"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "formats": [],
+      "website": "https://www.cursor.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-express",
+      "name": "Adobe Express",
+      "slug": "adobe-express",
+      "description": "Quick design and video templates from Adobe for creators and marketers.",
+      "category": "design",
+      "subcategory": "Graphic Design",
+      "tags": [
+        "design",
+        "video",
+        "templates"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/express",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "slug": "final-cut-pro",
+      "description": "Apple's professional video editing software for macOS.",
+      "category": "video",
+      "subcategory": "Video Creation & Editing",
+      "tags": [
+        "video",
+        "editing",
+        "macos"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "macos"
+      ],
+      "formats": [],
+      "website": "https://www.apple.com/final-cut-pro/",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "ecamm-live",
+      "name": "Ecamm Live",
+      "slug": "ecamm-live",
+      "description": "Mac-focused live streaming and production studio for creators.",
+      "category": "video",
+      "subcategory": "Live Streaming",
+      "tags": [
+        "streaming",
+        "mac",
+        "production"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "macos"
+      ],
+      "formats": [],
+      "website": "https://www.ecamm.com/mac/ecammlive/",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "sprout-social",
+      "name": "Sprout Social",
+      "slug": "sprout-social",
+      "description": "Social media management and analytics platform for larger creator teams.",
+      "category": "creator-business",
+      "subcategory": "Social Media",
+      "tags": [
+        "social",
+        "analytics"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://sproutsocial.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "slug": "zapier",
+      "description": "Automations and integrations to connect apps and automate creator workflows.",
+      "category": "creator-business",
+      "subcategory": "Automation",
+      "tags": [
+        "automation",
+        "integrations"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://zapier.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "ifttt",
+      "name": "IFTTT",
+      "slug": "ifttt",
+      "description": "Simple automation recipes connecting web services for creators.",
+      "category": "creator-business",
+      "subcategory": "Automation",
+      "tags": [
+        "automation",
+        "integrations"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://ifttt.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "otter",
+      "name": "Otter.ai",
+      "slug": "otter-ai",
+      "description": "Automatic meeting and interview transcription with speaker identification.",
+      "category": "ai",
+      "subcategory": "AI Voice & Audio",
+      "tags": [
+        "transcription",
+        "notes"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://otter.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "rev",
+      "name": "Rev",
+      "slug": "rev",
+      "description": "Paid transcription, captions, and subtitles services used by creators.",
+      "category": "ai",
+      "subcategory": "AI Voice & Audio",
+      "tags": [
+        "transcription",
+        "captions"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.rev.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "fiverr",
+      "name": "Fiverr",
+      "slug": "fiverr",
+      "description": "Marketplace to hire freelancers for video, audio, design, and editing tasks.",
+      "category": "creator-business",
+      "subcategory": "Monetization",
+      "tags": [
+        "freelance",
+        "services"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.fiverr.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "upwork",
+      "name": "Upwork",
+      "slug": "upwork",
+      "description": "Large freelance marketplace for long-term or ad-hoc creator services.",
+      "category": "creator-business",
+      "subcategory": "Monetization",
+      "tags": [
+        "freelance",
+        "services"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.upwork.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "convertkit",
+      "name": "ConvertKit",
+      "slug": "convertkit",
+      "description": "Email marketing tailored for creators with funnels and subscriber tools.",
+      "category": "creator-business",
+      "subcategory": "Newsletter & Email",
+      "tags": [
+        "email",
+        "marketing"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://convertkit.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "headliner",
+      "name": "Headliner",
+      "slug": "headliner",
+      "description": "Create audiograms and social clips from podcasts and audio for promotion.",
+      "category": "music",
+      "subcategory": "Audio & Podcasting",
+      "tags": [
+        "audio",
+        "podcast",
+        "social"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.headliner.app",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "anchor",
+      "name": "Anchor",
+      "slug": "anchor",
+      "description": "Podcast hosting and distribution platform with built-in creation tools.",
+      "category": "music",
+      "subcategory": "Audio & Podcasting",
+      "tags": [
+        "podcast",
+        "hosting"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": 0,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://anchor.fm",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "lumen5",
+      "name": "Lumen5",
+      "slug": "lumen5",
+      "description": "AI video creation platform that turns articles into short videos.",
+      "category": "video",
+      "subcategory": "Video Creation & Editing",
+      "tags": [
+        "ai",
+        "video",
+        "social"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://lumen5.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "invideo",
+      "name": "InVideo",
+      "slug": "invideo",
+      "description": "Online video editor with templates for marketing and social content.",
+      "category": "video",
+      "subcategory": "Video Creation & Editing",
+      "tags": [
+        "video",
+        "templates"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://invideo.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "placeit",
+      "name": "Placeit",
+      "slug": "placeit",
+      "description": "Mockups, logos, and video templates to quickly create branded assets.",
+      "category": "design",
+      "subcategory": "Graphic Design",
+      "tags": [
+        "mockups",
+        "templates",
+        "branding"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://placeit.net",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "pexels",
+      "name": "Pexels",
+      "slug": "pexels",
+      "description": "Free stock photos and videos for creators and social content.",
+      "category": "design",
+      "subcategory": "Stock Media",
+      "tags": [
+        "images",
+        "video",
+        "stock"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": 0,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.pexels.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "artlist",
+      "name": "Artlist",
+      "slug": "artlist",
+      "description": "Music and SFX licensing library for creators and filmmakers.",
+      "category": "music",
+      "subcategory": "Audio & Podcasting",
+      "tags": [
+        "music",
+        "licensing"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://artlist.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "shutterstock",
+      "name": "Shutterstock",
+      "slug": "shutterstock",
+      "description": "Stock images, footage, and music for professional content creation.",
+      "category": "design",
+      "subcategory": "Stock Media",
+      "tags": [
+        "images",
+        "video",
+        "music"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.shutterstock.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "description": "AI video generation platform for creating talking-head videos from text.",
+      "category": "ai",
+      "subcategory": "AI Creator Tools",
+      "tags": [
+        "ai",
+        "video",
+        "synthesis"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.synthesia.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "murf",
+      "name": "Murf.ai",
+      "slug": "murf-ai",
+      "description": "AI voiceover and TTS platform for professional-sounding narration.",
+      "category": "ai",
+      "subcategory": "AI Creator Tools",
+      "tags": [
+        "ai",
+        "voice",
+        "tts"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://murf.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "plausible",
+      "name": "Plausible Analytics",
+      "slug": "plausible-analytics",
+      "description": "Privacy-focused web analytics with a lightweight footprint.",
+      "category": "creator-business",
+      "subcategory": "Analytics",
+      "tags": [
+        "analytics",
+        "privacy"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://plausible.io/",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
     }
   ]
 }

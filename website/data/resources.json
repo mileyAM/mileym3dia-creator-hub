@@ -1,36 +1,9 @@
 {
   "version": "1.0",
   "name": "MILEYM3DIA Creator Hub",
-  "updatedAt": "2026-08-16",
-  "count": 248,
+  "updatedAt": "2026-11-18T06:01:10.993803+00:00",
+  "count": 320,
   "resources": [
-    {
-      "id": "sample-resource",
-      "name": "Example Resource",
-      "slug": "example-resource",
-      "description": "Placeholder resource used to demonstrate the MILEYM3DIA Creator Hub data structure.",
-      "category": "music-production",
-      "subcategory": "",
-      "tags": [
-        "free"
-      ],
-      "pricing": {
-        "type": "free",
-        "price": 0,
-        "currency": "USD"
-      },
-      "platforms": [
-        "web"
-      ],
-      "formats": [],
-      "website": "https://example.com",
-      "download": "",
-      "logo": "",
-      "featured": true,
-      "verified": false,
-      "source": "placeholder",
-      "lastVerified": null
-    },
     {
       "id": "capcut",
       "name": "CapCut",
@@ -4375,29 +4348,6 @@
       "lastVerified": "2026-08-16"
     },
     {
-      "id": "trypost",
-      "name": "TryPost",
-      "description": "TryPost \u2014 discovered in Social Media Automation.",
-      "category": "creator-business",
-      "subcategory": "Social Media Automation",
-      "tags": [],
-      "pricing": {
-        "type": "unknown",
-        "price": null,
-        "currency": null,
-        "confidence": "low"
-      },
-      "platforms": [],
-      "formats": [],
-      "website": "https://github.com/trypost-it/trypost",
-      "download": "",
-      "openSource": true,
-      "verified": true,
-      "featured": false,
-      "source": "GitHub:JuneYaooo/awesome-ai-media",
-      "lastVerified": "2026-08-16"
-    },
-    {
       "id": "social-auto-upload",
       "name": "social-auto-upload",
       "description": "social-auto-upload \u2014 discovered in Social Media Automation.",
@@ -4583,7 +4533,7 @@
     },
     {
       "id": "trypost",
-      "name": "trypost",
+      "name": "TryPost",
       "description": "trypost \u2014 discovered in Social Media Automation.",
       "category": "creator-business",
       "subcategory": "Social Media Automation",
@@ -4896,29 +4846,6 @@
       "platforms": [],
       "formats": [],
       "website": "https://github.com/SYSTRAN/faster-whisper",
-      "download": "",
-      "openSource": true,
-      "verified": true,
-      "featured": false,
-      "source": "GitHub:JuneYaooo/awesome-ai-media",
-      "lastVerified": "2026-08-16"
-    },
-    {
-      "id": "whisper-cpp",
-      "name": "whisper.cpp",
-      "description": "whisper.cpp \u2014 discovered in Subtitle and Localization.",
-      "category": "creator-tools",
-      "subcategory": "Subtitle and Localization",
-      "tags": [],
-      "pricing": {
-        "type": "unknown",
-        "price": null,
-        "currency": null,
-        "confidence": "low"
-      },
-      "platforms": [],
-      "formats": [],
-      "website": "https://github.com/ggerganov/whisper.cpp",
       "download": "",
       "openSource": true,
       "verified": true,
@@ -5514,7 +5441,7 @@
       "lastVerified": "2026-08-16"
     },
     {
-      "id": "helios",
+      "id": "helios-programmatic-video",
       "name": "Helios",
       "description": "Helios \u2014 discovered in Programmatic Video Creation.",
       "category": "video",
@@ -5767,6 +5694,2278 @@
       "featured": false,
       "source": "GitHub:JuneYaooo/awesome-ai-media",
       "lastVerified": "2026-08-16"
+    },
+    {
+      "id": "fontfam",
+      "name": "Font Fam",
+      "description": "Directory of 2,181 open-source fonts, searchable and ready to download for design and branding work.",
+      "category": "design",
+      "subcategory": "Fonts & Typography",
+      "tags": [
+        "fonts",
+        "open-source",
+        "typography"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": 0,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://fontfam.net/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "notemplate",
+      "name": "NoTemplate",
+      "description": "Local market and competitor research you run before building a website: audit your area, compare competitors, and shape positioning first.",
+      "category": "creator-business",
+      "subcategory": "Market Research",
+      "tags": [
+        "research",
+        "competitors",
+        "seo"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://notemplate.online/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "distrokid",
+      "name": "DistroKid",
+      "description": "Music distribution to Spotify, Apple Music, TikTok and 150+ other stores for a flat yearly fee, keeping 100% of royalties.",
+      "category": "creator-business",
+      "subcategory": "Music Distribution",
+      "tags": [
+        "distribution",
+        "streaming",
+        "royalties"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://distrokid.com/",
+      "download": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "beatstars",
+      "name": "BeatStars",
+      "description": "Marketplace and storefront for buying and selling beats, with licensing, contracts and instant delivery for producers.",
+      "category": "creator-business",
+      "subcategory": "Beat Selling & Licensing",
+      "tags": [
+        "beats",
+        "marketplace",
+        "licensing"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.beatstars.com/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "bandlab",
+      "name": "BandLab",
+      "description": "Free online DAW and social music platform with multitrack recording, effects, mastering and a built-in audience.",
+      "category": "music",
+      "subcategory": "Online DAW",
+      "tags": [
+        "daw",
+        "recording",
+        "free"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.bandlab.com/",
+      "download": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "moises",
+      "name": "Moises",
+      "description": "AI stem separation app: split vocals, drums, bass and other instruments from any song, with chord detection and pitch and tempo control.",
+      "category": "music",
+      "subcategory": "AI Audio Tools",
+      "tags": [
+        "stems",
+        "vocals",
+        "ai"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android",
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://moises.ai/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "landr",
+      "name": "LANDR",
+      "description": "AI mastering, a sample library, plugins and music distribution in one platform for producers and artists.",
+      "category": "music",
+      "subcategory": "Mastering & Distribution",
+      "tags": [
+        "mastering",
+        "samples",
+        "distribution"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.landr.com/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "description": "Google's AI research assistant: upload your sources and get summaries, briefings and audio overviews grounded in your own material.",
+      "category": "ai",
+      "subcategory": "Research & Notes",
+      "tags": [
+        "research",
+        "notes",
+        "ai"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://notebooklm.google.com/",
+      "download": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "description": "AI generator for presentations, documents and simple websites from a prompt, with clean, exportable designs.",
+      "category": "ai",
+      "subcategory": "Presentations & Docs",
+      "tags": [
+        "slides",
+        "docs",
+        "ai"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://gamma.app/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "krea-ai",
+      "name": "Krea AI",
+      "description": "Real-time AI image generation, editing, upscaling and enhancement on one canvas, running 60+ image and video models.",
+      "category": "ai",
+      "subcategory": "Image Generation",
+      "tags": [
+        "image",
+        "upscale",
+        "ai"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.krea.ai/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "luma-dream-machine",
+      "name": "Luma Dream Machine",
+      "description": "AI video generation and editing from text, images and keyframes, built by Luma Labs.",
+      "category": "ai",
+      "subcategory": "Text-to-Video",
+      "tags": [
+        "video",
+        "ai",
+        "generation"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios"
+      ],
+      "formats": [],
+      "website": "https://lumalabs.ai/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "google-fonts",
+      "name": "Google Fonts",
+      "description": "Free library of more than 1,500 open-source font families with easy web embedding and downloads.",
+      "category": "design",
+      "subcategory": "Fonts & Typography",
+      "tags": [
+        "fonts",
+        "typography",
+        "free"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": 0,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://fonts.google.com/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "coolors",
+      "name": "Coolors",
+      "description": "Fast color palette generator and explorer for building and exporting brand color schemes.",
+      "category": "design",
+      "subcategory": "Color Tools",
+      "tags": [
+        "color",
+        "palettes",
+        "branding"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://coolors.co/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "penpot",
+      "name": "Penpot",
+      "description": "Open-source design and prototyping platform for interfaces, graphics and design systems \u2014 a free Figma alternative.",
+      "category": "design",
+      "subcategory": "UI Design & Prototyping",
+      "tags": [
+        "ui",
+        "prototyping",
+        "open-source"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://penpot.app/",
+      "download": "",
+      "openSource": true,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "undraw",
+      "name": "unDraw",
+      "description": "Free open-source illustrations in a flat style that you can recolor to match your brand and use anywhere.",
+      "category": "design",
+      "subcategory": "Illustrations",
+      "tags": [
+        "illustrations",
+        "free",
+        "svg"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": 0,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://undraw.co/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "stan-store",
+      "name": "Stan Store",
+      "description": "All-in-one creator storefront for link-in-bio, digital products, courses, coaching and memberships.",
+      "category": "creator-business",
+      "subcategory": "Creator Storefronts",
+      "tags": [
+        "storefront",
+        "digital-products",
+        "link-in-bio"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.stan.store/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "beacons",
+      "name": "Beacons",
+      "description": "Link-in-bio and creator business platform with storefronts, media kits, email and fan monetization tools.",
+      "category": "creator-business",
+      "subcategory": "Link in Bio & Storefronts",
+      "tags": [
+        "link-in-bio",
+        "storefront"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://beacons.ai/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "framer",
+      "name": "Framer",
+      "description": "Visual website builder and CMS that publishes fast, polished marketing sites and portfolios without code.",
+      "category": "creator-business",
+      "subcategory": "Website Builders",
+      "tags": [
+        "websites",
+        "cms",
+        "portfolio"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": null
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.framer.com/",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": true,
+      "source": "manual-curation",
+      "lastVerified": "2026-10-26"
+    },
+    {
+      "id": "mago-an-open-source-ai-video-studio-runs-locally-with-comfy",
+      "name": "Mago, an open source AI video studio, runs locally with Comfy",
+      "slug": "mago-an-open-source-ai-video-studio-runs-locally-with-comfy",
+      "description": "I'm Alvaro, one of the founders of Mago. With my co-founder Alex (creator of Warpfusion, open source video to video), we built an open source AI video studio specialized in long form content and large volumes of video. It's a desktop app that you can run for free on your own GPU, that uses a portable ComfyUI or can be plugged into an existing Comfy setup. It handles both hybrid production (video to video, AI VFX) and full AI (microdramas, AI series for social etc). Back when Alex was working on Warpfusion, we were discussing making an app for \"real\" production, meaning hours of video, films, s",
+      "category": "video",
+      "subcategory": "General",
+      "tags": [
+        "discovered"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://github.com/MagoStudio/MagoStudio",
+      "download": "",
+      "openSource": true,
+      "featured": false,
+      "verified": false,
+      "source": "Hacker News (Show HN)",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "notes-on-watchmen",
+      "name": "Notes on Watchmen",
+      "slug": "notes-on-watchmen",
+      "description": "This is for fans of Watchmen the graphic novel. (not sure how many are here) I conceived of this project during COVID where I did all the data entry, design proof of concepts, documentation, and set the vision for the final site. Then it sat dormant until this past summer when I resurrected it with Codex. So now it's ready to share. It covers chapter analysis, character overviews, metrics, charts, color spectrums, panel grids, page-by-page detailed notes on themes, symbols, composition, and plot. There are also some longer form essays that go deeper into larger topics. I hope you like it. Comm",
+      "category": "design",
+      "subcategory": "General",
+      "tags": [
+        "discovered"
+      ],
+      "pricing": {
+        "type": "unknown",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://notesonwatchmen.com",
+      "download": "",
+      "openSource": false,
+      "featured": false,
+      "verified": false,
+      "source": "Hacker News (Show HN)",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "splice",
+      "name": "Splice",
+      "slug": "splice",
+      "description": "Royalty-free samples, presets and sounds for music production.",
+      "category": "music",
+      "subcategory": "Samples",
+      "tags": [
+        "samples",
+        "loops",
+        "presets",
+        "music production"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://splice.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "loopcloud",
+      "name": "Loopcloud",
+      "slug": "loopcloud",
+      "description": "Large searchable library of samples, loops and sounds for producers.",
+      "category": "music",
+      "subcategory": "Samples",
+      "tags": [
+        "samples",
+        "loops",
+        "production"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.loopcloud.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "soundtrap",
+      "name": "Soundtrap",
+      "slug": "soundtrap",
+      "description": "Online music studio for recording, beat making and collaboration.",
+      "category": "music",
+      "subcategory": "DAWs",
+      "tags": [
+        "daw",
+        "recording",
+        "collaboration"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.soundtrap.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "native-instruments",
+      "name": "Native Instruments",
+      "slug": "native-instruments",
+      "description": "Professional instruments, effects, samples and production software.",
+      "category": "music",
+      "subcategory": "Instruments & Plugins",
+      "tags": [
+        "plugins",
+        "kontakt",
+        "instruments",
+        "effects"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.native-instruments.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "arturia",
+      "name": "Arturia",
+      "slug": "arturia",
+      "description": "Synthesizers, virtual instruments, effects and music production hardware.",
+      "category": "music",
+      "subcategory": "Instruments & Plugins",
+      "tags": [
+        "synthesizers",
+        "plugins",
+        "effects",
+        "instruments"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.arturia.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "valhalla-dsp",
+      "name": "Valhalla DSP",
+      "slug": "valhalla-dsp",
+      "description": "Popular professional reverb and delay plugins for music producers.",
+      "category": "music",
+      "subcategory": "Mixing & Mastering",
+      "tags": [
+        "reverb",
+        "delay",
+        "mixing",
+        "mastering"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://valhalladsp.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "voxengo",
+      "name": "Voxengo",
+      "slug": "voxengo",
+      "description": "Audio plugins and professional mixing and mastering tools.",
+      "category": "music",
+      "subcategory": "Mixing & Mastering",
+      "tags": [
+        "plugins",
+        "mixing",
+        "mastering"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.voxengo.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "tunecore",
+      "name": "TuneCore",
+      "slug": "tunecore",
+      "description": "Independent music distribution, publishing and artist services.",
+      "category": "music",
+      "subcategory": "Music Business",
+      "tags": [
+        "distribution",
+        "publishing",
+        "artists"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.tunecore.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-premiere",
+      "name": "Adobe Premiere",
+      "slug": "adobe-premiere",
+      "description": "Professional video editing software for creators and production teams.",
+      "category": "video",
+      "subcategory": "Video Editing",
+      "tags": [
+        "editing",
+        "video",
+        "production"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/premiere.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "after-effects",
+      "name": "Adobe After Effects",
+      "slug": "adobe-after-effects",
+      "description": "Motion graphics and visual effects software for advanced video work.",
+      "category": "video",
+      "subcategory": "Motion Graphics",
+      "tags": [
+        "motion graphics",
+        "vfx",
+        "animation"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/aftereffects.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "frame-io",
+      "name": "Frame.io",
+      "slug": "frame-io",
+      "description": "Video collaboration, review and approval platform for creative teams.",
+      "category": "video",
+      "subcategory": "Collaboration",
+      "tags": [
+        "video",
+        "review",
+        "collaboration",
+        "production"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios"
+      ],
+      "formats": [],
+      "website": "https://frame.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "slug": "adobe-photoshop",
+      "description": "Professional image editing, compositing and graphic design software.",
+      "category": "design",
+      "subcategory": "Photo Editing",
+      "tags": [
+        "photoshop",
+        "photo editing",
+        "graphics"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "ios"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/photoshop.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-illustrator",
+      "name": "Adobe Illustrator",
+      "slug": "adobe-illustrator",
+      "description": "Professional vector graphics software for logos and illustrations.",
+      "category": "design",
+      "subcategory": "Graphic Design",
+      "tags": [
+        "vector",
+        "logos",
+        "illustration"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/products/illustrator.html",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "pixlr",
+      "name": "Pixlr",
+      "slug": "pixlr",
+      "description": "Browser-based photo editing and graphic design tools.",
+      "category": "design",
+      "subcategory": "Photo Editing",
+      "tags": [
+        "photo editing",
+        "design",
+        "graphics"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://pixlr.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "slug": "blender",
+      "description": "Free open-source 3D creation suite for modeling, animation and rendering.",
+      "category": "design",
+      "subcategory": "3D",
+      "tags": [
+        "3d",
+        "modeling",
+        "animation",
+        "rendering"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "formats": [],
+      "website": "https://www.blender.org",
+      "download": "",
+      "logo": "",
+      "openSource": true,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "spline",
+      "name": "Spline",
+      "slug": "spline",
+      "description": "Browser-based 3D design and interactive web experiences.",
+      "category": "design",
+      "subcategory": "3D",
+      "tags": [
+        "3d",
+        "web",
+        "interactive",
+        "design"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://spline.design",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "slug": "chatgpt",
+      "description": "AI assistant for writing, research, brainstorming, coding and creator workflows.",
+      "category": "ai",
+      "subcategory": "AI Assistants",
+      "tags": [
+        "ai",
+        "assistant",
+        "writing",
+        "research",
+        "coding"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android",
+        "mac",
+        "windows"
+      ],
+      "formats": [],
+      "website": "https://chatgpt.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "slug": "claude",
+      "description": "AI assistant for writing, analysis, coding and long-form work.",
+      "category": "ai",
+      "subcategory": "AI Assistants",
+      "tags": [
+        "ai",
+        "assistant",
+        "writing",
+        "coding"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://claude.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "slug": "google-gemini",
+      "description": "AI assistant for research, writing, coding and multimodal tasks.",
+      "category": "ai",
+      "subcategory": "AI Assistants",
+      "tags": [
+        "ai",
+        "assistant",
+        "research"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://gemini.google.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "slug": "perplexity",
+      "description": "AI-powered search and research engine with cited answers.",
+      "category": "ai",
+      "subcategory": "Research",
+      "tags": [
+        "research",
+        "search",
+        "ai"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.perplexity.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "slug": "wordpress",
+      "description": "Flexible website and publishing platform for creator businesses.",
+      "category": "creator-business",
+      "subcategory": "Websites",
+      "tags": [
+        "website",
+        "blog",
+        "cms",
+        "business"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://wordpress.org",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "slug": "shopify",
+      "description": "Ecommerce platform for selling products, services and digital goods.",
+      "category": "creator-business",
+      "subcategory": "Ecommerce",
+      "tags": [
+        "ecommerce",
+        "store",
+        "sales"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.shopify.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "printful",
+      "name": "Printful",
+      "slug": "printful",
+      "description": "Print-on-demand fulfillment for creator merchandise and ecommerce.",
+      "category": "creator-business",
+      "subcategory": "Merch",
+      "tags": [
+        "merch",
+        "print on demand",
+        "ecommerce"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.printful.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "slug": "mailchimp",
+      "description": "Email marketing platform for newsletters, campaigns and audiences.",
+      "category": "creator-business",
+      "subcategory": "Email Marketing",
+      "tags": [
+        "email",
+        "newsletter",
+        "marketing"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://mailchimp.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "hootsuite",
+      "name": "Hootsuite",
+      "slug": "hootsuite",
+      "description": "Social media management, scheduling and analytics platform.",
+      "category": "creator-business",
+      "subcategory": "Social Media",
+      "tags": [
+        "social media",
+        "analytics",
+        "scheduling"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.hootsuite.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "google-analytics",
+      "name": "Google Analytics",
+      "slug": "google-analytics",
+      "description": "Website analytics and audience measurement platform.",
+      "category": "creator-business",
+      "subcategory": "Analytics",
+      "tags": [
+        "analytics",
+        "website",
+        "traffic",
+        "seo"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://analytics.google.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "google-search-console",
+      "name": "Google Search Console",
+      "slug": "google-search-console",
+      "description": "Free tools for monitoring search performance and website indexing.",
+      "category": "creator-business",
+      "subcategory": "SEO",
+      "tags": [
+        "seo",
+        "google",
+        "search",
+        "website"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://search.google.com/search-console",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "slug": "github",
+      "description": "Code hosting and collaboration platform for building and deploying projects.",
+      "category": "creator-business",
+      "subcategory": "Development",
+      "tags": [
+        "code",
+        "github",
+        "development",
+        "collaboration"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "windows",
+        "mac"
+      ],
+      "formats": [],
+      "website": "https://github.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "slug": "vercel",
+      "description": "Deployment platform for modern websites and web applications.",
+      "category": "creator-business",
+      "subcategory": "Development",
+      "tags": [
+        "hosting",
+        "deployment",
+        "web",
+        "development"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://vercel.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "slug": "netlify",
+      "description": "Platform for deploying and hosting modern websites and web applications.",
+      "category": "creator-business",
+      "subcategory": "Development",
+      "tags": [
+        "hosting",
+        "deployment",
+        "web"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.netlify.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "slug": "lovable",
+      "description": "AI-powered application builder for creating web apps from natural language.",
+      "category": "ai",
+      "subcategory": "AI Development",
+      "tags": [
+        "ai",
+        "coding",
+        "web apps",
+        "development"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://lovable.dev",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "slug": "bolt",
+      "description": "AI-powered development environment for building web applications.",
+      "category": "ai",
+      "subcategory": "AI Development",
+      "tags": [
+        "ai",
+        "coding",
+        "web apps",
+        "development"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://bolt.new",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "slug": "cursor",
+      "description": "AI-powered code editor designed for building and modifying software.",
+      "category": "ai",
+      "subcategory": "AI Development",
+      "tags": [
+        "ai",
+        "coding",
+        "developer",
+        "editor"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "formats": [],
+      "website": "https://www.cursor.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-addition",
+      "lastVerified": "2026-11-06"
+    },
+    {
+      "id": "adobe-express",
+      "name": "Adobe Express",
+      "slug": "adobe-express",
+      "description": "Quick design and video templates from Adobe for creators and marketers.",
+      "category": "design",
+      "subcategory": "Graphic Design",
+      "tags": [
+        "design",
+        "video",
+        "templates"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.adobe.com/express",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "slug": "final-cut-pro",
+      "description": "Apple's professional video editing software for macOS.",
+      "category": "video",
+      "subcategory": "Video Creation & Editing",
+      "tags": [
+        "video",
+        "editing",
+        "macos"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "macos"
+      ],
+      "formats": [],
+      "website": "https://www.apple.com/final-cut-pro/",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "ecamm-live",
+      "name": "Ecamm Live",
+      "slug": "ecamm-live",
+      "description": "Mac-focused live streaming and production studio for creators.",
+      "category": "video",
+      "subcategory": "Live Streaming",
+      "tags": [
+        "streaming",
+        "mac",
+        "production"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "macos"
+      ],
+      "formats": [],
+      "website": "https://www.ecamm.com/mac/ecammlive/",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "sprout-social",
+      "name": "Sprout Social",
+      "slug": "sprout-social",
+      "description": "Social media management and analytics platform for larger creator teams.",
+      "category": "creator-business",
+      "subcategory": "Social Media",
+      "tags": [
+        "social",
+        "analytics"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://sproutsocial.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "slug": "zapier",
+      "description": "Automations and integrations to connect apps and automate creator workflows.",
+      "category": "creator-business",
+      "subcategory": "Automation",
+      "tags": [
+        "automation",
+        "integrations"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://zapier.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "ifttt",
+      "name": "IFTTT",
+      "slug": "ifttt",
+      "description": "Simple automation recipes connecting web services for creators.",
+      "category": "creator-business",
+      "subcategory": "Automation",
+      "tags": [
+        "automation",
+        "integrations"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://ifttt.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "otter",
+      "name": "Otter.ai",
+      "slug": "otter-ai",
+      "description": "Automatic meeting and interview transcription with speaker identification.",
+      "category": "ai",
+      "subcategory": "AI Voice & Audio",
+      "tags": [
+        "transcription",
+        "notes"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://otter.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "rev",
+      "name": "Rev",
+      "slug": "rev",
+      "description": "Paid transcription, captions, and subtitles services used by creators.",
+      "category": "ai",
+      "subcategory": "AI Voice & Audio",
+      "tags": [
+        "transcription",
+        "captions"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "formats": [],
+      "website": "https://www.rev.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "fiverr",
+      "name": "Fiverr",
+      "slug": "fiverr",
+      "description": "Marketplace to hire freelancers for video, audio, design, and editing tasks.",
+      "category": "creator-business",
+      "subcategory": "Monetization",
+      "tags": [
+        "freelance",
+        "services"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.fiverr.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "upwork",
+      "name": "Upwork",
+      "slug": "upwork",
+      "description": "Large freelance marketplace for long-term or ad-hoc creator services.",
+      "category": "creator-business",
+      "subcategory": "Monetization",
+      "tags": [
+        "freelance",
+        "services"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.upwork.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "convertkit",
+      "name": "ConvertKit",
+      "slug": "convertkit",
+      "description": "Email marketing tailored for creators with funnels and subscriber tools.",
+      "category": "creator-business",
+      "subcategory": "Newsletter & Email",
+      "tags": [
+        "email",
+        "marketing"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://convertkit.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "headliner",
+      "name": "Headliner",
+      "slug": "headliner",
+      "description": "Create audiograms and social clips from podcasts and audio for promotion.",
+      "category": "music",
+      "subcategory": "Audio & Podcasting",
+      "tags": [
+        "audio",
+        "podcast",
+        "social"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.headliner.app",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "anchor",
+      "name": "Anchor",
+      "slug": "anchor",
+      "description": "Podcast hosting and distribution platform with built-in creation tools.",
+      "category": "music",
+      "subcategory": "Audio & Podcasting",
+      "tags": [
+        "podcast",
+        "hosting"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": 0,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://anchor.fm",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "lumen5",
+      "name": "Lumen5",
+      "slug": "lumen5",
+      "description": "AI video creation platform that turns articles into short videos.",
+      "category": "video",
+      "subcategory": "Video Creation & Editing",
+      "tags": [
+        "ai",
+        "video",
+        "social"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://lumen5.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "invideo",
+      "name": "InVideo",
+      "slug": "invideo",
+      "description": "Online video editor with templates for marketing and social content.",
+      "category": "video",
+      "subcategory": "Video Creation & Editing",
+      "tags": [
+        "video",
+        "templates"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://invideo.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "placeit",
+      "name": "Placeit",
+      "slug": "placeit",
+      "description": "Mockups, logos, and video templates to quickly create branded assets.",
+      "category": "design",
+      "subcategory": "Graphic Design",
+      "tags": [
+        "mockups",
+        "templates",
+        "branding"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://placeit.net",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "pexels",
+      "name": "Pexels",
+      "slug": "pexels",
+      "description": "Free stock photos and videos for creators and social content.",
+      "category": "design",
+      "subcategory": "Stock Media",
+      "tags": [
+        "images",
+        "video",
+        "stock"
+      ],
+      "pricing": {
+        "type": "free",
+        "price": 0,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.pexels.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "artlist",
+      "name": "Artlist",
+      "slug": "artlist",
+      "description": "Music and SFX licensing library for creators and filmmakers.",
+      "category": "music",
+      "subcategory": "Audio & Podcasting",
+      "tags": [
+        "music",
+        "licensing"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://artlist.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "shutterstock",
+      "name": "Shutterstock",
+      "slug": "shutterstock",
+      "description": "Stock images, footage, and music for professional content creation.",
+      "category": "design",
+      "subcategory": "Stock Media",
+      "tags": [
+        "images",
+        "video",
+        "music"
+      ],
+      "pricing": {
+        "type": "paid",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.shutterstock.com",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "description": "AI video generation platform for creating talking-head videos from text.",
+      "category": "ai",
+      "subcategory": "AI Creator Tools",
+      "tags": [
+        "ai",
+        "video",
+        "synthesis"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://www.synthesia.io",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "murf",
+      "name": "Murf.ai",
+      "slug": "murf-ai",
+      "description": "AI voiceover and TTS platform for professional-sounding narration.",
+      "category": "ai",
+      "subcategory": "AI Creator Tools",
+      "tags": [
+        "ai",
+        "voice",
+        "tts"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://murf.ai",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
+    },
+    {
+      "id": "plausible",
+      "name": "Plausible Analytics",
+      "slug": "plausible-analytics",
+      "description": "Privacy-focused web analytics with a lightweight footprint.",
+      "category": "creator-business",
+      "subcategory": "Analytics",
+      "tags": [
+        "analytics",
+        "privacy"
+      ],
+      "pricing": {
+        "type": "freemium",
+        "price": null,
+        "currency": "USD"
+      },
+      "platforms": [
+        "web"
+      ],
+      "formats": [],
+      "website": "https://plausible.io/",
+      "download": "",
+      "logo": "",
+      "openSource": false,
+      "featured": true,
+      "verified": true,
+      "source": "curated-index",
+      "lastVerified": "2026-11-18"
     }
   ]
 }

@@ -13,7 +13,7 @@ import {
 
 import additions from "./resource-additions.js";
 
-const DATA_URL = "./data/resources.json";
+const DATA_URL = `${import.meta.env.BASE_URL}data/resources.json`;
 
 const state = {
   resources: [],
@@ -70,6 +70,13 @@ const CATEGORY_META = {
     title: "Creator Business",
     description:
       "Marketing, monetization, websites, analytics, ecommerce and growth."
+  },
+
+  "creator-tools": {
+    icon: "🧰",
+    title: "Creator Tools",
+    description:
+      "Productivity, bio links, utilities, and creator workflow tools."
   }
 };
 
