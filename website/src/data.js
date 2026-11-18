@@ -87,6 +87,24 @@ const CATEGORY_ALIASES = {
 
 const FAVORITES_KEY = "m3_creator_favorites_v2";
 const VIEW_MODE_KEY = "m3_view_mode_v2";
+const THEME_KEY = "m3_theme_v2";
+
+export function getTheme() {
+  try {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === "light" || saved === "dark") return saved;
+  } catch (e) {}
+  return "dark";
+}
+
+export function setTheme(theme) {
+  const clean = theme === "light" ? "light" : "dark";
+  try {
+    localStorage.setItem(THEME_KEY, clean);
+  } catch (e) {}
+  document.documentElement.setAttribute("data-theme", clean);
+  return clean;
+}
 
 export function normalize(value = "") {
   return String(value || "")

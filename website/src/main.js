@@ -17,6 +17,8 @@ import {
   toggleFavorite,
   getViewMode,
   setViewMode,
+  getTheme,
+  setTheme,
   getStats,
   getSubcategories
 } from "./data.js";
@@ -24,7 +26,11 @@ import {
 const RESOURCES_URL = `${import.meta.env.BASE_URL}data/resources.json`;
 const ORIGINALS_URL = `${import.meta.env.BASE_URL}data/m3-originals.json`;
 
+const currentTheme = getTheme();
+document.documentElement.setAttribute("data-theme", currentTheme);
+
 const state = {
+  theme: currentTheme,
   resources: [],
   originals: [],
   search: "",
@@ -121,6 +127,15 @@ function renderHeader(stats) {
             <span>♥</span>
             <span class="hide-mobile">Favorites</span>
             <span class="tab-count">${stats.favorites}</span>
+          </button>
+
+          <button
+            class="btn-theme-toggle"
+            id="themeToggleBtn"
+            title="${state.theme === 'light' ? 'Switch to Studio Dark Mode' : 'Switch to Crisp Light Mode'}"
+            aria-label="Toggle visual theme"
+          >
+            <span>${state.theme === 'light' ? '🌙' : '☀️'}</span>
           </button>
 
           <a
@@ -745,6 +760,14 @@ function bindEvents() {
     resetFilters();
     render();
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Theme Toggle Button
+  document.querySelector("#themeToggleBtn")?.addEventListener("click", () => {
+    const nextTheme = state.theme === "light" ? "dark" : "light";
+    state.theme = nextTheme;
+    setTheme(nextTheme);
+    render();
   });
 
   // Category Tab Click
