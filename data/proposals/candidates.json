@@ -1,14 +1,22 @@
 {
-  "generatedAt": "2026-11-16T22:36:52.726870+00:00",
+  "generatedAt": "2026-11-24T00:27:46.530217+00:00",
   "status": "needs-review",
-  "count": 1,
+  "count": 2,
   "candidates": [
     {
-      "name": "Show HN: Sample \u2013 Music Player",
-      "description": "Built my own multi source music player, aggrigates songs from multiple sources feeds into app, custom recommendations, radio, etc. Must try Comments URL: https://news.ycombinator.com/item?id=50522172 Points: 1 # Comments: 0",
-      "website": "https://sample-music-player.netlify.app/",
+      "name": "Show HN: Klink \u2013 I built a sudoku game where every puzzle helps rebuild a robot",
+      "description": "Two years ago, I tried making a sudoku game in React, but I let it go because getting everything properly implemented turned out to be quite a bit of work. Then AI came along. I\u2019ve spent the past few weeks working hard on Klink in the evenings and on weekends. It started out with experimenting a Tamagotchi-style game where you had to take care of a little robot and gradually add more parts to it. But it turned out that a Tamagotchi on an iPhone didn\u2019t really work, I was just mashing buttons and it didn't give me that same feeling I got as a kid clicking the little buttons to feed my pixelated ",
+      "website": "https://apps.apple.com/us/app/klink-sudoku-no-ads/id6830862513",
+      "category": "business",
+      "relevanceScore": 4,
+      "source": "Hacker News (Show HN)"
+    },
+    {
+      "name": "Show HN: Lode Runner 2099",
+      "description": "Hi all, Recently, Opus 5.5 and I as lowly Director in Chief (but I still feel like I matter, and that I'm good enough and smart enough to be involved, doggone it!), revamped this LR clone with procedural levels/music (it already had that, this was just a broad improvement/enhancement pass). It was ok'ish before but after the overhaul I was kind of taken back with how playable and good it is now. Added multiplayer and playing on a TV (Android/Google TV app and should work with a paired BT controller). It's pretty fun I have to say. I get bored with most LR's after a bit but this one I actually ",
+      "website": "https://loderunner2099.exe.xyz",
       "category": "music",
-      "relevanceScore": 2,
+      "relevanceScore": 3,
       "source": "Hacker News (Show HN)"
     }
   ]
